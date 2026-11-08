@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-doc"
+  short_description: "读取、创建和精确修改飞书文档正文、文档块和思维笔记；适用于 docx 或 wiki 文档链接。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

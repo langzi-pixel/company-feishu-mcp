@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-okr"
+  short_description: "读取和管理飞书 OKR 周期、目标、关键结果、对齐、指标、进展与评论。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

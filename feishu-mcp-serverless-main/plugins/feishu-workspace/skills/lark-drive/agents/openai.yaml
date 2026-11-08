@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-drive"
+  short_description: "搜索与管理飞书云盘文件、文件夹、权限、评论、导入导出和附件；正文编辑转文档技能。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

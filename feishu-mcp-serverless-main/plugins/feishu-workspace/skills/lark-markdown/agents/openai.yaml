@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-markdown"
+  short_description: "读取、创建和覆写飞书云盘中的原生 Markdown 文件；不把它当成 Docx 文档。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

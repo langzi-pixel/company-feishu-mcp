@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-sheets"
+  short_description: "读取和编辑飞书电子表格的单元格、公式、格式、图表、透视表和工作表结构。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

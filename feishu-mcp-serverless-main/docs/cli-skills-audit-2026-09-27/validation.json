@@ -1,0 +1,14 @@
+{
+  "scope": "offline inventory and report integrity only",
+  "skills": 28,
+  "source_files_current": 550,
+  "source_files_baseline": 437,
+  "mcp_tools_routed": 503,
+  "registered_api_methods": 251,
+  "coverage_rows_match_all_skill_names": true,
+  "duplicate_tool_routes": false,
+  "report_links_resolve": true,
+  "source_missing_instruction_references": 0,
+  "live_business_acceptance": false,
+  "implementation_or_deployment_performed": false
+}

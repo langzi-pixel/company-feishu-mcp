@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-whiteboard"
+  short_description: "读取飞书画板节点并按已有画板组织关系图、思维导图和图形修改。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

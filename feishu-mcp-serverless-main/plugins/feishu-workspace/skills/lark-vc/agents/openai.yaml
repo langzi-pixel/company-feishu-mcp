@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-vc"
+  short_description: "处理飞书视频会议查询、预约与录制；沿用会议统一工作流。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

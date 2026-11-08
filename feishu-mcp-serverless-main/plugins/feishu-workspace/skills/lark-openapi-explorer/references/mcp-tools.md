@@ -1,0 +1,758 @@
+# 工具与合同
+
+运行时以 feishu_get_tool_schema 为准；此索引不表示对应租户已经授权。
+
+| 名称 | 操作 | 调用 |
+|---|---|---|
+| `acs.v1.ruleExternal.create` | [Feishu/Lark]-智能门禁-权限组-创建或更新权限组-创建或更新权限组 | feishu_call_tool |
+| `acs.v1.ruleExternal.delete` | [Feishu/Lark]-智能门禁-权限组-删除权限组-删除权限组 | feishu_call_tool |
+| `acs.v1.ruleExternal.deviceBind` | [Feishu/Lark]-智能门禁-权限组-设备绑定权限组-设备绑定权限组 | feishu_call_tool |
+| `acs.v1.ruleExternal.get` | [Feishu/Lark]-智能门禁-权限组-获取权限组信息-获取权限组信息 | feishu_read_tool |
+| `acs.v1.visitor.create` | [Feishu/Lark]-智能门禁-访客-添加访客-添加访客 | feishu_call_tool |
+| `acs.v1.visitor.delete` | [Feishu/Lark]-智能门禁-访客-删除访客-删除访客 | feishu_call_tool |
+| `aily.v1.ailySessionAilyMessage.create` | [Feishu/Lark]-飞书 Aily-消息-发送 Aily 消息-该 API 用于向某个飞书 Aily 应用发送一条消息（Message）；每个消息从属于一个活跃的会话（Session） | feishu_call_tool |
+| `aily.v1.ailySessionAilyMessage.get` | [Feishu/Lark]-飞书 Aily-消息-获取 Aily 消息-该 API 用于获取某个飞书 Aily 应用的消息（Message）的详细信息；包括消息的内容、发送人等 | feishu_read_tool |
+| `aily.v1.ailySessionAilyMessage.list` | [Feishu/Lark]-飞书 Aily-消息-列出 Aily 消息-该 API 用于列出某个飞书 Aily 应用的某个会话（Session）下消息（Message）的详细信息；包括消息的内容、发送人等 | feishu_read_tool |
+| `aily.v1.ailySession.create` | [Feishu/Lark]-飞书 Aily-会话-创建会话-该 API 用于创建与某个飞书 Aily 应用的一次会话（Session）；当创建会话成功后，可以发送消息、创建运行 | feishu_call_tool |
+| `aily.v1.ailySession.delete` | [Feishu/Lark]-飞书 Aily-会话-删除会话-该 API 用于删除与某个飞书 Aily 应用的一次会话（Session） | feishu_call_tool |
+| `aily.v1.ailySession.get` | [Feishu/Lark]-飞书 Aily-会话-获取会话-该 API 用于获取与某个飞书 Aily 应用的一次会话（Session）的详细信息，包括会话的状态、渠道上下文、创建时间等 | feishu_read_tool |
+| `aily.v1.ailySessionRun.cancel` | [Feishu/Lark]-飞书 Aily-运行-取消运行-该 API 用于中止某个飞书 Aily 的一次运行 | feishu_call_tool |
+| `aily.v1.ailySessionRun.create` | [Feishu/Lark]-飞书 Aily-运行-创建运行-该 API 用于在某个飞书 Aily 应用会话（Session）上创建一次运行（Run） | feishu_call_tool |
+| `aily.v1.ailySessionRun.get` | [Feishu/Lark]-飞书 Aily-运行-获取运行-该 API 用于获取某个飞书 Aily 应用的运行（Run）的详细信息；包括运行的状态、结束时间等 | feishu_read_tool |
+| `aily.v1.ailySessionRun.list` | [Feishu/Lark]-飞书 Aily-运行-列出运行-该 API 用于列出某个飞书 Aily 应用的运行（Run）的详细信息；包括状态、结束时间等 | feishu_read_tool |
+| `aily.v1.ailySession.update` | [Feishu/Lark]-飞书 Aily-会话-更新会话-该 API 用于更新与某个飞书 Aily 应用的一次会话（Session）的信息 | feishu_call_tool |
+| `aily.v1.appDataAssetTag.list` | [Feishu/Lark]-飞书 Aily-知识问答-数据知识管理-获取数据知识分类列表-获取 Aily 助手的数据知识分类列表 | feishu_read_tool |
+| `aily.v1.appDataAsset.create` | [Feishu/Lark]-飞书 Aily-知识问答-数据知识管理-创建数据知识-在 Aily 中添加单个数据知识 | feishu_call_tool |
+| `aily.v1.appDataAsset.delete` | [Feishu/Lark]-飞书 Aily-知识问答-数据知识管理-删除数据知识-删除 Aily 的数据知识 | feishu_call_tool |
+| `aily.v1.appDataAsset.get` | [Feishu/Lark]-飞书 Aily-知识问答-数据知识管理-获取数据知识-获取单个数据知识 | feishu_read_tool |
+| `aily.v1.appDataAsset.list` | [Feishu/Lark]-飞书 Aily-知识问答-数据知识管理-查询数据知识列表-获取 Aily 助手的数据知识列表 | feishu_read_tool |
+| `aily.v1.appSkill.get` | [Feishu/Lark]-飞书 Aily-技能-获取技能信息-该 API 用于查询某个 Aily 应用的特定技能详情 | feishu_read_tool |
+| `aily.v1.appSkill.list` | [Feishu/Lark]-飞书 Aily-技能-查询技能列表-该 API 用于查询某个 Aily 应用的技能列表> 包括内置的数据分析与问答技能、以及未在对话开启的技能 | feishu_read_tool |
+| `aily.v1.appSkill.start` | [Feishu/Lark]-飞书 Aily-技能-调用技能-该 API 用于调用某个 Aily 应用的特定技能，支持指定技能入参；并同步返回技能执行的结果 | feishu_call_tool |
+| `apaas.v1.app.list` | [Feishu/Lark]-飞书 aPaaS-应用-查看应用基本信息-获取企业下应用基本信息，如应用名称 、应用命名空间等 | feishu_read_tool |
+| `apaas.v1.applicationAuditLog.auditLogList` | [Feishu/Lark]-飞书 aPaaS-审计日志-查询审计日志列表-根据搜索/筛选条件，查询审计日志列表 | feishu_read_tool |
+| `apaas.v1.applicationAuditLog.dataChangeLogDetail` | [Feishu/Lark]-飞书 aPaaS-审计日志-查询数据变更日志详情-根据日志 ID 查询数据变更日志详情 | feishu_read_tool |
+| `apaas.v1.applicationAuditLog.dataChangeLogsList` | [Feishu/Lark]-飞书 aPaaS-审计日志-查询数据变更日志列表-根据搜索/筛选条件，查询数据变更日志列表 | feishu_read_tool |
+| `apaas.v1.applicationAuditLog.get` | [Feishu/Lark]-飞书 aPaaS-审计日志-查询审计日志详情-根据日志 ID 查询审计日志详情 | feishu_read_tool |
+| `apaas.v1.seatActivity.list` | [Feishu/Lark]-飞书 aPaaS-席位活跃-查询席位活跃详情-获取租户下用户使用飞书 aPaaS 席位最近访问应用时间。需要飞书 aPaaS 系统管理员作为授权人调用当前API | feishu_read_tool |
+| `apaas.v1.seatAssignment.list` | [Feishu/Lark]-飞书 aPaaS-席位分配-查询席位分配详情-获取租户下平台席位和应用访问席位分配详情，如用户 ID 、应用命名空间等，需要飞书 aPaaS 系统管理员作为授权人调用当前 API | feishu_read_tool |
+| `application.v5.application.favourite` | [Feishu/Lark]-工作台-我的常用-获取用户自定义常用的应用 | feishu_read_tool |
+| `application.v5.application.recommend` | [Feishu/Lark]-工作台-我的常用-获取管理员推荐的应用 | feishu_read_tool |
+| `application.v6.applicationCollaborators.get` | [Feishu/Lark]-应用信息-应用-获取应用协作者列表-根据 app_id 获取应用（包括自建应用和商店应用）的协作者信息，包括应用的所有者、管理员、开发者、运营人员 | feishu_read_tool |
+| `application.v6.applicationCollaborators.update` | [Feishu/Lark]-应用信息-应用-更新应用协作者-某个应用（包括自建应用和商店应用）中添加/移除应用协作者，添加后协作者将会收到添加通知 | feishu_call_tool |
+| `application.v6.applicationOwner.update` | [Feishu/Lark]-应用信息-应用-转移应用所有者-将某个自建应用的所有者转移给另外一个人 | feishu_call_tool |
+| `approval.v4.task.query` | [Feishu/Lark]-审批-审批查询-查询用户的任务列表 | feishu_read_tool |
+| `attendance.v1.archiveRule.delReport` | [Feishu/Lark]-考勤打卡-归档报表-删除归档报表行数据-按月份、用户和归档规则ID直接删除归档报表行数据 | feishu_call_tool |
+| `attendance.v1.archiveRule.list` | [Feishu/Lark]-考勤打卡-归档报表-查询所有归档规则-查询所有归档规则，对应后台假勤管理-考勤统计-报表-[归档报表]功能 | feishu_read_tool |
+| `attendance.v1.archiveRule.uploadReport` | [Feishu/Lark]-考勤打卡-归档报表-写入归档报表结果-写入归档报表结果，对应假勤管理-考勤统计-报表-[归档报表]页签，点击报表名称进入后的导入功能。可以将数据直接写入归档报表 | feishu_call_tool |
+| `attendance.v1.archiveRule.userStatsFieldsQuery` | [Feishu/Lark]-考勤打卡-归档报表-查询归档报表表头-查询归档报表表头，对应后台假勤管理-考勤统计-报表-[归档报表]中一个归档报表的表头信息。归档报表支持引用系统报表，可设置归档时间和数据归档周期，并且支持根据部门/人员、国家/地区、人员类型、工作地点、职级、序列、职务进行人员圈选 | feishu_call_tool |
+| `attendance.v1.group.listUser` | [Feishu/Lark]-考勤打卡-考勤组管理-查询考勤组下所有成员-查询指定考勤组下的所有成员 | feishu_read_tool |
+| `attendance.v1.userDailyShift.batchCreateTemp` | [Feishu/Lark]-考勤打卡-考勤排班-创建或修改临时排班-可在排班表上创建或修改临时班次，并用于排班。目前支持按日期对一位或多位人员进行排临时班次。临时排班为付费功能，如需使用请联系您的客户经理 | feishu_call_tool |
+| `authen.v1.userInfo.get` | [Feishu/Lark]-认证及授权-登录态管理-获取用户信息-通过 `user_access_token` 获取相关用户信息 | feishu_read_tool |
+| `baike.v1.classification.list` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-分类-获取词典分类-获取飞书词典当前分类。飞书词典目前为二级分类体系，每个词条可添加多个二级分类，但选择的二级分类必须从属于不同的一级分类 | feishu_read_tool |
+| `baike.v1.draft.create` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-草稿-创建草稿-草稿并非词条，而是指通过 API 发起创建新词条或更新现有词条的申请。词典管理员审核通过后，草稿将变为新的词条或覆盖已有词条 | feishu_call_tool |
+| `baike.v1.draft.update` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-草稿-更新草稿-根据 draft_id 更新草稿内容，已审批的草稿无法编辑 | feishu_call_tool |
+| `baike.v1.entity.create` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-创建免审词条-通过此接口创建的词条，无需经过词典管理员审核，直接写入词库。因此，调用此接口时，应当慎重操作 | feishu_call_tool |
+| `baike.v1.entity.extract` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-提取潜在的词条-提取文本中可能成为词条的词语，且不会过滤已经成为词条的词语。同时返回推荐的别名 | feishu_call_tool |
+| `baike.v1.entity.get` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-获取词条详情-通过词条 id 拉取对应的词条详情信息 | feishu_read_tool |
+| `baike.v1.entity.highlight` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-词条高亮-传入一句话，智能识别句中对应的词条，并返回词条位置和 entity_id，可在外部系统中快速实现词条智能高亮 | feishu_read_tool |
+| `baike.v1.entity.list` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-获取词条列表-分页拉取词条列表数据，支持拉取租户内的全部词条 | feishu_read_tool |
+| `baike.v1.entity.match` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-精准搜索词条-将关键词与词条名、别名精准匹配，并返回对应的 词条 ID | feishu_read_tool |
+| `baike.v1.entity.search` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-模糊搜索词条-传入关键词，与词条名、别名、释义等信息进行模糊匹配，返回搜到的词条信息 | feishu_read_tool |
+| `baike.v1.entity.update` | [Feishu/Lark]-历史版本（不推荐）-飞书词典-词条-更新免审词条-通过此接口更新已有的词条，无需经过词典管理员审核，直接写入词库。因此，调用该接口时应当慎重操作 | feishu_call_tool |
+| `base.v2.appRole.create` | [Feishu/Lark]-云文档-多维表格-高级权限-自定义角色-新增自定义角色-新增多维表格高级权限中自定义的角色 | feishu_call_tool |
+| `base.v2.appRole.list` | [Feishu/Lark]-云文档-多维表格-高级权限-自定义角色-列出自定义角色-列出多维表格高级权限中用户自定义的角色 | feishu_read_tool |
+| `base.v2.appRole.update` | [Feishu/Lark]-云文档-多维表格-高级权限-自定义角色-更新自定义角色-更新多维表格高级权限中自定义的角色 | feishu_call_tool |
+| `bitable.v1.app.copy` | [Feishu/Lark]-云文档-多维表格-多维表格-复制多维表格-复制一个多维表格，可以指定复制到某个有权限的文件夹下 | feishu_call_tool |
+| `bitable.v1.app.create` | [Feishu/Lark]-云文档-多维表格-多维表格-创建多维表格-在指定文件夹中创建一个多维表格，包含一个空白的数据表 | feishu_call_tool |
+| `bitable.v1.appDashboard.copy` | [Feishu/Lark]-云文档-多维表格-仪表盘-复制仪表盘-基于现有仪表盘复制出新的仪表盘 | feishu_call_tool |
+| `bitable.v1.appDashboard.list` | [Feishu/Lark]-云文档-多维表格-仪表盘-列出仪表盘-获取多维表格中的所有仪表盘 | feishu_read_tool |
+| `bitable.v1.app.get` | [Feishu/Lark]-云文档-多维表格-多维表格-获取多维表格元数据-获取指定多维表格的元数据信息，包括多维表格名称、多维表格版本号、多维表格是否开启高级权限等 | feishu_read_tool |
+| `bitable.v1.appRole.create` | [Feishu/Lark]-历史版本（不推荐）-云文档-多维表格-自定义角色-新增自定义角色-新增多维表格高级权限中自定义的角色 | feishu_call_tool |
+| `bitable.v1.appRole.delete` | [Feishu/Lark]-云文档-多维表格-高级权限-自定义角色-删除自定义角色-删除多维表格高级权限中自定义的角色 | feishu_call_tool |
+| `bitable.v1.appRole.list` | [Feishu/Lark]-历史版本（不推荐）-云文档-多维表格-自定义角色-列出自定义角色-列出多维表格高级权限中用户自定义的角色 | feishu_read_tool |
+| `bitable.v1.appRoleMember.batchCreate` | [Feishu/Lark]-云文档-多维表格-高级权限-协作者-批量新增协作者-批量新增多维表格高级权限中自定义角色的协作者 | feishu_call_tool |
+| `bitable.v1.appRoleMember.batchDelete` | [Feishu/Lark]-云文档-多维表格-高级权限-协作者-批量删除协作者-删除多维表格高级权限中自定义角色的协作者 | feishu_call_tool |
+| `bitable.v1.appRoleMember.create` | [Feishu/Lark]-云文档-多维表格-高级权限-协作者-新增协作者-新增多维表格高级权限中自定义角色的协作者 | feishu_call_tool |
+| `bitable.v1.appRoleMember.delete` | [Feishu/Lark]-云文档-多维表格-高级权限-协作者-删除协作者-删除多维表格高级权限中自定义角色的协作者 | feishu_call_tool |
+| `bitable.v1.appRoleMember.list` | [Feishu/Lark]-云文档-多维表格-高级权限-协作者-列出协作者-列出多维表格高级权限中自定义角色的协作者 | feishu_read_tool |
+| `bitable.v1.appRole.update` | [Feishu/Lark]-历史版本（不推荐）-云文档-多维表格-自定义角色-更新自定义角色-更新多维表格高级权限中自定义的角色 | feishu_call_tool |
+| `bitable.v1.appTable.batchCreate` | [Feishu/Lark]-云文档-多维表格-数据表-新增多个数据表-新增多个数据表，仅可指定数据表名称 | feishu_call_tool |
+| `bitable.v1.appTable.batchDelete` | [Feishu/Lark]-云文档-多维表格-数据表-删除多个数据表-通过 app_token 和 table_id 删除多个数据表 | feishu_call_tool |
+| `bitable.v1.appTable.create` | [Feishu/Lark]-云文档-多维表格-数据表-新增一个数据表-新增一个数据表，支持传入数据表名称、视图名称和字段 | feishu_call_tool |
+| `bitable.v1.appTable.delete` | [Feishu/Lark]-云文档-多维表格-数据表-删除一个数据表-通过 app_token 和 table_id 删除指定的多维表格数据表 | feishu_call_tool |
+| `bitable.v1.appTableField.create` | [Feishu/Lark]-云文档-多维表格-字段-新增字段-在多维表格数据表中新增一个字段 | feishu_call_tool |
+| `bitable.v1.appTableField.delete` | [Feishu/Lark]-云文档-多维表格-字段-删除字段-删除多维表格数据表中的一个字段 | feishu_call_tool |
+| `bitable.v1.appTableField.list` | [Feishu/Lark]-云文档-多维表格-字段-列出字段-获取多维表格数据表中的的所有字段 | feishu_read_tool |
+| `bitable.v1.appTableField.update` | [Feishu/Lark]-云文档-多维表格-字段-更新字段-在多维表格数据表中更新一个字段。更新字段时为全量更新，property 等字段会被完全覆盖 | feishu_call_tool |
+| `bitable.v1.appTableFormField.list` | [Feishu/Lark]-云文档-多维表格-表单-列出表单问题-列出表单中的所有问题项 | feishu_read_tool |
+| `bitable.v1.appTableFormField.patch` | [Feishu/Lark]-云文档-多维表格-表单-更新表单问题-更新表单中的问题项 | feishu_call_tool |
+| `bitable.v1.appTableForm.get` | [Feishu/Lark]-云文档-多维表格-表单-获取表单元数据-获取表单的所有元数据，包括表单名称、描述、是否共享等 | feishu_read_tool |
+| `bitable.v1.appTableForm.patch` | [Feishu/Lark]-云文档-多维表格-表单-更新表单元数据-更新表单视图中的元数据，包括表单名称、描述、是否共享等 | feishu_call_tool |
+| `bitable.v1.appTable.list` | [Feishu/Lark]-云文档-多维表格-数据表-列出数据表-列出多维表格中的所有数据表，包括其 ID、版本号和名称 | feishu_read_tool |
+| `bitable.v1.appTable.patch` | [Feishu/Lark]-云文档-多维表格-数据表-更新数据表-更新数据表的名称 | feishu_call_tool |
+| `bitable.v1.appTableRecord.batchCreate` | [Feishu/Lark]-云文档-多维表格-记录-新增多条记录-在多维表格数据表中新增多条记录，单次调用最多新增 1,000 条记录 | feishu_call_tool |
+| `bitable.v1.appTableRecord.batchDelete` | [Feishu/Lark]-云文档-多维表格-记录-删除多条记录-删除多维表格数据表中现有的多条记录 | feishu_call_tool |
+| `bitable.v1.appTableRecord.batchGet` | [Feishu/Lark]-云文档-多维表格-记录-批量获取记录-通过多个记录 ID 查询记录信息。该接口最多支持查询 100 条记录 | feishu_read_tool |
+| `bitable.v1.appTableRecord.batchUpdate` | [Feishu/Lark]-云文档-多维表格-记录-更新多条记录-更新数据表中的多条记录，单次调用最多更新 1,000 条记录 | feishu_call_tool |
+| `bitable.v1.appTableRecord.create` | [Feishu/Lark]-云文档-多维表格-记录-新增记录-在多维表格数据表中新增一条记录 | feishu_call_tool |
+| `bitable.v1.appTableRecord.delete` | [Feishu/Lark]-云文档-多维表格-记录-删除记录-删除多维表格数据表中的一条记录 | feishu_call_tool |
+| `bitable.v1.appTableRecord.get` | [Feishu/Lark]-历史版本（不推荐）-云文档-多维表格-检索记录-该接口用于根据 record_id 的值检索现有记录 | feishu_read_tool |
+| `bitable.v1.appTableRecord.list` | [Feishu/Lark]-历史版本（不推荐）-云文档-多维表格-列出记录-该接口用于列出数据表中的现有记录，单次最多列出 500 行记录，支持分页获取 | feishu_read_tool |
+| `bitable.v1.appTableRecord.search` | [Feishu/Lark]-云文档-多维表格-记录-查询记录-该接口用于查询数据表中的现有记录，单次最多查询 500 行记录，支持分页获取 | feishu_read_tool |
+| `bitable.v1.appTableRecord.update` | [Feishu/Lark]-云文档-多维表格-记录-更新记录-更新多维表格数据表中的一条记录 | feishu_call_tool |
+| `bitable.v1.appTableView.create` | [Feishu/Lark]-云文档-多维表格-视图-新增视图-在多维表格数据表中新增一个视图，可指定视图类型，包括表格视图、看板视图、画册视图、甘特视图和表单视图 | feishu_call_tool |
+| `bitable.v1.appTableView.delete` | [Feishu/Lark]-云文档-多维表格-视图-删除视图-通过 app_token、table_id 和 view_id，删除多维表格数据表中的指定视图 | feishu_call_tool |
+| `bitable.v1.appTableView.get` | [Feishu/Lark]-云文档-多维表格-视图-获取视图-根据视图 ID 获取现有视图信息，包括视图名称、类型、属性等 | feishu_read_tool |
+| `bitable.v1.appTableView.list` | [Feishu/Lark]-云文档-多维表格-视图-列出视图-获取多维表格数据表中的所有视图 | feishu_read_tool |
+| `bitable.v1.appTableView.patch` | [Feishu/Lark]-云文档-多维表格-视图-更新视图-增量更新视图信息，包括视图名称、属性等，可设置视图的筛选条件 | feishu_call_tool |
+| `bitable.v1.app.update` | [Feishu/Lark]-云文档-多维表格-多维表格-更新多维表格元数据-更新多维表格元数据，包括多维表格的名称、是否开启高级权限 | feishu_call_tool |
+| `bitable.v1.appWorkflow.list` | [Feishu/Lark]-云文档-多维表格-自动化流程-列出自动化流程-该接口用于列出多维表格的自动化流程 | feishu_read_tool |
+| `bitable.v1.appWorkflow.update` | [Feishu/Lark]-云文档-多维表格-自动化流程-更新自动化流程状态-开启或关闭自动化流程 | feishu_call_tool |
+| `board.v1.whiteboardNode.list` | [Feishu/Lark]-云文档-画板-节点-获取所有节点-获取画板内所有的节点 | feishu_read_tool |
+| `calendar.v4.calendarAcl.create` | [Feishu/Lark]-日历-日历访问控制-创建访问控制-调用该接口以当前身份（应用或用户）为指定日历添加访问控制，即日历成员权限 | feishu_call_tool |
+| `calendar.v4.calendarAcl.delete` | [Feishu/Lark]-日历-日历访问控制-删除访问控制-调用该接口以当前身份（应用或用户）删除指定日历内的某一访问控制，即成员权限 | feishu_call_tool |
+| `calendar.v4.calendarAcl.list` | [Feishu/Lark]-日历-日历访问控制-获取访问控制列表-调用该接口以当前身份（应用或用户）获取指定日历的访问控制列表 | feishu_read_tool |
+| `calendar.v4.calendarAcl.subscription` | [Feishu/Lark]-日历-日历访问控制-订阅日历访问控制变更事件-调用该接口以用户身份订阅指定日历下的访问控制变更事件 | feishu_call_tool |
+| `calendar.v4.calendarAcl.unsubscription` | [Feishu/Lark]-日历-日历访问控制-取消订阅日历访问控制变更事件-调用该接口以用户身份取消订阅指定日历下的访问控制变更事件 | feishu_call_tool |
+| `calendar.v4.calendar.create` | [Feishu/Lark]-日历-日历管理-创建共享日历-调用该接口为当前身份（应用或用户）创建一个共享日历 | feishu_call_tool |
+| `calendar.v4.calendar.delete` | [Feishu/Lark]-日历-日历管理-删除共享日历-调用该接口以当前身份（应用或用户）删除某一指定的共享日历 | feishu_call_tool |
+| `calendar.v4.calendarEventAttendee.batchDelete` | [Feishu/Lark]-日历-日程参与人管理（含会议室）-删除日程参与人-调用该接口以当前身份（应用或用户）删除指定日程的一个或多个参与人 | feishu_call_tool |
+| `calendar.v4.calendarEventAttendeeChatMember.list` | [Feishu/Lark]-日历-日程参与人管理（含会议室）-获取日程参与群成员列表-调用该接口以当前身份（应用或用户）获取日程的群组类型参与人的群成员列表 | feishu_read_tool |
+| `calendar.v4.calendarEventAttendee.create` | [Feishu/Lark]-日历-日程参与人管理（含会议室）-添加日程参与人-调用该接口以当前身份（应用或用户）为指定日程添加一个或多个参与人，参与人类型包括用户、群组、会议室以及邮箱 | feishu_call_tool |
+| `calendar.v4.calendarEventAttendee.list` | [Feishu/Lark]-日历-日程参与人管理（含会议室）-获取日程参与人列表-调用该接口以当前身份（应用或用户）获取日程的参与人列表 | feishu_read_tool |
+| `calendar.v4.calendarEvent.create` | [Feishu/Lark]-日历-日程管理-创建日程-调用该接口以当前身份（应用或用户）在指定日历上创建一个日程 | feishu_call_tool |
+| `calendar.v4.calendarEvent.delete` | [Feishu/Lark]-日历-日程管理-删除日程-调用该接口以当前身份（应用或用户）删除指定日历上的一个日程 | feishu_call_tool |
+| `calendar.v4.calendarEvent.get` | [Feishu/Lark]-日历-日程管理-获取日程-调用该接口以当前身份（应用或用户）获取指定日历内的某一日程信息，包括日程的标题、时间段、视频会议信息、公开范围以及参与人权限等 | feishu_read_tool |
+| `calendar.v4.calendarEvent.instanceView` | [Feishu/Lark]-日历-日程管理-查询日程视图-调用该接口以用户身份查询指定日历下的日程视图。与[获取日程列表]不同的是，当前接口会按照重复日程的重复性规则展开成多个日程实例（instance），并根据查询的时间区间返回相应的日程实例信息 | feishu_read_tool |
+| `calendar.v4.calendarEvent.instances` | [Feishu/Lark]-日历-日程管理-获取重复日程实例-调用该接口以当前身份（应用或用户）获取指定日历中的某一重复日程信息 | feishu_read_tool |
+| `calendar.v4.calendarEvent.list` | [Feishu/Lark]-日历-日程管理-获取日程列表-调用该接口以当前身份（应用或用户）获取指定日历下的日程列表 | feishu_read_tool |
+| `calendar.v4.calendarEventMeetingChat.create` | [Feishu/Lark]-日历-会议群-创建会议群-调用该接口以当前身份（应用或用户）为指定日程创建一个会议群 | feishu_call_tool |
+| `calendar.v4.calendarEventMeetingChat.delete` | [Feishu/Lark]-日历-会议群-解绑会议群-调用该接口以当前身份（应用或用户）为日程解绑已创建的会议群 | feishu_call_tool |
+| `calendar.v4.calendarEventMeetingMinute.create` | [Feishu/Lark]-日历-会议纪要-创建会议纪要-调用该接口为指定的日程创建会议纪要。纪要以文档形式展示，成功创建后会返回纪要文档 URL | feishu_call_tool |
+| `calendar.v4.calendarEvent.patch` | [Feishu/Lark]-日历-日程管理-更新日程-调用该接口以当前身份（应用或用户）更新指定日历上的一个日程，包括日程标题、描述、开始与结束时间、视频会议以及日程地点等信息 | feishu_call_tool |
+| `calendar.v4.calendarEvent.reply` | [Feishu/Lark]-日历-日程管理-回复日程-调用该接口以当前身份（应用或用户）回复日程 | feishu_call_tool |
+| `calendar.v4.calendarEvent.search` | [Feishu/Lark]-日历-日程管理-搜索日程-调用该接口搜索指定日历下的相关日程，支持关键词搜索、过滤条件搜索 | feishu_read_tool |
+| `calendar.v4.calendarEvent.subscription` | [Feishu/Lark]-日历-日程管理-订阅日程变更事件-调用该接口以用户身份订阅指定日历下的日程变更事件 | feishu_call_tool |
+| `calendar.v4.calendarEvent.unsubscription` | [Feishu/Lark]-日历-日程管理-取消订阅日程变更事件-调用该接口以用户身份取消订阅指定日历下的日程变更事件 | feishu_call_tool |
+| `calendar.v4.calendar.get` | [Feishu/Lark]-日历-日历管理-查询日历信息-调用该接口以当前身份（应用或用户）查询指定日历的信息 | feishu_read_tool |
+| `calendar.v4.calendar.list` | [Feishu/Lark]-日历-日历管理-查询日历列表-调用该接口分页查询当前身份（应用或用户）的日历列表 | feishu_read_tool |
+| `calendar.v4.calendar.patch` | [Feishu/Lark]-日历-日历管理-更新日历信息-调用该接口以当前身份（应用或用户）修改指定日历的标题、描述、公开范围等信息 | feishu_call_tool |
+| `calendar.v4.calendar.primary` | [Feishu/Lark]-日历-日历管理-查询主日历信息-调用该接口获取当前身份（应用或用户）的主日历信息 | feishu_read_tool |
+| `calendar.v4.calendar.search` | [Feishu/Lark]-日历-日历管理-搜索日历-调用该接口通过关键字搜索日历，搜索结果为标题或描述包含关键字的公共日历或用户主日历 | feishu_read_tool |
+| `calendar.v4.calendar.subscribe` | [Feishu/Lark]-日历-日历管理-订阅日历-调用该接口以当前身份（应用或用户）订阅指定的日历 | feishu_call_tool |
+| `calendar.v4.calendar.subscription` | [Feishu/Lark]-日历-日历管理-订阅日历变更事件-调用该接口为当前用户身份订阅[日历变更事件] | feishu_call_tool |
+| `calendar.v4.calendar.unsubscribe` | [Feishu/Lark]-日历-日历管理-取消订阅日历-调用该接口以当前身份（应用或用户）取消指定日历的订阅状态 | feishu_call_tool |
+| `calendar.v4.calendar.unsubscription` | [Feishu/Lark]-日历-日历管理-取消订阅日历变更事件-调用该接口为当前用户身份取消订阅[日历变更事件] | feishu_call_tool |
+| `calendar.v4.exchangeBinding.create` | [Feishu/Lark]-日历-同步 Exchange 日历信息-将 Exchange 账户绑定到飞书账户-调用该接口将 Exchange 账户绑定到飞书账户，进而支持 Exchange 日历的导入 | feishu_call_tool |
+| `calendar.v4.exchangeBinding.delete` | [Feishu/Lark]-日历-同步 Exchange 日历信息-解除 Exchange 账户绑定-调用该接口解除 Exchange 账户和飞书账户的绑定关系，Exchange 账户解除绑定后才能和其他飞书账户继续绑定 | feishu_call_tool |
+| `calendar.v4.exchangeBinding.get` | [Feishu/Lark]-日历-同步 Exchange 日历信息-查询 Exchange 账户的绑定状态-调用该接口获取 Exchange 账户的绑定状态，包括 Exchange 日历的同步状态 | feishu_read_tool |
+| `calendar.v4.freebusy.list` | [Feishu/Lark]-日历-日历管理-查询主日历日程忙闲信息-调用该接口查询指定用户的主日历忙闲信息，或者查询指定会议室的忙闲信息 | feishu_read_tool |
+| `calendar.v4.setting.generateCaldavConf` | [Feishu/Lark]-日历-同步到本地日历-生成 CalDAV 配置-调用该接口为当前用户生成一个 CalDAV 账号密码，用于将飞书日历信息同步到本地设备日历 | feishu_call_tool |
+| `compensation.v1.archive.query` | [Feishu/Lark]-飞书人事（企业版）-基础薪酬-薪资档案-批量查询员工薪资档案-批量查询员工薪资档案 | feishu_read_tool |
+| `contact.v3.department.batch` | [Feishu/Lark]-通讯录-部门-批量获取部门信息-调用该接口获取一个或多个部门的信息，包括部门名称、ID、父部门、负责人、状态以及成员个数等 | feishu_read_tool |
+| `contact.v3.department.children` | [Feishu/Lark]-通讯录-部门-获取子部门列表-调用该接口查询指定部门下的子部门列表，列表内包含部门的名称、ID、父部门、负责人以及状态等信息 | feishu_read_tool |
+| `contact.v3.department.get` | [Feishu/Lark]-通讯录-部门-获取单个部门信息-调用该接口获取单个部门信息，包括部门名称、ID、父部门、负责人、状态以及成员个数等 | feishu_read_tool |
+| `contact.v3.department.list` | [Feishu/Lark]-历史版本（不推荐）-通讯录-部门管理-获取部门信息列表-该接口用于获取当前部门子部门列表。[常见问题答疑] | feishu_read_tool |
+| `contact.v3.department.parent` | [Feishu/Lark]-通讯录-部门-获取父部门信息-调用该接口递归获取指定部门的父部门信息，包括部门名称、ID、负责人以及状态等 | feishu_read_tool |
+| `contact.v3.department.search` | [Feishu/Lark]-通讯录-部门-搜索部门-调用该接口以用户身份通过部门名称关键词查询可见部门的信息，包括部门的 ID、父部门、负责人以及状态等 | feishu_read_tool |
+| `contact.v3.jobTitle.get` | [Feishu/Lark]-通讯录-职务-获取单个职务信息-调用该接口获取指定职务的信息，包括职务的 ID、名称、多语言名称以及启用状态 | feishu_read_tool |
+| `contact.v3.jobTitle.list` | [Feishu/Lark]-通讯录-职务-获取租户职务列表-调用该接口获取当前租户下的职务信息，包括职务的 ID、名称、多语言名称以及启用状态 | feishu_read_tool |
+| `contact.v3.user.batch` | [Feishu/Lark]-通讯录-用户-批量获取用户信息-调用该接口获取通讯录内一个或多个用户的信息，包括用户 ID、名称、邮箱、手机号、状态以及所属部门等信息 | feishu_read_tool |
+| `contact.v3.user.findByDepartment` | [Feishu/Lark]-通讯录-用户-获取部门直属用户列表-调用该接口获取指定部门直属的用户信息列表。用户信息包括用户 ID、名称、邮箱、手机号以及状态等信息 | feishu_read_tool |
+| `contact.v3.user.get` | [Feishu/Lark]-通讯录-用户-获取单个用户信息-调用该接口获取通讯录中某一用户的信息，包括用户 ID、名称、邮箱、手机号、状态以及所属部门等信息 | feishu_read_tool |
+| `contact.v3.user.list` | [Feishu/Lark]-历史版本（不推荐）-通讯录-用户管理-获取用户列表-基于部门ID获取部门下直属用户列表。[常见问题答疑] | feishu_read_tool |
+| `contact.v3.user.patch` | [Feishu/Lark]-通讯录-用户-修改用户部分信息-调用该接口更新通讯录中指定用户的信息，包括名称、邮箱、手机号、所属部门以及自定义字段等信息 | feishu_call_tool |
+| `contact.v3.workCity.get` | [Feishu/Lark]-通讯录-工作城市-获取单个工作城市信息-调用该接口获取指定工作城市的信息，包括工作城市的 ID、名称、多语言名称以及启用状态 | feishu_read_tool |
+| `contact.v3.workCity.list` | [Feishu/Lark]-通讯录-工作城市-获取租户工作城市列表-调用该接口获取当前租户下所有工作城市信息，包括工作城市的 ID、名称、多语言名称以及启用状态 | feishu_read_tool |
+| `corehr.v1.company.patch` | [Feishu/Lark]-飞书人事（企业版）-组织管理-公司-更新公司-更新公司信息，包括基本信息、注册地址、办公地址等 | feishu_call_tool |
+| `corehr.v1.compensationStandard.match` | [Feishu/Lark]-飞书人事（企业版）-基础薪酬-薪资标准-获取员工薪资标准-- 调用此接口来获取员工匹配的薪资标准信息- 请求时，可选传递员工的部门 ID、职级 ID、职务ID 、序列 ID 等筛选条件，用于匹配薪资标准- 此接口将返回员工可匹配到的薪资标准全部信息，包括薪资标准表 ID、薪级薪等、薪资带宽、薪资标准值等 | feishu_read_tool |
+| `corehr.v1.leave.calendarByScope` | [Feishu/Lark]-飞书人事（企业版）-休假-根据适用条件获取工作日历 ID-根据日历的适用范围，获取工作日历 ID。适用范围包含工作地点，工时制度等 | feishu_read_tool |
+| `corehr.v1.leave.workCalendarDate` | [Feishu/Lark]-飞书人事（企业版）-休假-获取工作日历日期详情-获取工作日历每一天的日期详情，如日期、日期类型等 | feishu_call_tool |
+| `directory.v1.collaborationRule.create` | [Feishu/Lark]-关联组织-可搜可见规则-新增可搜可见规则-管理员视角新增可搜可见规则。用户需具备关联组织管理员权限 | feishu_call_tool |
+| `directory.v1.collaborationRule.delete` | [Feishu/Lark]-关联组织-可搜可见规则-删除可搜可见规则-管理员视角删除可搜可见规则。用户需具备关联组织管理员权限 | feishu_call_tool |
+| `directory.v1.collaborationRule.list` | [Feishu/Lark]-关联组织-可搜可见规则-查询可搜可见规则-管理员视角查询可搜可见规则。用户需具备关联组织管理员权限 | feishu_read_tool |
+| `directory.v1.collaborationRule.update` | [Feishu/Lark]-关联组织-可搜可见规则-更新可搜可见规则-管理员视角更新可搜可见规则。用户需具备关联组织管理员权限 | feishu_call_tool |
+| `directory.v1.collaborationTenant.list` | [Feishu/Lark]-关联组织-关联组织-管理员获取所有关联组织列表-在创建规则时，需要知道对方组织的tenant key，可通过该接口获取有效的tenant key。只允许关联组织管理员权限调用 | feishu_read_tool |
+| `directory.v1.collborationShareEntity.list` | [Feishu/Lark]-关联组织-关联组织-获取关联组织双方共享成员范围-在创建规则时，需要获取本组织以及对方组织人员、部门和用户组的ID，且这些实体都应该在关联组织的共享范围内。本接口可获取关联组织双方的共享范围下的人员、部门和用户组 | feishu_read_tool |
+| `directory.v1.department.create` | [Feishu/Lark]-组织架构-部门管理-创建部门-本接口用于用于在企业通讯录中创建新部门，支持设置部门名称、父部门、负责人等信息 | feishu_call_tool |
+| `directory.v1.department.delete` | [Feishu/Lark]-组织架构-部门管理-删除部门-本接口用于删除部门 | feishu_call_tool |
+| `directory.v1.department.filter` | [Feishu/Lark]-组织架构-部门管理-获取部门列表-本接口用于依据指定条件，批量获取符合条件的部门详情列表 | feishu_read_tool |
+| `directory.v1.department.mget` | [Feishu/Lark]-组织架构-部门管理-批量获取部门信息-该接口支持传入多个部门ID，返回每个部门的详细信息（如名称、负责人、子部门等） | feishu_read_tool |
+| `directory.v1.department.patch` | [Feishu/Lark]-组织架构-部门管理-更新部门-本接口用于更新部门信息。仅更新显式传参的部分 | feishu_call_tool |
+| `directory.v1.department.search` | [Feishu/Lark]-组织架构-部门管理-搜索部门-本接口用于搜索部门信息，通过部门名称等关键词搜索部门信息，返回符合条件的部门列表 | feishu_read_tool |
+| `directory.v1.employee.create` | [Feishu/Lark]-组织架构-员工管理-创建员工-本接口用于在企业下创建员工。支持传入姓名、手机号等信息，生成在职状态的员工对象。员工指飞书企业内身份为「Employee」的成员，等同于通讯录OpenAPI中的「User」 | feishu_call_tool |
+| `directory.v1.employee.delete` | [Feishu/Lark]-组织架构-员工管理-离职员工-本接口用于离职员工 | feishu_call_tool |
+| `directory.v1.employee.filter` | [Feishu/Lark]-组织架构-员工管理-批量获取员工列表-本接口用于依据指定条件，批量获取符合条件的员工详情列表。员工指飞书企业内身份为「Employee」的成员，等同于通讯录OpenAPI中的「User」 | feishu_read_tool |
+| `directory.v1.employee.mget` | [Feishu/Lark]-组织架构-员工管理-批量获取员工信息-本接口用于批量根据员工的ID查询员工的详情，比如员工姓名，手机号，邮箱，部门等信息。员工指飞书企业内身份为「Employee」的成员，等同于通讯录OpenAPI中的「User」 | feishu_read_tool |
+| `directory.v1.employee.patch` | [Feishu/Lark]-组织架构-员工管理-更新员工信息-本接口用于更新在职/离职员工的信息、冻结/恢复员工。未传递的参数不会进行更新。员工指飞书企业内身份为「Employee」的成员，等同于通讯录OpenAPI中的「User」 | feishu_call_tool |
+| `directory.v1.employee.regular` | [Feishu/Lark]-组织架构-员工管理-更新待离职成员为在职-本接口用于为待离职员工取消离职，将其更新为「在职」状态。取消离职时会清空离职信息。使用user_access_token时默认为管理员用户，仅可操作「人事管理模式」的管理员可操作 | feishu_call_tool |
+| `directory.v1.employee.resurrect` | [Feishu/Lark]-组织架构-员工管理-恢复离职员工-该接口用于恢复已离职的成员，恢复已离职成员至在职状态 | feishu_call_tool |
+| `directory.v1.employee.search` | [Feishu/Lark]-组织架构-员工管理-搜索员工信息-本接口用于搜索员工信息，如通过关键词搜索员工的名称、手机号、邮箱等信息。员工指飞书企业内身份为「Employee」的成员，等同于通讯录OpenAPI中的「User」 | feishu_read_tool |
+| `directory.v1.employee.toBeResigned` | [Feishu/Lark]-组织架构-员工管理-更新在职员工为待离职-本接口用于为在职员工办理离职，将其更新为「待离职」状态。「待离职」员工不会自动离职，需要使用「离职员工」API操作离职和资源转交。使用user_access_token时默认为管理员用户，仅「人事管理模式」的管理员可操作 | feishu_call_tool |
+| `docs.v1.content.get` | [Feishu/Lark]-云文档-通用-获取云文档内容-可获取云文档内容，当前只支持获取新版文档 Markdown 格式的内容 | feishu_read_tool |
+| `docx.v1.chatAnnouncementBlock.batchUpdate` | [Feishu/Lark]-群组-新版群公告-块-批量更新群公告块的内容 | feishu_call_tool |
+| `docx.v1.chatAnnouncementBlockChildren.batchDelete` | [Feishu/Lark]-群组-新版群公告-块-删除群公告中的块-指定需要操作的块，删除其指定范围的子块。如果操作成功，接口将返回应用删除操作后的群公告版本号 | feishu_call_tool |
+| `docx.v1.chatAnnouncementBlockChildren.create` | [Feishu/Lark]-群组-新版群公告-块-在群公告中创建块 | feishu_call_tool |
+| `docx.v1.chatAnnouncementBlockChildren.get` | [Feishu/Lark]-群组-新版群公告-块-获取所有子块 | feishu_read_tool |
+| `docx.v1.chatAnnouncementBlock.get` | [Feishu/Lark]-群组-新版群公告-块-获取群公告块的内容 | feishu_read_tool |
+| `docx.v1.chatAnnouncementBlock.list` | [Feishu/Lark]-群组-新版群公告-群公告-获取群公告所有块 | feishu_read_tool |
+| `docx.v1.chatAnnouncement.get` | [Feishu/Lark]-群组-新版群公告-群公告-获取群公告基本信息-获取指定群组中的群公告基本信息 | feishu_read_tool |
+| `docx.v1.documentBlock.batchUpdate` | [Feishu/Lark]-云文档-文档-块-批量更新块的内容-批量更新块的富文本内容 | feishu_call_tool |
+| `docx.v1.documentBlockChildren.batchDelete` | [Feishu/Lark]-云文档-文档-块-删除块-指定需要操作的块，删除其指定范围的子块。如果操作成功，接口将返回应用删除操作后的文档版本号 | feishu_call_tool |
+| `docx.v1.documentBlockChildren.create` | [Feishu/Lark]-云文档-文档-块-创建块-指定需要操作的块，为其创建一批子块，并插入到指定位置。如果操作成功，接口将返回新创建子块的富文本内容 | feishu_call_tool |
+| `docx.v1.documentBlockChildren.get` | [Feishu/Lark]-云文档-文档-块-获取所有子块-给定一个指定版本的文档，并指定需要操作的块，分页遍历其所有子块富文本内容 。如果不指定版本，则会默认查询最新版本 | feishu_read_tool |
+| `docx.v1.documentBlockDescendant.create` | [Feishu/Lark]-云文档-文档-块-创建嵌套块 | feishu_call_tool |
+| `docx.v1.documentBlock.get` | [Feishu/Lark]-云文档-文档-块-获取块的内容-获取指定块的富文本内容 | feishu_read_tool |
+| `docx.v1.documentBlock.list` | [Feishu/Lark]-云文档-文档-文档-获取文档所有块-获取文档所有块的富文本内容并分页返回 | feishu_read_tool |
+| `docx.v1.documentBlock.patch` | [Feishu/Lark]-云文档-文档-块-更新块的内容-更新指定的块 | feishu_call_tool |
+| `docx.v1.document.convert` | [Feishu/Lark]-云文档-文档-块-Markdown/HTML 内容转换为文档块-将 HTML/Markdown 格式的内容转换为文档块 | feishu_read_tool |
+| `docx.v1.document.create` | [Feishu/Lark]-云文档-文档-文档-创建文档-创建文档类型为 docx 的文档。你可选择传入文档标题和文件夹 | feishu_call_tool |
+| `docx.v1.document.get` | [Feishu/Lark]-云文档-文档-文档-获取文档基本信息-获取文档标题和最新版本 ID | feishu_read_tool |
+| `docx.v1.document.rawContent` | [Feishu/Lark]-云文档-文档-文档-获取文档纯文本内容-获取文档的纯文本内容 | feishu_read_tool |
+| `drive.v1.exportTask.create` | [Feishu/Lark]-云文档-云空间-文件-导出云文档-创建导出任务-该接口用于创建导出文件的任务，并返回导出任务 ID。导出文件指将飞书文档、电子表格、多维表格导出为本地文件，包括 Word、Excel、PDF、CSV 格式。该接口为异步接口，需要继续调用[查询导出任务结果]接口获取导出结果。了解完整的导出步骤，参考[导出云文档概述] | feishu_call_tool |
+| `drive.v1.exportTask.get` | [Feishu/Lark]-云文档-云空间-文件-导出云文档-查询导出任务结果-根据[创建导出任务]返回的导出任务 ID（ticket）轮询导出任务结果，并返回导出文件的 token。你可使用该 token 继续调用[下载导出文件]接口将导出的产物下载到本地。了解完整的导出文件步骤，参考[导出飞书云文档概述] | feishu_read_tool |
+| `drive.v1.fileComment.batchQuery` | [Feishu/Lark]-云文档-评论-批量获取评论-该接口用于根据评论 ID 列表批量获取云文档评论信息，包括评论和回复 ID、回复的内容、评论人和回复人的用户 ID 等。支持返回全局评论以及局部评论（可通过 is_whole 字段区分） | feishu_call_tool |
+| `drive.v1.fileComment.create` | [Feishu/Lark]-云文档-评论-添加全文评论-在文档中添加一条全局评论，不支持局部评论 | feishu_call_tool |
+| `drive.v1.fileComment.get` | [Feishu/Lark]-云文档-评论-获取全文评论-获取云文档中的某条全文评论，不支持局部评论 | feishu_read_tool |
+| `drive.v1.fileComment.list` | [Feishu/Lark]-云文档-评论-获取云文档所有评论-该接口用于根据云文档 Token 分页获取文档所有评论信息，包括评论和回复 ID、回复的内容、评论人和回复人的用户 ID 等。该接口支持返回全局评论以及局部评论（可通过 is_whole 字段区分）。默认每页返回 50 个评论 | feishu_read_tool |
+| `drive.v1.fileComment.patch` | [Feishu/Lark]-云文档-评论-解决/恢复评论-解决或恢复云文档中的评论 | feishu_call_tool |
+| `drive.v1.fileCommentReply.delete` | [Feishu/Lark]-云文档-评论-删除回复-删除云文档中的某条回复 | feishu_call_tool |
+| `drive.v1.fileCommentReply.list` | [Feishu/Lark]-云文档-评论-获取回复信息-该接口用于根据评论 ID，获取该条评论对应的回复信息，包括回复 ID、回复内容、回复人的用户 ID 等 | feishu_read_tool |
+| `drive.v1.fileCommentReply.update` | [Feishu/Lark]-云文档-评论-更新回复的内容-更新云文档中的某条回复的内容 | feishu_call_tool |
+| `drive.v1.file.copy` | [Feishu/Lark]-云文档-云空间-文件-复制文件-将用户云空间中的文件复制至其它文件夹下。该接口为异步接口 | feishu_call_tool |
+| `drive.v1.file.createFolder` | [Feishu/Lark]-云文档-云空间-文件夹-新建文件夹-该接口用于在用户云空间指定文件夹中创建一个空文件夹 | feishu_call_tool |
+| `drive.v1.file.createShortcut` | [Feishu/Lark]-云文档-云空间-文件-创建文件快捷方式-创建指定文件的快捷方式到云空间的其它文件夹中 | feishu_call_tool |
+| `drive.v1.file.delete` | [Feishu/Lark]-云文档-云空间-文件-删除文件或文件夹-删除用户在云空间内的文件或者文件夹。文件或文件夹被删除后，会进入回收站中 | feishu_call_tool |
+| `drive.v1.file.deleteSubscribe` | [Feishu/Lark]-云文档-云空间-事件-取消云文档事件订阅-该接口用于取消订阅云文档的通知事件。了解事件订阅的配置流程和使用场景，参考[事件概述]。了解云文档支持的事件类型，参考[事件列表] | feishu_call_tool |
+| `drive.v1.file.getSubscribe` | [Feishu/Lark]-云文档-云空间-事件-查询云文档事件订阅状态-该接口用于查询云文档事件的订阅状态。了解事件订阅的配置流程和使用场景，参考[事件概述]。了解云文档支持的事件类型，参考[事件列表] | feishu_read_tool |
+| `drive.v1.file.list` | [Feishu/Lark]-云文档-云空间-文件夹-获取文件夹中的文件清单-该接口用于获取用户云空间指定文件夹中文件信息清单。文件的信息包括名称、类型、token、创建时间、所有者 ID 等 | feishu_read_tool |
+| `drive.v1.file.move` | [Feishu/Lark]-云文档-云空间-文件-移动文件或文件夹-将文件或者文件夹移动到用户云空间的其他位置 | feishu_call_tool |
+| `drive.v1.fileStatistics.get` | [Feishu/Lark]-云文档-云空间-文件-获取文件统计信息-此接口用于获取各类文件的流量统计信息和互动信息，包括阅读人数、阅读次数和点赞数 | feishu_read_tool |
+| `drive.v1.file.subscribe` | [Feishu/Lark]-云文档-云空间-事件-订阅云文档事件-订阅云文档的各类通知事件。调用该接口并在开发者后台添加事件后，当云文档发生指定事件时，系统会向配置的地址发送事件 | feishu_call_tool |
+| `drive.v1.fileSubscription.create` | [Feishu/Lark]-云文档-云文档助手-订阅-创建订阅-订阅文档中的变更事件，当前支持文档评论订阅，订阅后文档评论更新会有“云文档助手”推送给订阅的用户 | feishu_call_tool |
+| `drive.v1.fileSubscription.get` | [Feishu/Lark]-云文档-云文档助手-订阅-获取订阅状态-根据订阅ID获取该订阅的状态 | feishu_read_tool |
+| `drive.v1.fileSubscription.patch` | [Feishu/Lark]-云文档-云文档助手-订阅-更新订阅状态-根据订阅ID更新订阅状态 | feishu_call_tool |
+| `drive.v1.file.taskCheck` | [Feishu/Lark]-云文档-云空间-文件夹-查询异步任务状态-查询异步任务的状态信息。目前支持查询删除文件夹和移动文件夹的异步任务 | feishu_read_tool |
+| `drive.v1.file.uploadFinish` | [Feishu/Lark]-云文档-云空间-文件-上传文件-分片上传文件-分片上传文件-完成上传-调用[上传分片]接口将分片全部上传完毕后，你需调用本接口触发完成上传。否则将上传失败。了解完整的上传文件流程，参考[上传文件概述] | feishu_call_tool |
+| `drive.v1.file.uploadPrepare` | [Feishu/Lark]-云文档-云空间-文件-上传文件-分片上传文件-分片上传文件-预上传-发送初始化请求，以获取上传事务 ID 和分片策略，为[上传分片]做准备。平台固定以 4MB 的大小对文件进行分片。了解完整的上传文件流程，参考[上传文件概述] | feishu_call_tool |
+| `drive.v1.fileVersion.create` | [Feishu/Lark]-云文档-云空间-文档版本-创建文档版本-创建文档版本。文档支持在线文档或电子表格。该接口为异步接口 | feishu_call_tool |
+| `drive.v1.fileVersion.delete` | [Feishu/Lark]-云文档-云空间-文档版本-删除文档版本-删除基于在线文档或电子表格创建的版本 | feishu_call_tool |
+| `drive.v1.fileVersion.get` | [Feishu/Lark]-云文档-云空间-文档版本-获取文档版本信息-该接口用于获取文档或电子表格指定版本的信息，包括标题、标识、创建者、创建时间等 | feishu_read_tool |
+| `drive.v1.fileVersion.list` | [Feishu/Lark]-云文档-云空间-文档版本-获取文档版本列表-获取文档或电子表格的版本列表 | feishu_read_tool |
+| `drive.v1.fileViewRecord.list` | [Feishu/Lark]-云文档-云空间-文件-获取文件访问记录-获取文档、电子表格、多维表格等文件的历史访问记录，包括访问者的 ID、姓名、头像和最近访问时间 | feishu_read_tool |
+| `drive.v1.importTask.create` | [Feishu/Lark]-云文档-云空间-文件-导入文件-创建导入任务-该接口用于创建导入文件的任务，并返回导入任务 ID。导入文件指将本地文件如 Word、TXT、Markdown、Excel 等格式的文件导入为某种格式的飞书在线云文档。该接口为异步接口，需要继续调用[查询导入任务结果]接口获取导入结果。了解完整的导入文件步骤，参考[导入文件概述] | feishu_call_tool |
+| `drive.v1.importTask.get` | [Feishu/Lark]-云文档-云空间-文件-导入文件-查询导入任务结果-根据[创建导入任务]返回的导入任务 ID（ticket）轮询导入结果。了解完整的导入文件步骤，参考[导入文件概述] | feishu_read_tool |
+| `drive.v1.media.batchGetTmpDownloadUrl` | [Feishu/Lark]-云文档-云空间-素材-获取素材临时下载链接-该接口用于获取云文档中素材的临时下载链接。链接的有效期为 24 小时，过期失效 | feishu_read_tool |
+| `drive.v1.media.uploadFinish` | [Feishu/Lark]-云文档-云空间-素材-上传素材-分片上传素材-完成上传-调用[上传分片]接口将分片全部上传完毕后，你需调用本接口触发完成上传。了解完整的分片上传素材流程，参考[素材概述] | feishu_call_tool |
+| `drive.v1.media.uploadPrepare` | [Feishu/Lark]-云文档-云空间-素材-上传素材-分片上传素材-预上传-发送初始化请求，以获取上传事务 ID 和分片策略，为[上传素材分片]做准备。平台固定以 4MB 的大小对素材进行分片。了解完整的分片上传素材流程，参考[素材概述] | feishu_call_tool |
+| `drive.v1.meta.batchQuery` | [Feishu/Lark]-云文档-云空间-文件-获取文件元数据-该接口用于根据文件 token 获取其元数据，包括标题、所有者、创建时间、密级、访问链接等数据 | feishu_call_tool |
+| `drive.v1.permissionMember.auth` | [Feishu/Lark]-云文档-权限-成员-判断用户云文档权限-判断当前请求的应用或用户是否具有指定云文档的指定权限，权限包括阅读、编辑、分享、评论、导出等权限 | feishu_read_tool |
+| `drive.v1.permissionMember.batchCreate` | [Feishu/Lark]-云文档-权限-成员-批量增加协作者权限-为指定云文档批量添加多个协作者，协作者可以是用户、群组、部门、用户组等 | feishu_call_tool |
+| `drive.v1.permissionMember.create` | [Feishu/Lark]-云文档-权限-成员-增加协作者权限-为指定云文档添加协作者，协作者可以是用户、群组、部门、用户组等 | feishu_call_tool |
+| `drive.v1.permissionMember.delete` | [Feishu/Lark]-云文档-权限-成员-移除云文档协作者权限-通过云文档 token 和协作者 ID 移除指定云文档协作者的权限 | feishu_call_tool |
+| `drive.v1.permissionMember.list` | [Feishu/Lark]-云文档-权限-成员-获取云文档协作者-获取指定云文档的协作者，支持查询人、群、组织架构、用户组、知识库成员五种类型的协作者 | feishu_read_tool |
+| `drive.v1.permissionMember.transferOwner` | [Feishu/Lark]-云文档-权限-成员-转移云文档所有者-转移指定云文档的所有者 | feishu_call_tool |
+| `drive.v1.permissionMember.update` | [Feishu/Lark]-云文档-权限-成员-更新协作者权限-更新指定云文档中指定协作者的权限，包括可阅读、可编辑、可管理权限 | feishu_call_tool |
+| `drive.v1.permissionPublic.get` | [Feishu/Lark]-历史版本（不推荐）-云文档-权限设置 v1-获取云文档权限设置-获取指定云文档的权限设置，包括是否允许内容被分享到组织外、谁可以查看、添加、移除协作者等设置 | feishu_read_tool |
+| `drive.v1.permissionPublicPassword.create` | [Feishu/Lark]-云文档-权限-密码-启用云文档密码-启用指定云文档的密码。密码启用后，组织外用户需要密码访问，组织内用户无需密码可直接访问 | feishu_call_tool |
+| `drive.v1.permissionPublicPassword.delete` | [Feishu/Lark]-云文档-权限-密码-停用云文档密码-停用指定云文档的密码。密码停用后，组织外用户访问文档将无需输入密码 | feishu_call_tool |
+| `drive.v1.permissionPublicPassword.update` | [Feishu/Lark]-云文档-权限-密码-刷新云文档密码-刷新指定云文档的密码。密码刷新后，旧密码将失效，并生成新密码 | feishu_call_tool |
+| `drive.v1.permissionPublic.patch` | [Feishu/Lark]-历史版本（不推荐）-云文档-权限设置 v1-更新云文档权限设置-更新指定云文档的权限设置，包括是否允许内容被分享到组织外、谁可以查看、添加、移除协作者、谁可以复制内容等设置 | feishu_call_tool |
+| `drive.v2.fileLike.list` | [Feishu/Lark]-云文档-云空间-点赞-获取云文档的点赞者列表-获取指定云文档的点赞者列表并按点赞时间由近到远分页返回 | feishu_read_tool |
+| `drive.v2.permissionPublic.get` | [Feishu/Lark]-云文档-权限-设置-获取云文档权限设置-获取指定云文档的权限设置，包括是否允许内容被分享到组织外、谁可以查看、添加、移除协作者、谁可以复制内容等设置 | feishu_read_tool |
+| `drive.v2.permissionPublic.patch` | [Feishu/Lark]-云文档-权限-设置-更新云文档权限设置-更新指定云文档的权限设置，包括是否允许内容被分享到组织外、谁可以查看、添加、移除协作者、谁可以复制内容等设置 | feishu_call_tool |
+| `helpdesk.v1.notification.cancelApprove` | [Feishu/Lark]-服务台-推送中心-取消审核-提交审核后，如果需要取消审核，则调用此接口 | feishu_call_tool |
+| `helpdesk.v1.notification.cancelSend` | [Feishu/Lark]-服务台-推送中心-取消推送-取消推送接口，审核通过后待调度可以调用，发送过程中可以调用（会撤回已发送的消息），发送完成后可以需要推送（会撤回所有已发送的消息） | feishu_call_tool |
+| `helpdesk.v1.notification.create` | [Feishu/Lark]-服务台-推送中心-创建推送-调用接口创建推送，创建成功后为草稿状态 | feishu_call_tool |
+| `helpdesk.v1.notification.executeSend` | [Feishu/Lark]-服务台-推送中心-执行推送-审核通过后调用此接口设置推送时间，等待调度系统调度，发送消息 | feishu_call_tool |
+| `helpdesk.v1.notification.get` | [Feishu/Lark]-服务台-推送中心-查询推送-查询推送详情 | feishu_read_tool |
+| `helpdesk.v1.notification.patch` | [Feishu/Lark]-服务台-推送中心-更新推送-更新推送信息，只有在草稿状态下才可以调用此接口进行更新 | feishu_call_tool |
+| `helpdesk.v1.notification.preview` | [Feishu/Lark]-服务台-推送中心-预览推送-在正式执行推送之前是可以调用此接口预览设置的推送内容 | feishu_call_tool |
+| `helpdesk.v1.notification.submitApprove` | [Feishu/Lark]-服务台-推送中心-提交审核-正常情况下调用创建推送接口后，就可以调用提交审核接口，如果创建人是服务台owner则会自动审核通过，否则会通知服务台owner审核此推送信息 | feishu_call_tool |
+| `hire.v1.todo.list` | [Feishu/Lark]-招聘-候选人管理-招聘进程跟进-批量获取待办事项-批量获取当前用户的待办事项信息，包含评估待办事项、面试待办事项、笔试待办事项和 Offer 待办事项 | feishu_read_tool |
+| `hire.v2.interviewRecord.get` | [Feishu/Lark]-招聘-候选人管理-投递流程-面试-获取面试评价详细信息（新版）-获取面试评价详细信息，如面试结论、面试得分和面试官等信息 | feishu_read_tool |
+| `hire.v2.interviewRecord.list` | [Feishu/Lark]-招聘-候选人管理-投递流程-面试-批量获取面试评价详细信息（新版）-批量获取面试评价详细信息，如面试结论、面试得分和面试官等信息 | feishu_read_tool |
+| `im.v1.chatAnnouncement.get` | [Feishu/Lark]-群组-群公告-获取群公告信息-获取指定群组中的群公告信息，公告信息格式与[旧版云文档]格式相同 | feishu_read_tool |
+| `im.v1.chatAnnouncement.patch` | [Feishu/Lark]-群组-群公告-更新群公告信息-更新指定群组中的群公告信息。更新的公告内容格式和更新[旧版云文档]的格式相同，不支持新版云文档格式 | feishu_call_tool |
+| `im.v1.chat.delete` | [Feishu/Lark]-群组-群组管理-解散群-通过 chat_id 解散指定群组。通过 API 解散群组后，群聊天记录将不会保存 | feishu_call_tool |
+| `im.v1.chat.get` | [Feishu/Lark]-群组-群组管理-获取群信息-获取指定群的基本信息，包括群名称、群描述、群头像、群主 ID 以及群权限配置等 | feishu_read_tool |
+| `im.v1.chat.link` | [Feishu/Lark]-群组-群组管理-获取群分享链接-获取指定群的分享链接，他人点击分享链接后可加入群组 | feishu_call_tool |
+| `im.v1.chat.list` | [Feishu/Lark]-群组-群组管理-获取用户或机器人所在的群列表-获取 [access_token] 所代表的用户或者机器人所在的群列表 | feishu_read_tool |
+| `im.v1.chatManagers.addManagers` | [Feishu/Lark]-群组-群成员-指定群管理员-指定群组，将群内指定的用户或者机器人设置为群管理员 | feishu_call_tool |
+| `im.v1.chatManagers.deleteManagers` | [Feishu/Lark]-群组-群成员-删除群管理员-指定群组，删除群组内指定的管理员，包括用户类型的管理员和机器人类型的管理员 | feishu_call_tool |
+| `im.v1.chatMembers.create` | [Feishu/Lark]-群组-群成员-将用户或机器人拉入群聊-把指定的用户或机器人拉入指定群聊内 | feishu_call_tool |
+| `im.v1.chatMembers.delete` | [Feishu/Lark]-群组-群成员-将用户或机器人移出群聊-将指定的用户或机器人从群聊中移出 | feishu_call_tool |
+| `im.v1.chatMembers.get` | [Feishu/Lark]-群组-群成员-获取群成员列表-获取指定群组的成员信息，包括成员名字与 ID | feishu_read_tool |
+| `im.v1.chatMembers.isInChat` | [Feishu/Lark]-群组-群成员-判断用户或机器人是否在群里-根据使用的 access_token 判断对应的用户或者机器人是否在指定的群里 | feishu_read_tool |
+| `im.v1.chatMembers.meJoin` | [Feishu/Lark]-群组-群成员-用户或机器人主动加入群聊-将当前调用接口的操作者（用户或机器人）加入指定群聊 | feishu_call_tool |
+| `im.v1.chatModeration.get` | [Feishu/Lark]-群组-群组管理-获取群成员发言权限-获取指定群组的发言模式、可发言用户名单等信息 | feishu_read_tool |
+| `im.v1.chatModeration.update` | [Feishu/Lark]-群组-群组管理-更新群发言权限-更新指定群组的发言权限，可设置为所有群成员可发言、仅群主或管理员可发言、指定群成员可发言 | feishu_call_tool |
+| `im.v1.chat.search` | [Feishu/Lark]-群组-群组管理-搜索对用户或机器人可见的群列表-获取当前身份（用户或机器人）可见的群列表，包括当前身份所在的群、对当前身份公开的群。支持关键词搜索、分页搜索 | feishu_read_tool |
+| `im.v1.chatTab.create` | [Feishu/Lark]-群组-会话标签页-添加会话标签页-在指定会话内添加自定义会话标签页，仅支持添加文档类型（doc）或 URL （url）类型的标签页 | feishu_call_tool |
+| `im.v1.chatTab.deleteTabs` | [Feishu/Lark]-群组-会话标签页-删除会话标签页-删除指定会话内的一个或多个会话标签页 | feishu_call_tool |
+| `im.v1.chatTab.listTabs` | [Feishu/Lark]-群组-会话标签页-拉取会话标签页-获取指定会话内的会话标签页信息，包括 ID、名称、类型以及内容等 | feishu_read_tool |
+| `im.v1.chatTab.sortTabs` | [Feishu/Lark]-群组-会话标签页-会话标签页排序-调整指定会话内的多个会话标签页排列顺序 | feishu_call_tool |
+| `im.v1.chatTab.updateTabs` | [Feishu/Lark]-群组-会话标签页-更新会话标签页-更新指定的会话标签页信息，包括名称、类型以及内容等。仅支持更新文档类型（doc）或 URL （url）类型的标签页 | feishu_call_tool |
+| `im.v1.chatTopNotice.deleteTopNotice` | [Feishu/Lark]-群组-群组管理-撤销群置顶-撤销指定群组中的置顶消息或群公告 | feishu_call_tool |
+| `im.v1.chatTopNotice.putTopNotice` | [Feishu/Lark]-群组-群组管理-更新群置顶-更新群组中的群置顶信息，可以将群中的某一条消息，或群公告置顶展示 | feishu_call_tool |
+| `im.v1.chat.update` | [Feishu/Lark]-群组-群组管理-更新群信息-更新指定群的信息，包括群头像、群名称、群描述、群配置以及群主等 | feishu_call_tool |
+| `im.v1.message.delete` | [Feishu/Lark]-消息-消息管理-撤回消息-调用该接口撤回指定消息。调用接口的身份不同（身份通过 Authorization 请求头参数指定），可实现的效果不同：- 机器人可以撤回该机器人自己发送的消息。- 群聊的群主可以撤回群内指定的消息 | feishu_call_tool |
+| `im.v1.message.patch` | [Feishu/Lark]-消息-消息卡片-更新已发送的消息卡片-通过消息 ID（message_id）更新已发送的消息卡片的内容 | feishu_call_tool |
+| `im.v1.messageReaction.create` | [Feishu/Lark]-消息-表情回复-添加消息表情回复-给指定消息添加指定类型的表情回复 | feishu_call_tool |
+| `im.v1.messageReaction.delete` | [Feishu/Lark]-消息-表情回复-删除消息表情回复-删除指定消息的某一表情回复 | feishu_call_tool |
+| `im.v1.messageReaction.list` | [Feishu/Lark]-消息-表情回复-获取消息表情回复-获取指定消息内的表情回复列表，支持仅获取特定类型的表情回复 | feishu_read_tool |
+| `im.v1.pin.create` | [Feishu/Lark]-消息-Pin-Pin 消息-Pin 一条指定的消息。Pin 消息的效果可参见[Pin 消息概述] | feishu_call_tool |
+| `im.v1.pin.delete` | [Feishu/Lark]-消息-Pin-移除 Pin 消息-移除一条指定消息的 Pin | feishu_call_tool |
+| `im.v1.pin.list` | [Feishu/Lark]-消息-Pin-获取群内 Pin 消息-获取指定群、指定时间范围内的所有 Pin 消息 | feishu_read_tool |
+| `lingo.v1.classification.list` | [Feishu/Lark]-飞书词典-分类-获取词典分类-获取飞书词典当前分类。飞书词典目前为二级分类体系，每个词条可添加多个二级分类，但选择的二级分类必须从属于不同的一级分类 | feishu_read_tool |
+| `lingo.v1.draft.create` | [Feishu/Lark]-飞书词典-草稿-创建草稿-草稿并非词条，而是指通过 API 发起创建新词条或更新现有词条的申请。词典管理员审核通过后，草稿将变为新的词条或覆盖已有词条 | feishu_call_tool |
+| `lingo.v1.draft.update` | [Feishu/Lark]-飞书词典-草稿-更新草稿-根据 draft_id 更新草稿内容，已审批的草稿无法编辑 | feishu_call_tool |
+| `lingo.v1.entity.get` | [Feishu/Lark]-飞书词典-词条-获取词条详情-通过词条 id 拉取对应的词条详情信息 | feishu_read_tool |
+| `lingo.v1.entity.highlight` | [Feishu/Lark]-飞书词典-词条-词条高亮-传入一句话，智能识别句中对应的词条，并返回词条位置和 entity_id，可在外部系统中快速实现词条智能高亮 | feishu_read_tool |
+| `lingo.v1.entity.list` | [Feishu/Lark]-飞书词典-词条-获取词条列表-分页拉取词条列表数据，支持拉取租户内(或指定词库内)的全部词条 | feishu_read_tool |
+| `lingo.v1.entity.match` | [Feishu/Lark]-飞书词典-词条-精准搜索词条-将关键词与词条名、别名精准匹配，并返回对应的 词条 ID | feishu_read_tool |
+| `lingo.v1.entity.search` | [Feishu/Lark]-飞书词典-词条-模糊搜索词条-传入关键词，与词条名、别名、释义等信息进行模糊匹配，返回搜到的词条信息 | feishu_read_tool |
+| `lingo.v1.repo.list` | [Feishu/Lark]-飞书词典-词库-获取词库列表-获取有权限访问的飞书词典词库列表。如以应用身份获取，需要在“词库设置”页面添加应用；若以用户身份获取，该用户需要拥有对应词库的可见权限 | feishu_read_tool |
+| `mail.v1.publicMailbox.list` | [Feishu/Lark]-邮箱-公共邮箱-公共邮箱管理-查询所有公共邮箱-分页批量获取公共邮箱列表 | feishu_read_tool |
+| `mail.v1.userMailboxEvent.subscribe` | [Feishu/Lark]-邮箱-事件-订阅事件-订阅事件 | feishu_call_tool |
+| `mail.v1.userMailboxEvent.subscription` | [Feishu/Lark]-邮箱-事件-获取订阅状态-获取订阅状态 | feishu_read_tool |
+| `mail.v1.userMailboxEvent.unsubscribe` | [Feishu/Lark]-邮箱-事件-取消订阅-取消订阅 | feishu_call_tool |
+| `mail.v1.userMailboxFolder.create` | [Feishu/Lark]-邮箱-邮箱文件夹-创建邮箱文件夹-创建邮箱文件夹 | feishu_call_tool |
+| `mail.v1.userMailboxFolder.delete` | [Feishu/Lark]-邮箱-邮箱文件夹-删除邮箱文件夹-删除邮箱文件夹 | feishu_call_tool |
+| `mail.v1.userMailboxFolder.list` | [Feishu/Lark]-邮箱-邮箱文件夹-列出邮箱文件夹-列出邮箱文件夹 | feishu_read_tool |
+| `mail.v1.userMailboxFolder.patch` | [Feishu/Lark]-邮箱-邮箱文件夹-修改邮箱文件夹-修改邮箱文件夹 | feishu_call_tool |
+| `mail.v1.userMailboxMailContact.create` | [Feishu/Lark]-邮箱-邮箱联系人-创建邮箱联系人-创建一个邮箱联系人 | feishu_call_tool |
+| `mail.v1.userMailboxMailContact.delete` | [Feishu/Lark]-邮箱-邮箱联系人-删除邮箱联系人-删除一个邮箱联系人 | feishu_call_tool |
+| `mail.v1.userMailboxMailContact.list` | [Feishu/Lark]-邮箱-邮箱联系人-列出邮箱联系人-列出邮箱联系人列表 | feishu_read_tool |
+| `mail.v1.userMailboxMailContact.patch` | [Feishu/Lark]-邮箱-邮箱联系人-修改邮箱联系人信息-修改一个邮箱联系人的信息 | feishu_call_tool |
+| `mail.v1.userMailboxMessageAttachment.downloadUrl` | [Feishu/Lark]-邮箱-用户邮件-邮件附件-获取附件下载链接-获取附件下载链接 | feishu_read_tool |
+| `mail.v1.userMailboxMessage.get` | [Feishu/Lark]-邮箱-用户邮件-获取邮件详情-获取邮件详情 | feishu_read_tool |
+| `mail.v1.userMailboxMessage.getByCard` | [Feishu/Lark]-邮箱-用户邮件-获取邮件卡片的邮件列表-获取邮件卡片下的邮件列表 | feishu_read_tool |
+| `mail.v1.userMailboxMessage.list` | [Feishu/Lark]-邮箱-用户邮件-列出邮件-列出邮件 | feishu_read_tool |
+| `mail.v1.userMailboxMessage.send` | [Feishu/Lark]-邮箱-用户邮件-发送邮件-发送邮件 | feishu_call_tool |
+| `mail.v1.userMailboxRule.create` | [Feishu/Lark]-邮箱-收信规则-创建收信规则-创建收信规则 | feishu_call_tool |
+| `mail.v1.userMailboxRule.delete` | [Feishu/Lark]-邮箱-收信规则-删除收信规则-删除收信规则 | feishu_call_tool |
+| `mail.v1.userMailboxRule.list` | [Feishu/Lark]-邮箱-收信规则-列出收信规则-列出收信规则 | feishu_read_tool |
+| `mail.v1.userMailboxRule.reorder` | [Feishu/Lark]-邮箱-收信规则-对收信规则进行排序-对收信规则进行排序 | feishu_call_tool |
+| `mail.v1.userMailboxRule.update` | [Feishu/Lark]-邮箱-收信规则-更新收信规则-更新收信规则 | feishu_call_tool |
+| `minutes.v1.minute.get` | [Feishu/Lark]-妙记-妙记信息-获取妙记信息-通过这个接口，可以得到一篇妙记的基础概述信息，包含 `owner_id`、`create_time`、标题、封面、时长和 URL | feishu_read_tool |
+| `minutes.v1.minuteMedia.get` | [Feishu/Lark]-妙记-妙记音视频文件-下载妙记音视频文件-获取妙记的音视频文件 | feishu_read_tool |
+| `minutes.v1.minuteStatistics.get` | [Feishu/Lark]-妙记-妙记统计数据-获取妙记统计数据-通过这个接口，可以获得妙记的访问情况统计，包含PV、UV、访问过的 user id、访问过的 user timestamp | feishu_read_tool |
+| `okr.v1.okr.batchGet` | [Feishu/Lark]-OKR-OKR 内容-批量获取 OKR-根据 OKR id 批量获取 OKR | feishu_read_tool |
+| `okr.v1.progressRecord.create` | [Feishu/Lark]-OKR-OKR 进展记录-创建 OKR 进展记录-创建 OKR 进展记录 | feishu_call_tool |
+| `okr.v1.progressRecord.delete` | [Feishu/Lark]-OKR-OKR 进展记录-删除 OKR 进展记录-根据 ID 删除 OKR 进展记录 | feishu_call_tool |
+| `okr.v1.progressRecord.get` | [Feishu/Lark]-OKR-OKR 进展记录-获取 OKR 进展记录-根据 ID 获取 OKR 进展记录详情，接口返回进展记录的内容、更新时间以及进展百分比和状态 | feishu_read_tool |
+| `okr.v1.progressRecord.update` | [Feishu/Lark]-OKR-OKR 进展记录-更新 OKR 进展记录-根据 OKR 进展记录 ID 更新进展详情 | feishu_call_tool |
+| `okr.v1.userOkr.list` | [Feishu/Lark]-OKR-OKR 内容-获取用户的 OKR 列表-根据用户的 id 获取 OKR 列表 | feishu_read_tool |
+| `payroll.v1.acctItem.list` | [Feishu/Lark]-Payroll-算薪项-批量查询算薪项-批量查询算薪项 | feishu_read_tool |
+| `payroll.v1.costAllocationDetail.list` | [Feishu/Lark]-Payroll-成本分摊明细-查询成本分摊报表明细-根据报表方案、期间、和报表类型获取成本分摊明细数据。调用接口前，需打开「财务过账」开关，并且完成发布成本分摊报表 | feishu_read_tool |
+| `payroll.v1.datasourceRecord.query` | [Feishu/Lark]-Payroll-外部数据源记录-批量查询外部算薪数据记录-1. 支持通过payroll_period（必传）、employment_id（可选）这两个预置字段，批量查询指定数据源下的数据记录列表。2. 数据源配置信息可从[获取外部数据源配置信息]或者 「飞书人事后台-设置-算薪数据设置-外部数据源配置」页面 获取 | feishu_read_tool |
+| `payroll.v1.datasourceRecord.save` | [Feishu/Lark]-Payroll-外部数据源记录-创建 / 更新外部算薪数据-参照数据源配置字段格式，批量保存（创建或更新）数据记录。1. 记录的唯一标志通过业务主键判断（employment_id + payroll_period）2. 若不存在数据记录，则本次保存会插入1条记录。3. 若已存在数据记录，则本次保存会覆盖更新已有记录（只更新传入字段的值，未传入字段值不更新），如果传入的数据记录没有任何变化，则不更新。4. 若更新或者插入成功，会返回产生数据变更的记录条数 | feishu_call_tool |
+| `payroll.v1.datasource.list` | [Feishu/Lark]-Payroll-外部数据源设置-获取外部数据源配置信息-批量查询飞书人事后台：设置->算薪数据设置->外部数据源设置 中的数据源设置列表 | feishu_read_tool |
+| `payroll.v1.paymentActivityDetail.list` | [Feishu/Lark]-Payroll-发薪明细-查询发薪活动明细列表-根据「发薪活动 ID 」和「分页参数」查询发薪活动明细列表和关联的算薪明细分段数据 | feishu_read_tool |
+| `payroll.v1.paymentActivity.archive` | [Feishu/Lark]-Payroll-发薪活动-封存发薪活动-根据发薪活动ID对发薪活动进行封存。注意：仅当发薪活动状态为审批通过时，方可进行封存 | feishu_call_tool |
+| `payroll.v1.paymentActivity.list` | [Feishu/Lark]-Payroll-发薪活动-查询发薪活动列表-根据「发薪日起止范围」、「发薪活动状态」和「分页参数」查询发薪活动列表 | feishu_read_tool |
+| `payroll.v1.paymentDetail.query` | [Feishu/Lark]-Payroll-发薪明细-批量查询发薪明细-根据 __发薪活动 ID 列表__ 、__发薪日起止时间__ 和 __飞书人事雇佣 ID 列表__ 分页查询发薪明细列表和关联的算薪明细分段数据 | feishu_read_tool |
+| `performance.v1.reviewData.query` | [Feishu/Lark]-绩效-评估数据-获取绩效结果-获取被评估人在指定周期、指定项目中各个环节的评估结果信息，包含绩效所在的周期、项目、评估项、评估模版以及各环节评估数据等信息 | feishu_read_tool |
+| `performance.v1.stageTask.findByUserList` | [Feishu/Lark]-绩效-评估任务-获取周期任务（指定用户）-根据用户 ID 批量获取指定周期的任务信息。支持传入任务分类、任务截止时间参数删选周期内任务数据 | feishu_call_tool |
+| `report.v1.task.query` | [Feishu/Lark]-汇报-任务-查询任务-查询任务 | feishu_read_tool |
+| `search.v2.app.create` | [Feishu/Lark]-搜索-套件搜索-搜索应用-用户可以通过关键字搜索到可见应用，应用可见性与套件内搜索一致 | feishu_call_tool |
+| `search.v2.message.create` | [Feishu/Lark]-搜索-套件搜索-搜索消息-用户可以通过关键字搜索可见消息，可见性和套件内搜索一致 | feishu_read_tool |
+| `sheets.v3.spreadsheet.create` | [Feishu/Lark]-云文档-电子表格-表格-创建电子表格-在云空间指定目录下创建电子表格。可自定义表格标题。不支持带内容创建表格 | feishu_call_tool |
+| `sheets.v3.spreadsheet.get` | [Feishu/Lark]-云文档-电子表格-表格-获取电子表格信息-根据电子表格 token 获取电子表格的基础信息，包括电子表格的所有者、URL 链接等 | feishu_read_tool |
+| `sheets.v3.spreadsheet.patch` | [Feishu/Lark]-云文档-电子表格-表格-修改电子表格属性-该接口用于修改电子表格的属性。目前支持修改电子表格标题 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterViewCondition.create` | [Feishu/Lark]-云文档-电子表格-筛选视图-筛选条件-创建筛选条件-在筛选视图的指定列创建筛选条件，包括筛选的类型、比较类型、筛选参数等 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterViewCondition.delete` | [Feishu/Lark]-云文档-电子表格-筛选视图-筛选条件-删除筛选条件-删除筛选视图指定列的所有筛选条件 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterViewCondition.get` | [Feishu/Lark]-云文档-电子表格-筛选视图-筛选条件-获取筛选条件-获取筛选视图某列的筛选条件，包括筛选的类型、比较类型、筛选参数等 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFilterViewCondition.query` | [Feishu/Lark]-云文档-电子表格-筛选视图-筛选条件-查询筛选条件-查询指定筛选视图的所有筛选条件，包括筛选的类型、比较类型、筛选参数等 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFilterViewCondition.update` | [Feishu/Lark]-云文档-电子表格-筛选视图-筛选条件-更新筛选条件-更新筛选视图指定列的筛选条件，包括筛选的类型、比较类型、筛选参数等 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterView.create` | [Feishu/Lark]-云文档-电子表格-筛选视图-创建筛选视图-指定电子表格工作表的筛选范围，创建一个筛选视图 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterView.delete` | [Feishu/Lark]-云文档-电子表格-筛选视图-删除筛选视图-删除指定筛选视图 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterView.get` | [Feishu/Lark]-云文档-电子表格-筛选视图-获取筛选视图-获取指定筛选视图的信息，包括 ID、名称和筛选范围 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFilterView.patch` | [Feishu/Lark]-云文档-电子表格-筛选视图-更新筛选视图-更新筛选视图的名称或筛选范围 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilterView.query` | [Feishu/Lark]-云文档-电子表格-筛选视图-查询筛选视图-查询电子表格指定工作表的所有筛选视图及其基本信息，包括视图 ID、视图名称和筛选范围 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFilter.create` | [Feishu/Lark]-云文档-电子表格-筛选-创建筛选-在电子表格工作表的指定范围内，设置筛选条件，创建筛选 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilter.delete` | [Feishu/Lark]-云文档-电子表格-筛选-删除筛选-删除电子表格中指定工作表的所有筛选 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFilter.get` | [Feishu/Lark]-云文档-电子表格-筛选-获取筛选-获取电子表格中工作表的详细筛选信息，包括筛选的应用范围、筛选条件、被筛选条件过滤掉的行 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFilter.update` | [Feishu/Lark]-云文档-电子表格-筛选-更新筛选-在电子表格工作表筛选范围中，更新指定列的筛选条件 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheet.find` | [Feishu/Lark]-云文档-电子表格-单元格-查找单元格-在指定范围内查找符合查找条件的单元格 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFloatImage.create` | [Feishu/Lark]-云文档-电子表格-浮动图片-创建浮动图片-在电子表格工作表的指定位置创建一张浮动图片 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFloatImage.delete` | [Feishu/Lark]-云文档-电子表格-浮动图片-删除浮动图片-删除电子表格工作表内指定的浮动图片 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFloatImage.get` | [Feishu/Lark]-云文档-电子表格-浮动图片-获取浮动图片-获取电子表格工作表内指定浮动图片的参数信息 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheetFloatImage.patch` | [Feishu/Lark]-云文档-电子表格-浮动图片-更新浮动图片-更新已有的浮动图片位置和宽高 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheetFloatImage.query` | [Feishu/Lark]-云文档-电子表格-浮动图片-查询浮动图片-获取电子表格工作表内所有的浮动图片的参数信息 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheet.get` | [Feishu/Lark]-云文档-电子表格-工作表-查询工作表-根据工作表 ID 查询工作表属性信息，包括工作表的标题、索引位置、是否被隐藏等 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheet.moveDimension` | [Feishu/Lark]-云文档-电子表格-行列-移动行列-该接口用于移动行或列。行或列被移动到目标位置后，原本在目标位置的行列会对应右移或下移 | feishu_call_tool |
+| `sheets.v3.spreadsheetSheet.query` | [Feishu/Lark]-云文档-电子表格-工作表-获取工作表-根据电子表格 token 获取表格中所有工作表及其属性信息，包括工作表 ID、标题、索引位置、是否被隐藏等 | feishu_read_tool |
+| `sheets.v3.spreadsheetSheet.replace` | [Feishu/Lark]-云文档-电子表格-单元格-替换单元格-在指定范围内，查找并替换符合查找条件的单元格 | feishu_call_tool |
+| `task.v1.task.batchDeleteCollaborator` | [Feishu/Lark]-历史版本（不推荐）-任务-执行者-批量删除执行者-该接口用于批量删除执行者 | feishu_call_tool |
+| `task.v1.task.batchDeleteFollower` | [Feishu/Lark]-历史版本（不推荐）-任务-关注人-批量删除关注人-该接口用于批量删除关注人 | feishu_call_tool |
+| `task.v1.taskCollaborator.create` | [Feishu/Lark]-历史版本（不推荐）-任务-执行者-新增执行者-该接口用于新增任务执行者，一次性可以添加多个执行者。只有任务的创建者和执行者才能添加执行者，关注人无权限添加 | feishu_call_tool |
+| `task.v1.taskCollaborator.delete` | [Feishu/Lark]-历史版本（不推荐）-任务-执行者-删除指定执行者-该接口用于删除任务执行者 | feishu_call_tool |
+| `task.v1.taskCollaborator.list` | [Feishu/Lark]-历史版本（不推荐）-任务-执行者-获取执行者列表-该接口用于查询任务执行者列表，支持分页，最大值为50 | feishu_read_tool |
+| `task.v1.taskComment.create` | [Feishu/Lark]-历史版本（不推荐）-任务-评论-创建评论-该接口用于创建和回复任务的评论。当parent_id字段为0时，为创建评论；当parent_id不为0时，为回复某条评论 | feishu_call_tool |
+| `task.v1.taskComment.delete` | [Feishu/Lark]-历史版本（不推荐）-任务-评论-删除评论-该接口用于通过评论ID删除评论 | feishu_call_tool |
+| `task.v1.taskComment.get` | [Feishu/Lark]-历史版本（不推荐）-任务-评论-获取评论详情-该接口用于通过评论ID获取评论详情 | feishu_read_tool |
+| `task.v1.taskComment.list` | [Feishu/Lark]-历史版本（不推荐）-任务-评论-获取评论列表-该接口用于查询任务评论列表，支持分页，最大值为100 | feishu_read_tool |
+| `task.v1.taskComment.update` | [Feishu/Lark]-历史版本（不推荐）-任务-评论-更新评论-该接口用于更新评论内容 | feishu_call_tool |
+| `task.v1.task.complete` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-完成任务-该接口用于将任务状态修改为“已完成”。完成任务是指整个任务全部完成，而不支持执行者分别完成任务，执行成功后，任务对所有关联用户都变为完成状态 | feishu_call_tool |
+| `task.v1.task.create` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-创建任务-该接口可以创建一个任务，支持填写任务的基本信息，包括任务的标题，描述及协作者等。在此基础上，创建任务时可以设置截止时间和重复规则，将任务设置为定期执行的重复任务。通过添加协作者，则可以让其他用户协同完成该任务。此外，接口也提供了一些支持自定义内容的字段，调用方可以实现定制化效果，如完成任务后跳转到指定结束界面 | feishu_call_tool |
+| `task.v1.task.delete` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-删除任务-该接口用于删除任务 | feishu_call_tool |
+| `task.v1.taskFollower.create` | [Feishu/Lark]-历史版本（不推荐）-任务-关注人-新增关注人-该接口用于新增任务关注人。可以一次性添加多位关注人。关注人ID要使用表示用户的ID | feishu_call_tool |
+| `task.v1.taskFollower.delete` | [Feishu/Lark]-历史版本（不推荐）-任务-关注人-删除指定关注人-该接口用于删除任务关注人 | feishu_call_tool |
+| `task.v1.taskFollower.list` | [Feishu/Lark]-历史版本（不推荐）-任务-关注人-获取关注人列表 | feishu_read_tool |
+| `task.v1.task.get` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-查询指定任务-该接口用于获取任务详情，包括任务标题、描述、时间、来源等信息 | feishu_read_tool |
+| `task.v1.task.list` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-查询所有任务-以分页的方式获取任务列表。当使用user_access_token时，获取与该用户身份相关的所有任务。当使用tenant_access_token时，获取以该应用身份通过“创建任务“接口创建的所有任务（并非获取该应用所在租户下所有用户创建的任务）。本接口支持通过任务创建时间以及任务的完成状态对任务进行过滤 | feishu_read_tool |
+| `task.v1.task.patch` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-更新任务-该接口用于修改任务的标题、描述、时间、来源等相关信息 | feishu_call_tool |
+| `task.v1.taskReminder.create` | [Feishu/Lark]-历史版本（不推荐）-任务-提醒-新增提醒时间-该接口用于创建任务的提醒时间。提醒时间在截止时间基础上做偏移，但是偏移后的结果不能早于当前时间 | feishu_call_tool |
+| `task.v1.taskReminder.delete` | [Feishu/Lark]-历史版本（不推荐）-任务-提醒-删除提醒时间-删除提醒时间，返回结果状态 | feishu_call_tool |
+| `task.v1.taskReminder.list` | [Feishu/Lark]-历史版本（不推荐）-任务-提醒-查询提醒时间列表-返回提醒时间列表，支持分页，最大值为50 | feishu_read_tool |
+| `task.v1.task.uncomplete` | [Feishu/Lark]-历史版本（不推荐）-任务-任务管理-取消完成任务-该接口用于取消任务的已完成状态 | feishu_call_tool |
+| `task.v2.attachment.delete` | [Feishu/Lark]-任务-附件-删除附件-提供一个附件GUID，删除该附件。删除后该附件不可再恢复 | feishu_call_tool |
+| `task.v2.attachment.get` | [Feishu/Lark]-任务-附件-获取附件-提供一个附件GUID，返回附件的详细信息，包括GUID，名称，大小，上传时间，临时可下载链接等 | feishu_read_tool |
+| `task.v2.attachment.list` | [Feishu/Lark]-任务-附件-列取附件-列取一个资源的所有附件。返回的附件列表支持分页，按照附件上传时间排序。每个附件会返回一个可供下载的临时url，有效期为3分钟，最多可以支持3次下载。如果超过使用限制，需要通过本接口获取新的临时url | feishu_read_tool |
+| `task.v2.comment.create` | [Feishu/Lark]-任务-评论-创建评论-为一个任务创建评论，或者回复该任务的某个评论。若要创建一个回复评论，需要在创建时设置`reply_to_comment_id`字段。被回复的评论和新建的评论必须属于同一个任务 | feishu_call_tool |
+| `task.v2.comment.delete` | [Feishu/Lark]-任务-评论-删除评论-删除一条评论。评论被删除后，将无法进行任何操作，也无法恢复 | feishu_call_tool |
+| `task.v2.comment.get` | [Feishu/Lark]-任务-评论-获取评论详情-给定一个评论的ID，返回评论的详情，包括内容，创建人，创建时间和更新时间等信息 | feishu_read_tool |
+| `task.v2.comment.list` | [Feishu/Lark]-任务-评论-获取评论列表-给定一个资源，返回该资源的评论列表。支持分页。评论可以按照创建时间的正序（asc, 从最老到最新），或者逆序（desc，从最老到最新），返回数据 | feishu_read_tool |
+| `task.v2.comment.patch` | [Feishu/Lark]-任务-评论-更新评论-更新一条评论。更新时，将`update_fields`字段中填写所有要修改的评论的字段名，同时在`comment`字段中填写要修改的字段的新值即可。更新接口规范详情见[功能概述]中的“ 关于资源的更新”章节。目前只支持更新评论的"conent"字段 | feishu_call_tool |
+| `task.v2.customField.add` | [Feishu/Lark]-任务-自定义字段-将自定义字段加入资源-将自定义字段加入一个资源。目前资源类型支持清单tasklist。一个自定义字段可以加入多个清单中。加入后，该清单可以展示任务的该字段的值，同时基于该字段实现筛选，分组等功能。如果自定义字段的设置被更新，字段加入的所有资源都能收到这个更新，并进行相应的展示 | feishu_call_tool |
+| `task.v2.customField.create` | [Feishu/Lark]-任务-自定义字段-创建自定义字段-创建一个自定义字段，并将其加入一个资源上（目前资源只支持清单）。创建自定义字段必须提供字段名称，类型和相应类型的设置。目前任务自定义字段支持数字(number)，成员(member)，日期(datetime)，单选(single_select),多选(multi_select), 文本(text)几种类型。分别使用"number_setting", "member_setting", "datetime_setting", "single_select_setting", "multi_select_setting","text_setting"来设置。例如创建一个数字类型的自定义字段，并添加到guid为"ec5ed63d-a4a9-44de-a935-7ba243471c0a"的清单，可以这样发请求。```POST /task/v2/custom_fields{ "name": "价格", "type": "number", "resource_type": "tasklist", "resource_id": "ec5ed63d-a4a9-44de-a935-7ba243471c0a", "number_setting": { "format": "cny", "decimal_count": 2, "separator": "thousand" }}```表示创建一个叫做“价格”的自定义字段，保留两位小数。在界面上显示时采用人民币的格式，并显示千分位分割符。类似的，创建一个单选字段，可以这样调用接口：```POST /task/v2/custom_fields{ "name": "优先级", "type": "single_select", "resource_type": "tasklist", "resource_id": "ec5ed63d-a4a9-44de-a935-7ba243471c0a", "single_select_setting": { "options": [ { "name": "高", "color_index": 1 }, { "name": "中", "color_index": 11 }, { "name": "低", "color_index": 16 } ] }}```表示创建一个叫“优先级”的单选，包含“高”，“中”，“低”三个选项，每个选项设置一个颜色值 | feishu_call_tool |
+| `task.v2.customField.get` | [Feishu/Lark]-任务-自定义字段-获取自定义字段-根据一个自定义字段的GUID，获取其详细的设置信息 | feishu_read_tool |
+| `task.v2.customField.list` | [Feishu/Lark]-任务-自定义字段-列取自定义字段-列取用户可访问的自定义字段列表。如果不提供`resource_type`和`resource_id`参数，则返回用户可访问的所有自定义字段。如果提供`resource_type`和`resource_id`，则返回该资源下的自定义字段。目前`resource_type`仅支持"tasklist"，此时`resource_id`应为一个清单的tasklist_guid。该接口支持分页 | feishu_read_tool |
+| `task.v2.customFieldOption.create` | [Feishu/Lark]-任务-自定义字段选项-创建自定义任务选项-为单选或多选字段添加一个自定义选项。一个单选/多选字段最大支持100个选项。新添加的选项如果不隐藏，其名字不能和已存在的不隐藏选项的名字重复 | feishu_call_tool |
+| `task.v2.customFieldOption.patch` | [Feishu/Lark]-任务-自定义字段选项-更新自定义字段选项-根据一个自定义字段的GUID和其选项的GUID，更新该选项的数据。要更新的字段必须是单选或者多选类型，且要更新的字段必须归属于该字段。更新时，将`update_fields`字段中填写所有要修改的任务字段名，同时在`option`字段中填写要修改的字段的新值即可。`update_fields`支持的字段包括：* `name`: 选项名称* `color_index`: 选项的颜色索引值* `is_hidden`: 是否从界面上隐藏* `insert_before`: 将当前option放到同字段某个option之前的那个option_guid。* `insert_after`: 将当前option放到同字段某个option之后的那个option_guid | feishu_call_tool |
+| `task.v2.customField.patch` | [Feishu/Lark]-任务-自定义字段-更新自定义字段-更新一个自定义字段的名称和设定。更新时，将`update_fields`字段中填写所有要修改的任务字段名，同时在`custom_field`字段中填写要修改的字段的新值即可。自定义字段不允许修改类型，只能根据类型修改其设置。`update_fields`支持更新的字段包括：* `name`：自定义字段名称* `number_setting` ：数字类型设置（当且仅当要更新的自定义字段类型是数字时)* `member_setting` ：人员类型设置（当且仅当要更新的自定义字段类型是人员时)* `datetime_setting` ：日期类型设置 (当且仅当要更新的自定义字段类型是日期时)* `single_select_setting`：单选类型设置 (当且仅当要更新的自定义字段类型是单选时)* `multi_select_setting`：多选类型设置 (当且仅当要更新的自定义字段类型是多选时)* `text_setting`: 文本类型设置（目前文本类型没有可设置项）当更改某个设置时，如果不填写一个字段，表示不覆盖原有的设定。比如，对于一个数字，原有的setting是:```json"number_setting": { "format": "normal", "decimal_count": 2, "separator": "none", "custom_symbol": "L", "custom_symbol_position": "right"}```使用如下参数调用接口：```PATCH /task/v2/custom_fields/:custom_field_guid{ "custom_field": { "number_setting": { "decimal_count": 4 } }, "update_fields": ["number_setting"]}```表示仅仅将小数位数从2改为4，其余的设置`format`, `separator`, `custom_field`等都不变。对于单选/多选类型的自定义字段，其设定是一个选项列表。更新时，使用方式接近使用App的界面。使用者不必传入字段的所有选项，而是只需要提供最终希望界面可见（is_hidden=false) 的选项。原有字段中的选项如果没有出现在输入中，则被置为`is_hidden=true`并放到所有可见选项之后。对于某一个更新的选项，如果提供了option_guid，将视作更新该选项（此时option_guid必须存在于当前字段，否则会返回错误）；如果不提供，将视作新建一个选项（新的选项的option_guid会在reponse中被返回)。例如，一个单选字段原来有3个选项A，B，C，D。其中C是隐藏的。用户可以这样更新选项：```PATCH /task/v2/custom_fields/:custom_field_guid{ "custom_field": { "single_select_setting": { "optoins": [ { "name": "E", "color_index": 25 }, { "guid": "<option_guid of A>" "name": "A2" }, { "guid": "<option_guid of C>", }, ] } }, "update_fields": ["single_select_setting"]}```调用后最终得到了新的选项列表E, A, C, B, D。其中：* 选项E被新建出来，其`color_index`被设为了25。* 选项A被更新，其名称被改为了"A2"。但其color_index因为没有设置而保持不变；* 选项整体顺序遵循用户的输入顺序，即E，A，C。同时E，A，C作为直接的输入，其is_hidden均被设为了false，其中，C原本是is_hidden=true，也会被设置为is_hidden=false。* 选项B和D因为用户没有输入，其`is_hidden`被置为了true，并且被放到了所有用户输入的选项之后。如果只是单纯的希望修改用户可见的选项的顺序，比如从原本的选项A,B,C修改为C,B,A，可以这样调用接口：```PATCH /task/v2/custom_fields/:custom_field_guid{ "custom_field": { "single_select_setting": { "optoins": [ { "guid": "<option_guid_of_C>" }, { "guid": "<option_guid of B>" }, { "guid": "<option_guid of A>", }, ] } }, "update_fields": ["single_select_setting"]}```如果希望直接将字段里的所有选项都标记为不可见，可以这样调用接口：```PATCH /task/v2/custom_fields/:custom_field_guid{ "custom_field": { "single_select_setting": { "optoins": [] } }, "update_fields": ["single_select_setting"]}```更新单选/多选字段的选项必须满足“可见选项名字不能重复”的约束。否则会返回错误。开发者需要自行保证输入的选项名不可以重复。如希望只更新单个选项，或者希望单独设置某个选项的is_hidden，本接口无法支持，但可以使用[更新自定义字段选项]接口实现 | feishu_call_tool |
+| `task.v2.customField.remove` | [Feishu/Lark]-任务-自定义字段-将自定义字段移出资源-将自定义字段从资源中移出。移除后，该资源将无法再使用该字段。目前资源的类型支持"tasklist"。如果要移除自定义字段本来就不存在于资源，本接口将正常返回。注意自定义字段是通过清单来实现授权的，如果将自定义字段从所有关联的清单中移除，就意味着任何调用身份都无法再访问改自定义字段 | feishu_call_tool |
+| `task.v2.section.create` | [Feishu/Lark]-任务-自定义分组-创建自定义分组-为清单或我负责的任务列表创建一个自定义分组。创建时可以需要提供名称和可选的配置。如果不指定位置，新分组会放到指定resource的自定义分组列表的最后。当在清单中创建自定义分组时，需要设置`resourse_type`为"tasklist", `resource_id`设为清单的GUID。当为我负责任务列表中创建自定义分组时，需要设置`resource_type`为"my_tasks"，不需要设置`resource_id`。调用身份只能为自己的我负责的任务列表创建自定义分组 | feishu_call_tool |
+| `task.v2.section.delete` | [Feishu/Lark]-任务-自定义分组-删除自定义分组-删除一个自定义分组。删除后该自定义分组中的任务会被移动到被删除自定义分组所属资源的默认自定义分组中。不能删除默认的自定义分组 | feishu_call_tool |
+| `task.v2.section.get` | [Feishu/Lark]-任务-自定义分组-获取自定义分组详情-获取一个自定义分组详情，包括名称，创建人等信息。如果该自定义分组归属于一个清单，还会返回清单的摘要信息 | feishu_read_tool |
+| `task.v2.section.list` | [Feishu/Lark]-任务-自定义分组-获取自定义分组列表-获取一个资源下所有的自定义分组列表。支持分页。返回结果按照自定义分组在界面上的顺序排序 | feishu_read_tool |
+| `task.v2.section.patch` | [Feishu/Lark]-任务-自定义分组-更新自定义分组-更新自定义分组，可以更新自定义分组的名称和位置。更新时，将`update_fields`字段中填写所有要修改的字段名，同时在`section`字段中填写要修改的字段的新值即可。调用约定详情见[功能概述]中的“ 关于资源的更新”章节。目前支持更新的字段包括：* `name` - 自定义字段名字;* `insert_before` - 要让当前自定义分组放到某个自定义分组前面的secion_guid，用于改变当前自定义分组的位置;* `insert_after` - 要让当前自定义分组放到某个自定义分组后面的secion_guid，用于改变当前自定义分组的位置。`insert_before`和`insert_after`如果填写，必须是同一个资源的合法section_guid。注意不能同时设置`insert_before`和`insert_after` | feishu_call_tool |
+| `task.v2.section.tasks` | [Feishu/Lark]-任务-自定义分组-获取自定义分组任务列表-列取一个自定义分组里的所有任务。支持分页。任务按照自定义排序的顺序返回。本接口支持简单的过滤 | feishu_read_tool |
+| `task.v2.task.addDependencies` | [Feishu/Lark]-任务-任务-添加依赖-为一个任务添加一个或多个依赖。可以添加任务的前置依赖和后置依赖。存在依赖关系的任务如果在同一个清单，可以通过清单的甘特图来展示其依赖关系。本接口也可以用于修改一个现有依赖的类型（前置改为后置或者后置改为前置）。注意：添加的依赖的`task_guid`不能重复，也不能添加当前任务为自己的依赖。尝试添加一个已经存在的依赖会被自动忽略 | feishu_call_tool |
+| `task.v2.task.addMembers` | [Feishu/Lark]-任务-任务-添加任务成员-添加任务的负责人或者关注人。一次性可以添加多个成员。返回任务的实体中会返回最终任务成员的列表。* 关于member的格式，详见[功能概述]中的“ 如何表示任务和清单的成员？”章节。* 成员的角色支持"assignee"和"follower"。* 成员类型支持"user"和"app"。* 如果要添加的成员已经在任务中，则自动被忽略 | feishu_call_tool |
+| `task.v2.task.addReminders` | [Feishu/Lark]-任务-任务-添加任务提醒-为一个任务添加提醒。提醒是基于任务的截止时间计算得到的一个时刻。为了设置提醒，任务必须首先拥有截止时间(due)。可以在[创建任务]时设置截止时间，或者通过[更新任务]设置一个截止时间。目前一个任务只能设置1个提醒。但接口的形式可以在未来扩充为一个任务支持多个提醒。如果当前任务已经有提醒了，要更新提醒的设置，需要先调用[移除任务提醒]接口移除原有提醒。再调用本接口添加提醒 | feishu_call_tool |
+| `task.v2.task.addTasklist` | [Feishu/Lark]-任务-任务-任务加入清单-将一个任务加入清单。返回任务的详细信息，包括任务所在的所有清单信息。如果任务已经在该清单，接口将返回成功 | feishu_call_tool |
+| `task.v2.task.create` | [Feishu/Lark]-任务-任务-创建任务-该接口可以创建一个任务，在创建任务时，支持填写任务的基本信息（如标题、描述、负责人等），此外，还可以设置任务的开始时间、截止时间提醒等条件，此外，还可以通过传入 tasklists 字段将新任务加到多个清单中。创建任务时，可以通过设置`members`字段来设置任务的负责人和关注人。关于member的格式，详见[功能概述]中的“ 如何表示任务和清单的成员？ ”章节。如果要设置任务的开始时间和截止时间，需要遵守任务时间的格式和约束。详见[功能概述]中的“ 如何使用开始时间和截止时间？”章节。如要设置自定义字段值，可以设置`custom_fields`字段。但因为自定义字段归属于清单，因此要填写的自定义字段的guid必须归属于要添加的清单(通过`tasklists`设置）。详见[自定义字段概览]。通过设置`client_token`实现幂等调用。详见[功能概述]中的“ 幂等调用 ”章节。如要创建一个任务的子任务，需要使用[创建子任务]接口。创建任务时可以一并设置自定义字段值。但根据自定义字段的权限关系，任务只能添加`tasklists`字段设置的清单中关联的自定义字段的值。详见[自定义字段功能概述]中的介绍 | feishu_call_tool |
+| `task.v2.task.delete` | [Feishu/Lark]-任务-任务-删除任务-删除一个任务。删除后任务无法再被获取到 | feishu_call_tool |
+| `task.v2.task.get` | [Feishu/Lark]-任务-任务-获取任务详情-该接口用于获取任务详情，包括任务标题、描述、时间、成员等信息 | feishu_read_tool |
+| `task.v2.task.list` | [Feishu/Lark]-任务-任务-列取任务列表-基于调用身份，列出特定类型的所有任务。支持分页。目前只支持列取任务界面上“我负责的”任务。返回的任务数据按照任务在”我负责的“界面中”自定义拖拽“的顺序排序 | feishu_read_tool |
+| `task.v2.task.patch` | [Feishu/Lark]-任务-任务-更新任务-该接口用于修改任务的标题、描述、截止时间等信息。更新时，将`update_fields`字段中填写所有要修改的任务字段名，同时在`task`字段中填写要修改的字段的新值即可。如果`update_fields`中设置了要变更一个字段的名字，但是task里没设置新的值，则表示将该字段清空。调用约定详情见[功能概述]中的“ 关于资源的更新”章节。该接口可以用于完成任务和将任务恢复至未完成，只需要修改`completed_at`字段即可。但留意，目前不管任务本身是会签任务还是或签任务，oapi对任务进行完成只能实现“整体完成”，不支持个人单独完成。此外，不能对已经完成的任务再次完成，但可以将其恢复到未完成的状态(设置`completed_at`为"0")。如更新自定义字段的值，需要调用身份同时拥有任务的编辑权限和自定义字段的编辑权限。详情见[自定义字段功能概览]。更新时，只有填写在`task.custom_fields`的自定义字段值会被更新，不填写的不会被改变。任务成员/提醒/清单数据不能使用本接口进行更新。* 如要修改任务成员，需要使用[添加任务成员]和[移除任务成员]接口。* 如要修改任务提醒，需要使用[添加任务提醒]和[移除任务提醒]接口。* 如要变更任务所在的清单，需要使用[任务加入清单]和[任务移出清单]接口 | feishu_call_tool |
+| `task.v2.task.removeDependencies` | [Feishu/Lark]-任务-任务-移除依赖-从一个任务移除一个或者多个依赖。移除时只需要输入要移除的`task_guid`即可。注意，如果要移除的依赖非当前任务的依赖，会被自动忽略。接口会返回成功 | feishu_call_tool |
+| `task.v2.task.removeMembers` | [Feishu/Lark]-任务-任务-移除任务成员-移除任务成员。一次性可以移除多个成员。可以移除任务的负责人或者关注人。移除时，如果要移除的成员不是任务成员，会被自动忽略。本接口返回移除成员后的任务数据，包含移除后的任务成员列表 | feishu_call_tool |
+| `task.v2.task.removeReminders` | [Feishu/Lark]-任务-任务-移除任务提醒-将一个提醒从任务中移除。如果要移除的提醒本来就不存在，本接口将直接返回成功 | feishu_call_tool |
+| `task.v2.task.removeTasklist` | [Feishu/Lark]-任务-任务-任务移出清单-将任务从一个清单中移出。返回任务详情。如果任务不在清单中，接口将返回成功 | feishu_call_tool |
+| `task.v2.taskSubtask.create` | [Feishu/Lark]-任务-子任务-创建子任务-给一个任务创建一个子任务。接口功能除了额外需要输入父任务的GUID之外，和[创建任务]接口功能完全一致 | feishu_call_tool |
+| `task.v2.taskSubtask.list` | [Feishu/Lark]-任务-子任务-获取任务的子任务列表-获取一个任务的子任务列表。支持分页，数据按照子任务在界面上的顺序返回 | feishu_read_tool |
+| `task.v2.task.tasklists` | [Feishu/Lark]-任务-任务-列取任务所在清单-列取一个任务所在的所有清单的信息，包括清单的GUID和所在自定义分组的GUID。只有调用身份有权限访问的清单信息会被返回 | feishu_read_tool |
+| `task.v2.tasklistActivitySubscription.create` | [Feishu/Lark]-任务-清单动态订阅-创建动态订阅-为一个清单创建一个订阅。每个订阅可以包含1个或多个订阅者（目前只支持普通群组）。订阅创建后，如清单发生相应的事件，则会向订阅里的订阅者发送通知消息。一个清单最多可以创建50个订阅。每个订阅最大支持50个订阅者。订阅者目前仅支持"chat"类型。每个订阅可以通过设置`include_keys`可以针对哪些事件(event_key)做通知。如果`include_keys`为空，则不对任何事件进行通知。如有需要，创建时也可以直接将`disabled`设为true，创建一个禁止发送订阅通知的订阅 | feishu_call_tool |
+| `task.v2.tasklistActivitySubscription.delete` | [Feishu/Lark]-任务-清单动态订阅-删除动态订阅-给定一个清单的GUID和一个订阅的GUID，将其删除。删除后的数据不可恢复 | feishu_call_tool |
+| `task.v2.tasklistActivitySubscription.get` | [Feishu/Lark]-任务-清单动态订阅-获取动态订阅-提供一个清单的GUID和一个订阅的GUID，获取该订阅的详细信息，包括名称，订阅者，可通知的event key列表等 | feishu_read_tool |
+| `task.v2.tasklistActivitySubscription.list` | [Feishu/Lark]-任务-清单动态订阅-列取动态订阅-给定一个清单的GUID，获取其所有的订阅信息。结果按照订阅的创建时间排序 | feishu_read_tool |
+| `task.v2.tasklistActivitySubscription.patch` | [Feishu/Lark]-任务-清单动态订阅-更新动态订阅-提供一个清单的GUID和一个动态订阅的GUID，对其进行更新。更新时，将`update_fields`字段中填写所有要修改的字段名，同时在`activity_subscription`字段中填写要修改的字段的新值即可。`update_fields`支持更新的字段包括：* name：订阅的名称* subscribers: 订阅者列表。如更新，会将旧的订阅者列表完全替换为新的订阅者列表。支持最大50个订阅者。并且订阅者必须是chat类型。* include_keys ：订阅需要发送通知的key。如更新，会将旧的列表完全替换为新的include_keys列表。只能设置支持的event key (见字段描述）。* disabled：修改订阅的开启/禁用状态 | feishu_call_tool |
+| `task.v2.tasklist.addMembers` | [Feishu/Lark]-任务-清单-添加清单成员-向一个清单添加1个或多个协作成员。成员信息通过设置`members`字段实现。关于member的格式，详见[功能概述]中的“ 如何表示任务和清单的成员？”章节。一个清单协作成员可以是一个用户，应用或者群组。每个成员可以设置“可编辑”或者“可阅读”的角色。群组作为协作成员表示该群里所有群成员都自动拥有群组协作成员的角色。如果要添加的成员已经是清单成员，且角色和请求中设置是一样的，则会被自动忽略，接口返回成功。如果要添加的成员已经是清单成员，且角色和请求中设置是不一样的（比如原来的角色是可阅读，请求中设为可编辑），则相当于更新其角色。如果要添加的成员已经是清单的所有者，则会被自动忽略。接口返回成功。其所有者的角色不会改变。本接口不能用来设置清单所有者，如要设置，可以使用[更新清单]接口 | feishu_call_tool |
+| `task.v2.tasklist.create` | [Feishu/Lark]-任务-清单-创建清单-创建一个清单。清单可以用于组织和管理属于同一个项目的多个任务。创建时，必须填写清单的名字。同时，可以设置通过`members`字段设置清单的协作成员。关于member的格式，详见[功能概述]中的“ 如何表示任务和清单的成员？”章节。创建清单后，创建人自动成为清单的所有者。如果请求同时将创建人设置为可编辑/可阅读角色，则最终该用户成为清单所有者，并自动从清单成员列表中消失。因为同一个用户在同一个清单只能拥有一个角色 | feishu_call_tool |
+| `task.v2.tasklist.delete` | [Feishu/Lark]-任务-清单-删除清单-删除一个清单。删除清单后，不可对该清单做任何操作，也无法再访问到清单。清单被删除后不可恢复 | feishu_call_tool |
+| `task.v2.tasklist.get` | [Feishu/Lark]-任务-清单-获取清单详情-获取一个清单的详细信息，包括清单名，所有者，清单成员等 | feishu_read_tool |
+| `task.v2.tasklist.list` | [Feishu/Lark]-任务-清单-获取清单列表-获取调用身份所有可读取的清单列表 | feishu_read_tool |
+| `task.v2.tasklist.patch` | [Feishu/Lark]-任务-清单-更新清单-更新清单，可以更新清单的名字和所有者。更新清单时，将`update_fields`字段中填写所有要修改的清单字段名，同时在`tasklist`字段中填写要修改的字段的新值即可。更新调用规范详见[功能概述]中的“ 关于资源的更新”章节。支持更新的字段包括:* `name` - 清单名字* `owner` - 清单所有者更新清单所有者（owner）时，如果该成员已经是清单的“可编辑”或者“可阅读”角色，则该成员将直接升级为所有者角色，自动从清单的成员列表中消失。这是因为同一个用户在同一个清单中只能有一个角色。同时，支持使用`origin_owner_to_role`字段将原有所有者变为可编辑/可阅读角色或者直接退出清单。该接口不能用于更新清单的成员和增删清单中的任务。* 如要增删清单中的成员，可以使用[添加清单成员]和[移除清单成员]接口。* 如要增删清单中的任务，可以使用[任务加入清单]和[任务移出清单]接口 | feishu_call_tool |
+| `task.v2.tasklist.removeMembers` | [Feishu/Lark]-任务-清单-移除清单成员-移除清单的一个或多个协作成员。通过设置`members`字段表示要移除的成员信息。关于member的格式，详见[功能概述]中的“ 如何表示任务和清单的成员？”章节。清单中同一个成员只能有一个角色，通过的member的id和type可以唯一确定一个成员，因此请求参数中对于要删除的成员，不需要填写"role"字段。如果要移除的成员不在清单中，则被自动忽略，接口返回成功。该接口不能用于移除清单所有者。如果要移除的成员是清单所有者，则会被自动忽略。如要设置清单所有者，需要调用[更新清单]接口 | feishu_call_tool |
+| `task.v2.tasklist.tasks` | [Feishu/Lark]-任务-清单-获取清单任务列表-获取一个清单的任务列表，返回任务的摘要信息。本接口支持分页。清单中的任务以“自定义拖拽”的顺序返回。本接口支持简单的按照任务的完成状态或者任务的创建时间范围过滤 | feishu_read_tool |
+| `trust_party.v1.collaborationTenantCollaborationDepartment.get` | [Feishu/Lark]-关联组织-关联组织-获取关联组织部门详情-获取对方的关联组织部门详情，需要对部门有可见性权限才可以获取 | feishu_read_tool |
+| `trust_party.v1.collaborationTenantCollaborationUser.get` | [Feishu/Lark]-关联组织-关联组织-获取关联组织成员详情-获取关联组织成员详情，需要对关联组织成员有权限才可以获取 | feishu_read_tool |
+| `trust_party.v1.collaborationTenant.get` | [Feishu/Lark]-关联组织-关联组织-获取关联组织详情-基于组织tenant key获取关联组织详情，需要对对方组织有可见权限才可以获取 | feishu_read_tool |
+| `trust_party.v1.collaborationTenant.list` | [Feishu/Lark]-关联组织-关联组织-获取可见关联组织的列表-分页获取用户可见的关联列表 | feishu_read_tool |
+| `trust_party.v1.collaborationTenant.visibleOrganization` | [Feishu/Lark]-关联组织-关联组织-获取关联组织的部门和成员信息-该接口会返回用户在外部部门下可见的下级部门、用户、用户组 | feishu_read_tool |
+| `vc.v1.export.get` | [Feishu/Lark]-视频会议-导出-查询导出任务结果-查看异步导出的进度 | feishu_read_tool |
+| `vc.v1.export.meetingList` | [Feishu/Lark]-视频会议-导出-导出会议明细-导出会议明细，具体权限要求请参考资源介绍 | feishu_call_tool |
+| `vc.v1.export.participantList` | [Feishu/Lark]-视频会议-导出-导出参会人明细-导出某个会议的参会人详情列表，具体权限要求请参考「资源介绍」 | feishu_call_tool |
+| `vc.v1.export.participantQualityList` | [Feishu/Lark]-视频会议-导出-导出参会人会议质量数据-导出某场会议某个参会人的音视频&共享质量数据（仅支持已结束会议），具体权限要求请参考「资源介绍」 | feishu_call_tool |
+| `vc.v1.export.resourceReservationList` | [Feishu/Lark]-视频会议-导出-导出会议室预定数据-导出会议室预定数据，具体权限要求请参考「资源介绍」 | feishu_call_tool |
+| `vc.v1.meetingList.get` | [Feishu/Lark]-视频会议-会议数据-查询会议明细-查询会议明细，具体权限要求请参考[资源介绍] | feishu_read_tool |
+| `vc.v1.meeting.end` | [Feishu/Lark]-视频会议-会议管理-结束会议-结束一个进行中的会议 | feishu_call_tool |
+| `vc.v1.meeting.get` | [Feishu/Lark]-视频会议-会议管理-获取会议详情-获取一个会议的详细数据 | feishu_read_tool |
+| `vc.v1.meeting.invite` | [Feishu/Lark]-视频会议-会议管理-邀请参会人-邀请参会人进入会议 | feishu_call_tool |
+| `vc.v1.meeting.listByNo` | [Feishu/Lark]-视频会议-会议管理-获取与会议号关联的会议列表-获取指定时间范围（90天内)会议号关联的会议简要信息列表 | feishu_read_tool |
+| `vc.v1.meetingRecording.get` | [Feishu/Lark]-视频会议-录制-获取录制文件-获取一个会议的录制文件 | feishu_read_tool |
+| `vc.v1.meetingRecording.setPermission` | [Feishu/Lark]-视频会议-录制-授权录制文件-将一个会议的录制文件授权给组织、用户或公开到公网 | feishu_call_tool |
+| `vc.v1.meetingRecording.start` | [Feishu/Lark]-视频会议-录制-开始录制-在会议中开始录制 | feishu_call_tool |
+| `vc.v1.meetingRecording.stop` | [Feishu/Lark]-视频会议-录制-停止录制-在会议中停止录制 | feishu_call_tool |
+| `vc.v1.meeting.setHost` | [Feishu/Lark]-视频会议-会议管理-设置主持人-设置会议的主持人 | feishu_call_tool |
+| `vc.v1.participantList.get` | [Feishu/Lark]-视频会议-会议数据-查询参会人明细-查询参会人明细，具体权限要求请参考[资源介绍] | feishu_read_tool |
+| `vc.v1.participantQualityList.get` | [Feishu/Lark]-视频会议-会议数据-查询参会人会议质量数据-查询参会人会议质量数据（仅支持已结束会议），具体权限要求请参考「资源介绍」 | feishu_read_tool |
+| `vc.v1.reserve.apply` | [Feishu/Lark]-视频会议-预约-预约会议-创建一个会议预约 | feishu_call_tool |
+| `vc.v1.reserve.delete` | [Feishu/Lark]-视频会议-预约-删除预约-删除一个预约 | feishu_call_tool |
+| `vc.v1.reserve.get` | [Feishu/Lark]-视频会议-预约-获取预约-获取一个预约的详情 | feishu_read_tool |
+| `vc.v1.reserve.getActiveMeeting` | [Feishu/Lark]-视频会议-预约-获取活跃会议-获取一个预约的当前活跃会议 | feishu_read_tool |
+| `vc.v1.reserve.update` | [Feishu/Lark]-视频会议-预约-更新预约-更新一个预约 | feishu_call_tool |
+| `vc.v1.resourceReservationList.get` | [Feishu/Lark]-视频会议-会议数据-查询会议室预定数据-查询会议室预定数据，具体权限要求请参考「资源介绍」 | feishu_read_tool |
+| `vc.v1.room.search` | [Feishu/Lark]-视频会议-会议室管理-搜索会议室-该接口可以用来搜索会议室，支持使用关键词进行搜索，也支持使用自定义会议室 ID 进行查询。该接口只会返回用户有预定权限的会议室列表 | feishu_read_tool |
+| `wiki.v1.node.search` | [Feishu/Lark]-云文档-知识库-搜索 Wiki | feishu_read_tool |
+| `wiki.v2.space.create` | [Feishu/Lark]-云文档-知识库-知识空间-创建知识空间-此接口用于创建知识空间 | feishu_call_tool |
+| `wiki.v2.space.get` | [Feishu/Lark]-云文档-知识库-知识空间-获取知识空间信息-此接口用于根据知识空间 ID 查询知识空间的信息，包括空间的类型、可见性、分享状态等 | feishu_read_tool |
+| `wiki.v2.space.getNode` | [Feishu/Lark]-云文档-知识库-节点-获取知识空间节点信息-获取知识空间节点信息 | feishu_read_tool |
+| `wiki.v2.space.list` | [Feishu/Lark]-云文档-知识库-知识空间-获取知识空间列表-此接口用于获取有权限访问的知识空间列表 | feishu_read_tool |
+| `wiki.v2.spaceMember.create` | [Feishu/Lark]-云文档-知识库-空间成员-添加知识空间成员-添加知识空间成员或管理员 | feishu_call_tool |
+| `wiki.v2.spaceMember.delete` | [Feishu/Lark]-云文档-知识库-空间成员-删除知识空间成员-此接口用于删除知识空间成员或管理员 | feishu_call_tool |
+| `wiki.v2.spaceMember.list` | [Feishu/Lark]-云文档-知识库-空间成员-获取知识空间成员列表-获取知识空间的成员与管理员列表 | feishu_read_tool |
+| `wiki.v2.spaceNode.copy` | [Feishu/Lark]-云文档-知识库-节点-创建知识空间节点副本-此接口用于在知识空间创建节点副本到指定位置 | feishu_call_tool |
+| `wiki.v2.spaceNode.create` | [Feishu/Lark]-云文档-知识库-节点-创建知识空间节点-此接口用于在知识节点里创建[节点]到指定位置 | feishu_call_tool |
+| `wiki.v2.spaceNode.list` | [Feishu/Lark]-云文档-知识库-节点-获取知识空间子节点列表-此接口用于分页获取Wiki节点的子节点列表。此接口为分页接口。由于权限过滤，可能返回列表为空，但分页标记（has_more）为true，可以继续分页请求 | feishu_read_tool |
+| `wiki.v2.spaceNode.move` | [Feishu/Lark]-云文档-知识库-节点-移动知识空间节点-此方法用于在Wiki内移动节点，支持跨知识空间移动。如果有子节点，会携带子节点一起移动 | feishu_call_tool |
+| `wiki.v2.spaceNode.moveDocsToWiki` | [Feishu/Lark]-云文档-知识库-云文档-移动云空间文档至知识空间-该接口允许移动云空间文档至知识空间，并挂载在指定位置 | feishu_call_tool |
+| `wiki.v2.spaceNode.updateTitle` | [Feishu/Lark]-云文档-知识库-节点-更新知识空间节点标题-此接口用于更新节点标题 | feishu_call_tool |
+| `wiki.v2.spaceSetting.update` | [Feishu/Lark]-云文档-知识库-空间设置-更新知识空间设置-根据space_id更新知识空间公共设置 | feishu_call_tool |
+| `wiki.v2.task.get` | [Feishu/Lark]-云文档-知识库-云文档-获取任务结果-该方法用于获取wiki异步任务的结果 | feishu_read_tool |
+| `docx.builtin.search` | [飞书/Lark] - 云文档-文档 - 搜索文档 - 搜索云文档，只支持user_access_token | feishu_read_tool |
+| `docx.builtin.import` | [飞书/Lark] - 云文档-文档 - 导入文档 - 导入云文档，最大20MB | feishu_call_tool |
+| `cli.approval.approvals.search` | 搜索当前用户可发起的审批定义 | feishu_call_tool |
+| `cli.approval.approvals.get` | 获取审批定义详情 | feishu_read_tool |
+| `cli.approval.instances.get` | 获取单个审批实例详情 | feishu_read_tool |
+| `cli.approval.instances.create` | 创建审批实例 | feishu_call_tool |
+| `cli.approval.instances.cancel` | 撤回审批实例 | feishu_call_tool |
+| `cli.approval.instances.cc` | 抄送审批实例 | feishu_call_tool |
+| `cli.approval.instances.initiated` | 查询用户的已发起列表 | feishu_read_tool |
+| `cli.approval.tasks.remind` | 催办审批人 | feishu_call_tool |
+| `cli.approval.tasks.approve` | 同意审批任务 | feishu_call_tool |
+| `cli.approval.tasks.reject` | 拒绝审批任务 | feishu_call_tool |
+| `cli.approval.tasks.transfer` | 转交审批任务 | feishu_call_tool |
+| `cli.approval.tasks.query` | 查询用户的任务列表 | feishu_read_tool |
+| `cli.approval.tasks.add_sign` | 审批任务加签 | feishu_call_tool |
+| `cli.approval.tasks.rollback` | 退回审批任务 | feishu_call_tool |
+| `cli.attendance.user_tasks.query` | Obtain attendance result | feishu_read_tool |
+| `cli.calendar.calendars.create` | Create a shared calendar | feishu_call_tool |
+| `cli.calendar.calendars.delete` | Delete shared calendar | feishu_call_tool |
+| `cli.calendar.calendars.get` | Query calendar information | feishu_read_tool |
+| `cli.calendar.calendars.list` | Query the calendar list | feishu_read_tool |
+| `cli.calendar.calendars.patch` | Update calendar information | feishu_call_tool |
+| `cli.calendar.calendars.primary` | 查询主日历信息。推荐使用此 API 获取主日历 ID，无需先 list 再过滤 | feishu_read_tool |
+| `cli.calendar.calendars.search` | Search for calendars | feishu_read_tool |
+| `cli.calendar.event.attendees.batch_delete` | Delete event invitees | feishu_call_tool |
+| `cli.calendar.event.attendees.create` | Create event invitees | feishu_call_tool |
+| `cli.calendar.event.attendees.list` | Obtain event invitee list | feishu_read_tool |
+| `cli.calendar.events.create` | Create an event | feishu_call_tool |
+| `cli.calendar.events.delete` | Delete an event | feishu_call_tool |
+| `cli.calendar.events.get` | Obtain an event | feishu_read_tool |
+| `cli.calendar.events.instance_view` | Query event view | feishu_read_tool |
+| `cli.calendar.events.patch` | Update an event | feishu_call_tool |
+| `cli.calendar.events.search_event` | 搜索日程 | feishu_read_tool |
+| `cli.calendar.events.share_info` | 获取日程分享信息 | feishu_read_tool |
+| `cli.calendar.freebusys.list` | Query availability of the primary calendar | feishu_read_tool |
+| `cli.contact.user_profiles.batch_query` | 批量获取用户个人资料（个人状态、个性签名）。Identity: `user` only (`user_access_token`) | feishu_read_tool |
+| `cli.drive.files.copy` | Copy a file | feishu_call_tool |
+| `cli.drive.files.create_folder` | Create Folder | feishu_call_tool |
+| `cli.drive.files.list` | List items in folder | feishu_read_tool |
+| `cli.drive.files.patch` |  | feishu_call_tool |
+| `cli.drive.file.comments.batch_query` | Batch Query Comments | feishu_read_tool |
+| `cli.drive.file.comments.create_v2` | 开放平台：添加评论(V2) | feishu_call_tool |
+| `cli.drive.file.comments.list` | Get Document Comments in Pages | feishu_read_tool |
+| `cli.drive.file.comments.patch` | Solve or Restore a Comment | feishu_call_tool |
+| `cli.drive.file.comment.replys.create` | Add Reply | feishu_call_tool |
+| `cli.drive.file.comment.replys.delete` | Delete Reply | feishu_call_tool |
+| `cli.drive.file.comment.replys.list` | Get Replies List | feishu_read_tool |
+| `cli.drive.file.comment.replys.update` | Update Reply | feishu_call_tool |
+| `cli.drive.permission.members.auth` | Check whether the current user has a specific permission | feishu_read_tool |
+| `cli.drive.permission.members.create` | Add permissions | feishu_call_tool |
+| `cli.drive.permission.members.transfer_owner` | Transfer owner | feishu_call_tool |
+| `cli.drive.permission.public.get` | Get cloud document permission settings | feishu_read_tool |
+| `cli.drive.permission.public.patch` | Update common settings of a document | feishu_call_tool |
+| `cli.drive.metas.batch_query` | Obtain metadata | feishu_read_tool |
+| `cli.drive.user.remove_subscription` | Cancel User Subscription to Cloud Document Events | feishu_call_tool |
+| `cli.drive.user.subscription` | Subscribe to User Cloud Document Events | feishu_call_tool |
+| `cli.drive.user.subscription_status` | Query the Subscription Status of User Cloud Document Events | feishu_read_tool |
+| `cli.drive.file.statistics.get` | Obtain file's statistics | feishu_read_tool |
+| `cli.drive.file.view_records.list` | Obtain file view records | feishu_read_tool |
+| `cli.drive.file.comment.reply.reactions.update_reaction` | Add/Cancel Emoji Response | feishu_call_tool |
+| `cli.drive.quota_details.get` | 获取当前用户的容量信息，包含各业务使用量、租户配额是否超限、用户配额、所在部门配额 | feishu_read_tool |
+| `cli.im.chats.get` | Obtain group information. Identity: supports `user` and `bot`; the caller must be in the target chat to get full details, and must belong to the same tenant for internal chats | feishu_read_tool |
+| `cli.im.chats.link` | Get group share link. Identity: supports `user` and `bot`; the caller must be in the target chat, must be an owner or admin when chat sharing is restricted to owners/admins, and must belong to the same tenant for internal chats | feishu_call_tool |
+| `cli.im.chats.update` | Update group information. Identity: supports `user` and `bot` | feishu_call_tool |
+| `cli.im.chat.members.bots` | 获取群内机器人列表。Identity: supports `user` and `bot`; the caller must be in the target chat and must belong to the same tenant for internal chats | feishu_read_tool |
+| `cli.im.chat.members.create` | Add users or bots to a group. Identity: supports `user` and `bot`; the caller must be in the target chat; for `bot` calls, added users must be within the app's availability; for internal chats the operator must belong to the same tenant; if only owners/admins can add members, the caller must be an owner/admin, or a chat-creator bot with `im:chat:operate_as_owner` | feishu_call_tool |
+| `cli.im.chat.members.delete` | Remove users or bots from a group. Identity: supports `user` and `bot`; only group owner, admin, or creator bot can remove others; max 50 users or 5 bots per request | feishu_call_tool |
+| `cli.im.chat.members.get` | Obtain group member list. Identity: supports `user` and `bot`; the caller must be in the target chat and must belong to the same tenant for internal chats | feishu_read_tool |
+| `cli.im.chat.user_setting.batch_query` | 批量查询当前用户在群内的个人偏好设置 (e.g. `is_muted` mutes normal messages, `is_mute_at_all` mutes @all messages); up to 10 chats per request. Identity: `user` only (`user_access_token`); the caller must be in each target chat | feishu_read_tool |
+| `cli.im.chat.user_setting.batch_update` | 批量更新当前用户在群内的个人偏好设置 (e.g. `is_muted` mutes normal messages, `is_mute_at_all` mutes @all messages); up to 10 chats per request. Identity: `user` only (`user_access_token`); the caller must be in each target chat | feishu_call_tool |
+| `cli.im.chat.managers.add_managers` | Specify group administrators. Identity: supports `user` and `bot`; only the group owner can add managers; max 10 managers per chat (20 for super-large chats), and at most 5 bots per request | feishu_call_tool |
+| `cli.im.chat.managers.delete_managers` | Delete group administrators. Identity: supports `user` and `bot`; only the group owner can remove managers; max 50 users or 5 bots per request | feishu_call_tool |
+| `cli.im.chat.moderation.get` | Obtains the group member speech scopes. Identity: supports `user` and `bot`; the caller must be in the target chat and belong to the same tenant | feishu_read_tool |
+| `cli.im.chat.moderation.update` | Updates group speech scopes. Identity: supports `user` and `bot`; only the group owner (or creator bot with `im:chat:operate_as_owner`) can update; the caller must be in the chat | feishu_call_tool |
+| `cli.im.chat.nickname.delete` | Clear your own nickname in the chat (self-only). Identity: `user` only (`user_access_token`) | feishu_call_tool |
+| `cli.im.chat.nickname.get` | 获取调用 user 自己在群里的群昵称（self-only）。未设置时返空串。Get your own nickname in the chat (self-only). Identity: `user` only (`user_access_token`); returns an empty string when no nickname is set | feishu_read_tool |
+| `cli.im.chat.nickname.update` | 设置或更新调用 user 自己在群里的群昵称（self-only，非空字符串；清空请用 DELETE）。Set or update your own nickname in the chat (self-only). Identity: `user` only (`user_access_token`); `nickname` must be a non-empty string (max 300 bytes). Use DELETE to clear it | feishu_call_tool |
+| `cli.im.chat.join_requests.handle` | 批量审批入群申请（approve/reject，仅群主/管理员，user_access_token）。Approve or reject pending join requests in bulk (1-50 items, processed in order). Identity: `user` only (`user_access_token`); the caller must be the chat owner or an admin. `results[]` mirrors `items[]` in count and order — check each `result` (`success` / `failed` / `already_handled`); exit 0 does not mean every item succeeded | feishu_call_tool |
+| `cli.im.chat.join_requests.list` | 列出群的待审批入群申请（仅群主/管理员，user_access_token）。List pending join requests for a chat. Identity: `user` only (`user_access_token`); the caller must be the chat owner or an admin. Paginated (`page_size` 1-100); stop on `has_more == false` — `page_token` is returned even on the last page, so paging while it is present never terminates | feishu_read_tool |
+| `cli.im.messages.delete` | Recall message. Identity: supports `user` and `bot`; for `bot` calls, the bot must be in the chat to revoke group messages; to revoke another user's group message, the bot must be the owner, an admin, or the creator; for user P2P recalls, the target user must be within the bot's availability | feishu_call_tool |
+| `cli.im.messages.forward` | Forward a message. Identity: supports `user` and `bot` | feishu_call_tool |
+| `cli.im.messages.patch` | Update sent message card. Update an interactive message card sent by the app. Identity: supports `user` and `bot`; the message must have been sent within the last 14 days, and `content` must be a JSON-serialized string no larger than 30 KB | feishu_call_tool |
+| `cli.im.messages.read_status` | 批量查询当前用户对消息的已读状态。Identity: `user` only (`user_access_token`); accepts up to 50 message IDs and returns `items[].is_read` plus `invalid_message_ids` for messages that cannot be determined.Must-read | feishu_read_tool |
+| `cli.im.messages.read_users` | Query the read status of a message as the sender. Identity: supports `user` and `bot`. With `user_access_token`, the user must still be in the chat and can query read users only for messages they sent within the last 7 days. With `tenant_access_token`, the bot must be in the chat and can only query its own messages within the last 7 days.Must-read | feishu_read_tool |
+| `cli.im.reactions.batch_query` | Batch list message reactions. Identity: supports `user` and `bot`.Must-read | feishu_read_tool |
+| `cli.im.reactions.create` | Add a reaction for a message. Identity: supports `user` and `bot`; the caller must be in the conversation that contains the message.Must-read | feishu_call_tool |
+| `cli.im.reactions.delete` | Delete a reaction for a message. Identity: supports `user` and `bot`; the caller must be in the conversation that contains the message, and can only delete reactions added by itself.Must-read | feishu_call_tool |
+| `cli.im.reactions.list` | List message reactions. Identity: supports `user` and `bot`; the caller must be in the conversation that contains the message.Must-read | feishu_read_tool |
+| `cli.im.threads.forward` | Forward a thread. Identity: supports `user` and `bot` | feishu_call_tool |
+| `cli.im.images.create` | Upload image. Identity: supports `user` and `bot`; user identity requires `im:resource` scope on the UAT | feishu_call_tool |
+| `cli.im.files.create` | Upload file. Identity: supports `user` and `bot`; user identity requires `im:resource` scope on the UAT | feishu_call_tool |
+| `cli.im.files.folder` | 获取消息或消息链接中资源文件夹的子文件列表。recursive=false 仅返回给定 file_key 的一层子项（folder 子项带 children_count 提示深度）；recursive=true 返回完整层级树（嵌套 children） | feishu_read_tool |
+| `cli.im.pins.create` | Pin a message. Identity: supports `user` and `bot` | feishu_call_tool |
+| `cli.im.pins.delete` | Unpin a message. Identity: supports `user` and `bot` | feishu_call_tool |
+| `cli.im.pins.list` | Get pins in group. Identity: supports `user` and `bot` | feishu_read_tool |
+| `cli.im.feed.groups.batch_add_item` | Batch add feed cards to a feed group. Identity: `user` only (`user_access_token`).Must-read | feishu_call_tool |
+| `cli.im.feed.groups.batch_query` | Batch query feed groups. Identity: `user` only (`user_access_token`).Must-read | feishu_read_tool |
+| `cli.im.feed.groups.batch_remove_item` | Batch remove feed cards from a feed group. Identity: `user` only (`user_access_token`).Must-read | feishu_call_tool |
+| `cli.im.feed.groups.create` | Create a feed group. Identity: `user` only (`user_access_token`).Must-read | feishu_call_tool |
+| `cli.im.feed.groups.delete` | Delete a feed group. Identity: `user` only (`user_access_token`).Must-read | feishu_call_tool |
+| `cli.im.feed.groups.update` | Update a feed group. Identity: `user` only (`user_access_token`).Must-read | feishu_call_tool |
+| `cli.mail.multi_entity.search` | Search contacts for composing email | feishu_call_tool |
+| `cli.mail.user_mailboxes.accessible_mailboxes` | List accessible mailboxes | feishu_read_tool |
+| `cli.mail.user_mailboxes.profile` | Get user email information | feishu_read_tool |
+| `cli.mail.user_mailboxes.search` | Search email | feishu_call_tool |
+| `cli.mail.user_mailbox.drafts.cancel_scheduled_send` | Cancel scheduled transmission | feishu_call_tool |
+| `cli.mail.user_mailbox.drafts.create` | Create draft | feishu_call_tool |
+| `cli.mail.user_mailbox.drafts.delete` | Delete draft | feishu_call_tool |
+| `cli.mail.user_mailbox.drafts.get` | Get draft content | feishu_read_tool |
+| `cli.mail.user_mailbox.drafts.list` | List of drafts | feishu_read_tool |
+| `cli.mail.user_mailbox.drafts.send` | Send draft | feishu_call_tool |
+| `cli.mail.user_mailbox.drafts.update` | Update draft | feishu_call_tool |
+| `cli.mail.user_mailbox.event.subscribe` | Subscribe to mail events | feishu_call_tool |
+| `cli.mail.user_mailbox.event.subscription` | Get Subscription Status | feishu_read_tool |
+| `cli.mail.user_mailbox.event.unsubscribe` | Cancel Subscribe | feishu_call_tool |
+| `cli.mail.user_mailbox.folders.create` | Create Email Folder | feishu_call_tool |
+| `cli.mail.user_mailbox.folders.delete` | Delete Email Folder | feishu_call_tool |
+| `cli.mail.user_mailbox.folders.get` | Get mailbox folder information | feishu_read_tool |
+| `cli.mail.user_mailbox.folders.list` | List Email Folders | feishu_read_tool |
+| `cli.mail.user_mailbox.folders.patch` | Update Email Folder | feishu_call_tool |
+| `cli.mail.user_mailbox.labels.create` | Create label | feishu_call_tool |
+| `cli.mail.user_mailbox.labels.delete` | Delete label | feishu_call_tool |
+| `cli.mail.user_mailbox.labels.get` | Get label information | feishu_read_tool |
+| `cli.mail.user_mailbox.labels.list` | List label | feishu_read_tool |
+| `cli.mail.user_mailbox.labels.patch` | Update label | feishu_call_tool |
+| `cli.mail.user_mailbox.mail_contacts.create` | Create Email Contact | feishu_call_tool |
+| `cli.mail.user_mailbox.mail_contacts.delete` | Delete Email Contact | feishu_call_tool |
+| `cli.mail.user_mailbox.mail_contacts.list` | List Email Contacts | feishu_read_tool |
+| `cli.mail.user_mailbox.mail_contacts.patch` | Modify Email Contact's Info | feishu_call_tool |
+| `cli.mail.user_mailbox.message.attachments.download_url` | Get Attachment Download Links | feishu_read_tool |
+| `cli.mail.user_mailbox.messages.batch_get` | Batch get email details | feishu_call_tool |
+| `cli.mail.user_mailbox.messages.batch_modify` | Batch Modify Mail Message | feishu_call_tool |
+| `cli.mail.user_mailbox.messages.batch_trash` | Batch Trash Mail Message | feishu_call_tool |
+| `cli.mail.user_mailbox.messages.get` | Get Email Details | feishu_read_tool |
+| `cli.mail.user_mailbox.messages.list` | List Emails | feishu_read_tool |
+| `cli.mail.user_mailbox.messages.modify` | Modify Mail message | feishu_call_tool |
+| `cli.mail.user_mailbox.messages.send_status` | 查询邮件发送状态 | feishu_read_tool |
+| `cli.mail.user_mailbox.messages.trash` | Trash Mail Message | feishu_call_tool |
+| `cli.mail.user_mailbox.rules.create` | Create Auto Filter | feishu_call_tool |
+| `cli.mail.user_mailbox.rules.delete` | Delete Auto Filter | feishu_call_tool |
+| `cli.mail.user_mailbox.rules.list` | List Auto Filters | feishu_read_tool |
+| `cli.mail.user_mailbox.rules.reorder` | Reorder Auto Filters | feishu_call_tool |
+| `cli.mail.user_mailbox.rules.update` | Update Auto Filter | feishu_call_tool |
+| `cli.mail.user_mailbox.sent_messages.get_recall_detail` | Check the progress of email withdrawal | feishu_read_tool |
+| `cli.mail.user_mailbox.sent_messages.recall` | Withdraw a sent email | feishu_call_tool |
+| `cli.mail.user_mailbox.settings.send_as` | List send-as mailboxes | feishu_read_tool |
+| `cli.mail.user_mailbox.template.attachments.download_url` | 获取指定邮件模板下的附件下载链接。用于在已知模板 ID 与附件 ID 的场景下，二次获取附件的有效访问 URL，便于在用户端预览或下载邮件模板中的附件资源 | feishu_read_tool |
+| `cli.mail.user_mailbox.templates.create` | 在指定用户邮箱下创建一份可复用的个人邮件模板。请求时需传入完整的模板对象（含名称、主题、正文、收件信息、附件等），创建成功后返回完整模板内容（含系统生成的 template_id），适用于将常用邮件内容沉淀为模板以便后续快速发送同类型邮件 | feishu_call_tool |
+| `cli.mail.user_mailbox.templates.delete` | 永久删除指定用户邮箱下的某个个人邮件模板。删除操作不可恢复，删除后该模板将无法在「列出邮件模板」「获取邮件模板」等接口中再返回，常用于清理已废弃或不再使用的模板 | feishu_call_tool |
+| `cli.mail.user_mailbox.templates.get` | 获取指定邮件模板的完整详情，包括模板名称、主题、正文（HTML 或纯文本）、收件人/抄送/密送地址、附件信息等所有字段。常用于编辑模板前回填表单，或在发送邮件场景下读取模板内容做二次填充 | feishu_read_tool |
+| `cli.mail.user_mailbox.templates.list` | 列出指定用户邮箱下的全部个人邮件模板基本信息（一次性返回，不分页），常用于在编辑或发送邮件场景下展示可选模板列表。如需获取模板正文与附件等完整字段，请通过获取个人邮件模板详情接口按 `template_id` 查询 | feishu_read_tool |
+| `cli.mail.user_mailbox.templates.update` | 以全量替换的方式更新指定邮件模板的所有字段（包括名称、主题、正文、附件、收件信息等）。本接口为「全量更新」语义：请求时需传入完整的模板对象，未携带的字段将被清空。调用依赖：如仅修改部分字段，请先调用获取个人邮件模板详情接口拿到完整模板，在本地修改后再传回本接口，以避免漏传字段导致数据丢失 | feishu_call_tool |
+| `cli.mail.user_mailbox.threads.batch_modify` | Batch Modify Mail Threads | feishu_call_tool |
+| `cli.mail.user_mailbox.threads.batch_trash` | Batch Trash Mail Thread | feishu_call_tool |
+| `cli.mail.user_mailbox.threads.get` | Get Mail Thread Message List | feishu_read_tool |
+| `cli.mail.user_mailbox.threads.list` | List Mail Thread | feishu_read_tool |
+| `cli.mail.user_mailbox.threads.modify` | Modify Mail Thread | feishu_call_tool |
+| `cli.mail.user_mailbox.threads.trash` | Delete Mail Thread | feishu_call_tool |
+| `cli.mindnotes.nodes.create` | 创建/更新思维笔记节点 | feishu_call_tool |
+| `cli.mindnotes.nodes.list` | 获取思维笔记节点列表 | feishu_read_tool |
+| `cli.minutes.minutes.get` | Get minutes meta | feishu_read_tool |
+| `cli.okr.alignments.delete` | Delete OKR Alignment | feishu_call_tool |
+| `cli.okr.alignments.get` | Get OKR Alignment | feishu_read_tool |
+| `cli.okr.categories.list` | List all okr categories | feishu_read_tool |
+| `cli.okr.cycles.list` | Get user OKR Cycle list | feishu_read_tool |
+| `cli.okr.cycles.objectives_position` | Update the positions of all Objectives in a user's OKR cycle | feishu_call_tool |
+| `cli.okr.cycles.objectives_weight` | Update the weights of all Objectives in a user's OKR cycle | feishu_call_tool |
+| `cli.okr.cycle.objectives.create` | Create Objective in OKR Cycle | feishu_call_tool |
+| `cli.okr.cycle.objectives.list` | Get Objectives in OKR Cycle | feishu_read_tool |
+| `cli.okr.indicators.patch` | Update Indicator | feishu_call_tool |
+| `cli.okr.key_results.delete` | Delete Key Result | feishu_call_tool |
+| `cli.okr.key_results.get` | Get Key Result | feishu_read_tool |
+| `cli.okr.key_results.patch` | Modify Key Result | feishu_call_tool |
+| `cli.okr.key_result.indicators.list` | Get Indicator of a Key Result | feishu_read_tool |
+| `cli.okr.objectives.delete` | Delete Objective | feishu_call_tool |
+| `cli.okr.objectives.get` | Get Objective | feishu_read_tool |
+| `cli.okr.objectives.key_results_position` | Update the positions of all Key Results of an Objective | feishu_call_tool |
+| `cli.okr.objectives.key_results_weight` | Update the weights of all Key Results of an Objective | feishu_call_tool |
+| `cli.okr.objectives.patch` | Modify Objective | feishu_call_tool |
+| `cli.okr.objective.alignments.create` | Create Object Alignment | feishu_call_tool |
+| `cli.okr.objective.alignments.list` | List Alignment of an Objective | feishu_read_tool |
+| `cli.okr.objective.indicators.list` | Get Indicator of an Objective | feishu_read_tool |
+| `cli.okr.objective.key_results.create` | Create Key Result of an Objective | feishu_call_tool |
+| `cli.okr.objective.key_results.list` | List Key Results of an Objective | feishu_read_tool |
+| `cli.sheets.spreadsheets.create` | Create a spreadsheet | feishu_call_tool |
+| `cli.sheets.spreadsheets.get` | Get spreadsheet information | feishu_read_tool |
+| `cli.sheets.spreadsheets.patch` | Modify spreadsheet properties | feishu_call_tool |
+| `cli.sheets.spreadsheet.sheet.filters.create` | Create a filter | feishu_call_tool |
+| `cli.sheets.spreadsheet.sheet.filters.delete` | Delete a filter | feishu_call_tool |
+| `cli.sheets.spreadsheet.sheet.filters.get` | Obtain filter | feishu_read_tool |
+| `cli.sheets.spreadsheet.sheet.filters.update` | Update a filter | feishu_call_tool |
+| `cli.sheets.spreadsheet.sheets.find` | Find cells | feishu_read_tool |
+| `cli.slides.xml_presentations.create` | 以 XML 格式创建演示文稿 | feishu_call_tool |
+| `cli.slides.xml_presentations.get` | 读取演示文稿全文信息，XML 格式返回 | feishu_read_tool |
+| `cli.slides.xml_presentation.history.list` | 列出 XML 演示文稿历史版本 | feishu_read_tool |
+| `cli.slides.xml_presentation.history.revert` | 按 history_version_id 发起 XML 演示文稿历史版本回滚任务 | feishu_call_tool |
+| `cli.slides.xml_presentation.history.revert_status` | 查询 XML 演示文稿历史回滚任务状态 | feishu_read_tool |
+| `cli.slides.xml_presentation.slide.create` | 在指定 XML 演示文稿下创建页面 | feishu_call_tool |
+| `cli.slides.xml_presentation.slide.delete` | 在指定 XML 演示文稿下删除页面 | feishu_call_tool |
+| `cli.slides.xml_presentation.slide.get` | 获取指定 XML 演示文稿的单个页面 XML 内容 | feishu_read_tool |
+| `cli.slides.xml_presentation.slide.replace` | 对指定 XML 演示文稿页面进行元素级别的局部替换 | feishu_call_tool |
+| `cli.slides.xml_presentation.slide_image.list` | 获取幻灯片截图 | feishu_read_tool |
+| `cli.slides.xml_presentation.slide_image.render` | 渲染页面截图为图片 | feishu_call_tool |
+| `cli.task.tasks.create` | Create Task | feishu_call_tool |
+| `cli.task.tasks.delete` | Delete Task | feishu_call_tool |
+| `cli.task.tasks.get` | Get Task Details | feishu_read_tool |
+| `cli.task.tasks.list` | List Tasks | feishu_read_tool |
+| `cli.task.tasks.patch` | Patch Task | feishu_call_tool |
+| `cli.task.tasklists.add_members` | Add tasklist members | feishu_call_tool |
+| `cli.task.tasklists.create` | Create Tasklist | feishu_call_tool |
+| `cli.task.tasklists.delete` | Delete Tasklist | feishu_call_tool |
+| `cli.task.tasklists.get` | Get Tasklist Details | feishu_read_tool |
+| `cli.task.tasklists.list` | List Tasklists | feishu_read_tool |
+| `cli.task.tasklists.patch` | Patch Tasklist | feishu_call_tool |
+| `cli.task.tasklists.remove_members` | Remove Tasklist Members | feishu_call_tool |
+| `cli.task.tasklists.tasks` | Get Tasks of Tasklist | feishu_read_tool |
+| `cli.task.subtasks.create` | Create Subtask | feishu_call_tool |
+| `cli.task.subtasks.list` | List Subtasks of Task | feishu_read_tool |
+| `cli.task.sections.create` | Create Section | feishu_call_tool |
+| `cli.task.sections.delete` | Delete Section | feishu_call_tool |
+| `cli.task.sections.get` | Get Section | feishu_read_tool |
+| `cli.task.sections.list` | List Sections | feishu_read_tool |
+| `cli.task.sections.patch` | Patch Section | feishu_call_tool |
+| `cli.task.sections.tasks` | List Tasks of Section | feishu_read_tool |
+| `cli.task.custom_fields.add` | Add Custom Field to Resource | feishu_call_tool |
+| `cli.task.custom_fields.create` | Create Custom Field | feishu_call_tool |
+| `cli.task.custom_fields.get` | Get Custom Field | feishu_read_tool |
+| `cli.task.custom_fields.list` | List Custom Fields | feishu_read_tool |
+| `cli.task.custom_fields.patch` | Update Custom Field | feishu_call_tool |
+| `cli.task.custom_fields.remove` | Remove Custom Field From Resource | feishu_call_tool |
+| `cli.task.custom_field_options.create` | Create Custom Field Option | feishu_call_tool |
+| `cli.task.custom_field_options.patch` | Update Custom Field Option | feishu_call_tool |
+| `cli.task.members.add` | Add Task Member | feishu_call_tool |
+| `cli.task.members.remove` | Remove Task Member | feishu_call_tool |
+| `cli.vc.meeting.get` | Obtain meeting details | feishu_read_tool |
+| `cli.wiki.spaces.create` | Create Wiki space | feishu_call_tool |
+| `cli.wiki.spaces.get` | Access to Wiki space information | feishu_read_tool |
+| `cli.wiki.spaces.get_node` | Get Wiki node information | feishu_read_tool |
+| `cli.wiki.spaces.list` | Get a list of Wiki spaces | feishu_read_tool |
+| `cli.wiki.members.create` | Add Wiki space members | feishu_call_tool |
+| `cli.wiki.members.delete` | Delete Wiki space members | feishu_call_tool |
+| `cli.wiki.members.list` | Obtain Wiki space members | feishu_read_tool |
+| `cli.wiki.nodes.copy` | Create a node copy in Wiki | feishu_call_tool |
+| `cli.wiki.nodes.create` | Create node in Wiki | feishu_call_tool |
+| `cli.wiki.nodes.list` | Get the list of child nodes in Wiki | feishu_read_tool |
+| `sheets.v2.tools.read` | 读取电子表格单元格、公式、图表及结构。tool_name 如 get_workbook_structure、get_cell_ranges、get_range_as_csv；input 为对应操作的 JSON 对象。 | feishu_read_tool |
+| `sheets.v2.tools.write` | 修改电子表格单元格、公式、格式、图表、透视及结构。tool_name 如 set_cell_range、batch_update、modify_sheet_structure；input 为对应操作 JSON；部分成功不自动回滚。 | feishu_call_tool |
+| `im.v1.chat.create` | [Feishu/Lark]-群组-群组管理-创建群-创建群聊，创建时支持设置群头像、群名称、群主以及群类型等配置，同时支持邀请群成员、群机器人入群 | feishu_call_tool |
+| `im.v1.message.create` | [Feishu/Lark]-消息-消息管理-发送消息-调用该接口向指定用户或者群聊发送消息。支持发送的消息类型包括文本、富文本、卡片、群名片、个人名片、图片、视频、音频、文件以及表情包等 | feishu_call_tool |
+| `im.v1.message.list` | [Feishu/Lark]-消息-消息管理-获取会话历史消息-获取指定会话（包括单聊、群组）内的历史消息（即聊天记录） | feishu_read_tool |
+| `im.v1.message.reply` | [Feishu/Lark]-消息-消息管理-回复消息-调用该接口回复指定消息。回复的内容支持文本、富文本、卡片、群名片、个人名片、图片、视频、文件等多种类型 | feishu_call_tool |

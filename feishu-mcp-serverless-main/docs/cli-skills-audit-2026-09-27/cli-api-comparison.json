@@ -1,0 +1,5317 @@
+[
+  {
+    "command": "lark-cli approval approvals search",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/approvals/search_launchable",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:approval:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "e75b82d4a183e8a0110c601b33605b6cfe023795688c00e02d7e5351285f08cd"
+  },
+  {
+    "command": "lark-cli approval approvals get",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "GET",
+    "path": "/open-apis/approval/v4/approvals/{approval_code}/detail",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:approval:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "e689d01378d89d7b621171b1dca9b3cfaa7362c28fb4cc56a9c24a793ae57356"
+  },
+  {
+    "command": "lark-cli approval instances get",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "GET",
+    "path": "/open-apis/approval/v4/instances/detail",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "02be5b8e456b402f9b73cb0dc780e35d26cd24a18c8d2b6829c9752ddcc272d2"
+  },
+  {
+    "command": "lark-cli approval instances create",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/instances/initiate",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "6353ebc536816839e201861137ae2f0d3aaf06adef772bd63ff62b8b6c66d188"
+  },
+  {
+    "command": "lark-cli approval instances cancel",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/instances/recall",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "2d6e3328806defbc081980cf5d7ccb807a29bebceef7d9e6220e574f893abc8d"
+  },
+  {
+    "command": "lark-cli approval instances cc",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/instances/add_cc",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "6233f9ca4e163042d44e7e3c17e446ca209754bc9d82e9ec34c61baf28239b0b"
+  },
+  {
+    "command": "lark-cli approval instances initiated",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "GET",
+    "path": "/open-apis/approval/v4/instances/initiated",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "24d6f4e3b53a4d3501dbbd9f0ca12c9fb4a0ea3498f768c589b673a7c31b3c4e"
+  },
+  {
+    "command": "lark-cli approval tasks remind",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/instances/remind",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:instance:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "595f098fa98dc34c14da557abf195d7bfce6f39d54f1ace8662a024e8575e160"
+  },
+  {
+    "command": "lark-cli approval tasks approve",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/tasks/pass",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "97e5c67cc1037a54b5620b8f5c23acea913cca0f38902b7402ae109feb1eb105"
+  },
+  {
+    "command": "lark-cli approval tasks reject",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/tasks/refuse",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "b4ca9b60dae658b66ada9e66e186447302eb9e6ceb45aa4eeb432d730e76b666"
+  },
+  {
+    "command": "lark-cli approval tasks transfer",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/tasks/forward",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "1ca8bbf9df6f2a1f1e5bbe8f431e3b23d962ae8317e364249116e9f860deae20"
+  },
+  {
+    "command": "lark-cli approval tasks query",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "GET",
+    "path": "/open-apis/approval/v4/tasks",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "120fdd1e3d3b19f364eacac16af2bc58d8407226ba6d135e9f5687d3a7b7a902"
+  },
+  {
+    "command": "lark-cli approval tasks add_sign",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/tasks/add_sign",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "591570537b8719bd289b35230c4647c698e1ec8cfea4db4dcf89c75b9d3f1f89"
+  },
+  {
+    "command": "lark-cli approval tasks rollback",
+    "source": "internal/registry/catalog/services/approval.json",
+    "method": "POST",
+    "path": "/open-apis/approval/v4/tasks/rollback",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "approval:task:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "b4c2553e168e79dab722b60cb4bb334772b6a249d738dd40063f391bee006b95"
+  },
+  {
+    "command": "lark-cli attendance user_tasks query",
+    "source": "internal/registry/catalog/services/attendance.json",
+    "method": "POST",
+    "path": "/open-apis/attendance/v1/user_tasks/query",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "attendance.v1.userTask.query",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "attendance:task:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "4190080d63ed2bafb07ba888f540524cf176ec73ac0624626b8ab37fff4d8788"
+  },
+  {
+    "command": "lark-cli calendar calendars create",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar:create"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "5463ea6d8735e664e6d8e3a194a2b2353542140e1add0bdbc57be0d81ce91679"
+  },
+  {
+    "command": "lark-cli calendar calendars delete",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "DELETE",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar:delete"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "684a873a55d8e8f1bded3672fc380c5b0adaf38c2acc0612c6d40f5cda1a1fa7"
+  },
+  {
+    "command": "lark-cli calendar calendars get",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "GET",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "fe5228f1a86d1eeaa741de70a9e0a29a6f8c12e844875de1bd6d897b6c0fbdf6"
+  },
+  {
+    "command": "lark-cli calendar calendars list",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "GET",
+    "path": "/open-apis/calendar/v4/calendars",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.calendar:readonly",
+        "calendar:calendar:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "0c28066c5395abc58f3d960552cd8cb0b517c5ad25052601639cbb124f78f3f1"
+  },
+  {
+    "command": "lark-cli calendar calendars patch",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "PATCH",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8c4653430e427cafde4eaeba74ca96ac66942622e2b53432b01b338278d1cf52"
+  },
+  {
+    "command": "lark-cli calendar calendars primary",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/primary",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.primary"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar.calendar:readonly",
+        "calendar:calendar:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "e02cb22fff1e1db1fe280612e03de02ef41122f6dbec9e4f98665a4841f1a961"
+  },
+  {
+    "command": "lark-cli calendar calendars search",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/search",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendar.search"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "fd6bfc26294d57020b00f1cfbc68e3b30fac06bd54468429a210cc525f581101"
+  },
+  {
+    "command": "lark-cli calendar event.attendees batch_delete",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}/attendees/batch_delete",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEventAttendee.batchDelete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar.event:writeonly",
+        "calendar:calendar.event:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "62559a9b51296c884b76026fc7eeb3cced3d8c38339677c53cc0d6e20dfe8649"
+  },
+  {
+    "command": "lark-cli calendar event.attendees create",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}/attendees",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEventAttendee.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar.event:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "feac52624d34c43d46b39b75fd018203cc6df9287656268113c6b1cc8d42c421"
+  },
+  {
+    "command": "lark-cli calendar event.attendees list",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "GET",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}/attendees",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEventAttendee.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.event:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "9682eb1f180fa27bc591a0e3236a8fb7ec27345a1fb4be9bc5eb5da9dca37984"
+  },
+  {
+    "command": "lark-cli calendar events create",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEvent.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar.event:create"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "71ab476e3a21d37e9d616660b7e294a51d189e6654edbb0cd6f399cfaee55b29"
+  },
+  {
+    "command": "lark-cli calendar events delete",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "DELETE",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEvent.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar.event:writeonly",
+        "calendar:calendar.event:delete"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "10fd03ee72521ab758acd1b937dee7ab2899c234f335f44425725ee39a7486f2"
+  },
+  {
+    "command": "lark-cli calendar events get",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "GET",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEvent.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.event:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "97d0c55853c660e3aabfb63e0086df168b16f3ddbf84a57c144dc7dd01d06f97"
+  },
+  {
+    "command": "lark-cli calendar events instance_view",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "GET",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/instance_view",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEvent.instanceView"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.event:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "401dbbbfa647bdeea1645798a32e6273e7e6732dffec0b5036ed821b01762512"
+  },
+  {
+    "command": "lark-cli calendar events patch",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "PATCH",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.calendarEvent.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar",
+        "calendar:calendar.event:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "de34145de178ad7669cb85a6dab08b85d369f7b1795b179f8dd53073a88c5129"
+  },
+  {
+    "command": "lark-cli calendar events search_event",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/search_event",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.event:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "39f139d0138fa7d7506a9982b6a46ce2cc0901743befd106ba84495b907425f1"
+  },
+  {
+    "command": "lark-cli calendar events share_info",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/calendars/{calendar_id}/events/{event_id}/share_info",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.event:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "69c91294c2b8b1d5c2515851e794c91a6c29e429014eefbdf3db4b17d9365a49"
+  },
+  {
+    "command": "lark-cli calendar freebusys list",
+    "source": "internal/registry/catalog/services/calendar.json",
+    "method": "POST",
+    "path": "/open-apis/calendar/v4/freebusy/list",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "calendar.v4.freebusy.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "calendar:calendar:readonly",
+        "calendar:calendar",
+        "calendar:calendar.free_busy:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "07627d5cfcf6fef29b57087a400ef4bb60421b45fad0cf99fc03b00b62dc2244"
+  },
+  {
+    "command": "lark-cli contact user_profiles batch_query",
+    "source": "internal/registry/catalog/services/contact.json",
+    "method": "POST",
+    "path": "/open-apis/profile/v2/user_profiles/batch_query",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "profile:user_profile:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "bad6ef3f51c34d4b16510abd2a8b19d65b8721ecd9834ee54b000de3431c4d5d"
+  },
+  {
+    "command": "lark-cli drive files copy",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/files/{file_token}/copy",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.file.copy"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:document:copy"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8f07037f4b787c1f2027b95369c5e494de7e4e7ac4188665e450542feb2afe16"
+  },
+  {
+    "command": "lark-cli drive files create_folder",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/files/create_folder",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.file.createFolder"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "space:folder:create"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "50b51eaae85feba2664a7599b31c2938cc863015794b71f693e72a4c4ccb76a9"
+  },
+  {
+    "command": "lark-cli drive files list",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/files",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.file.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "space:document:retrieve"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d506477f2e837396334f9bfea1a56eefea168ff68f364067a91dd71c4e7b8547"
+  },
+  {
+    "command": "lark-cli drive files patch",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "PATCH",
+    "path": "/open-apis/drive/v1/files/{file_token}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docx:document:write_only",
+        "sheets:spreadsheet:write_only",
+        "base:app:update",
+        "drive:file:upload"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "89ad86dbe7af401289cd5503261f122cd347e1c7be8c0221a2aead40d419dafe"
+  },
+  {
+    "command": "lark-cli drive file.comments batch_query",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/batch_query",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileComment.batchQuery"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "1bdf62fbc6cadb6aff7519af5891e235dbc086c5262d4f6db6c70793a6314e36"
+  },
+  {
+    "command": "lark-cli drive file.comments create_v2",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/files/{file_token}/new_comments",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docs:document.comment:create",
+        "docs:document.comment:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "dc8537c8e9da91fec11f1d1e8924382ee811373422d3806edba72e9e5bd3bc87"
+  },
+  {
+    "command": "lark-cli drive file.comments list",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileComment.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "drive:drive:readonly",
+        "docs:doc:readonly",
+        "sheets:spreadsheet:readonly",
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "0d6ef85d7ed55b2b936d67731cac29f37bec2cbb8f52b6abbf2f477b2935b881"
+  },
+  {
+    "command": "lark-cli drive file.comments patch",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "PATCH",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/{comment_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileComment.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "drive:drive:readonly",
+        "docs:doc:readonly",
+        "sheets:spreadsheet:readonly",
+        "docs:document.comment:write_only",
+        "docs:document.comment:update"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "f76dc540c0e48e6f58dbdf39135cf985bdc915369fef49a7036235c913cc726a"
+  },
+  {
+    "command": "lark-cli drive file.comment.replys create",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/{comment_id}/replies",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "drive:drive:readonly",
+        "docs:doc:readonly",
+        "sheets:spreadsheet:readonly",
+        "docs:document.comment:create"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "fa469cea9f42580569981a0bdde83e58e29ecbe0256377fd50876616dc60d822"
+  },
+  {
+    "command": "lark-cli drive file.comment.replys delete",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "DELETE",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/{comment_id}/replies/{reply_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileCommentReply.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "drive:drive:readonly",
+        "docs:doc:readonly",
+        "sheets:spreadsheet:readonly",
+        "docs:document.comment:write_only",
+        "docs:document.comment:delete"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "cf54b21c1c01189d5bb4c3f82d64fcf733bf4dca18530040e9d4b9026d42df4f"
+  },
+  {
+    "command": "lark-cli drive file.comment.replys list",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/{comment_id}/replies",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileCommentReply.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "94db6fa04b9bb65ea984829fd6a88f8b9901ddc78ae75b1d5e1e773e56c5ed05"
+  },
+  {
+    "command": "lark-cli drive file.comment.replys update",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "PUT",
+    "path": "/open-apis/drive/v1/files/{file_token}/comments/{comment_id}/replies/{reply_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileCommentReply.update"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "drive:drive:readonly",
+        "docs:doc:readonly",
+        "sheets:spreadsheet:readonly",
+        "docs:document.comment:write_only",
+        "docs:document.comment:update"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "ee92870e8d997a5b154fcade32d8c80cd72916c756c6f4cc9e12b40b00593e48"
+  },
+  {
+    "command": "lark-cli drive permission.members auth",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/permissions/{token}/members/auth",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.permissionMember.auth"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "bitable:bitable",
+        "wiki:wiki",
+        "bitable:app",
+        "docs:permission.member:auth"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "532a9a32991da09fd231aec79c49c8f76ede656352a9f57e263a891ec069a15b"
+  },
+  {
+    "command": "lark-cli drive permission.members create",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/permissions/{token}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.permissionMember.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:file",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "wiki:wiki",
+        "bitable:bitable",
+        "bitable:app",
+        "docs:permission.member:create"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "e9556041f45ecd471ab151741d872030c2cde174bdbf5ecd9025e8b8d66929ce"
+  },
+  {
+    "command": "lark-cli drive permission.members transfer_owner",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/permissions/{token}/members/transfer_owner",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.permissionMember.transferOwner"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "bitable:bitable",
+        "wiki:wiki",
+        "bitable:app",
+        "docs:permission.member:transfer"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "e64a20b60f231aaa05051f87d27ece1cf7c6540d3d7ff03da6988c1f0acde78e"
+  },
+  {
+    "command": "lark-cli drive permission.public get",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/permissions/{token}/public",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.permissionPublic.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "drive:file",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "wiki:wiki",
+        "bitable:bitable",
+        "docs:permission.setting:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "1ba4eae491fcd7d72111106b3d0d29b868582fc0d5af885f766b28f5c9b3d625"
+  },
+  {
+    "command": "lark-cli drive permission.public patch",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "PATCH",
+    "path": "/open-apis/drive/v1/permissions/{token}/public",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.permissionPublic.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:file",
+        "docs:doc",
+        "sheets:spreadsheet",
+        "wiki:wiki",
+        "bitable:bitable",
+        "docs:permission.setting:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d6d7eaff7a41dce8859e31d5d00ceda0ca7c2f38e5b24c06a7ede08fa5a3df9f"
+  },
+  {
+    "command": "lark-cli drive metas batch_query",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/metas/batch_query",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.meta.batchQuery"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive.metadata:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "e3d2ff01c477527757d8d6b2bce71cb5f748e7408a4fa423fdfcafe62e2e3388"
+  },
+  {
+    "command": "lark-cli drive user remove_subscription",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "DELETE",
+    "path": "/open-apis/drive/v1/user/remove_subscription",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "2f8c743e4d2efa7a226dddbcfc53cf035af99d3cb1eea8703126f9e33d615d9c"
+  },
+  {
+    "command": "lark-cli drive user subscription",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v1/user/subscription",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c6999f26e4ec8d38b82322e701a4c5377ce21f601fe816c126cf14eff596a3af"
+  },
+  {
+    "command": "lark-cli drive user subscription_status",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/user/subscription_status",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docs:document.comment:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "0b834af542883db64aafecb729c99a0a1d7567a1198f642440180849567e62aa"
+  },
+  {
+    "command": "lark-cli drive file.statistics get",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/files/{file_token}/statistics",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileStatistics.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "drive:drive.metadata:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "c7455f8fab88e1d04fa5f2f977c9bbe1ce51c4e2a4d047843dccddf596c8805a"
+  },
+  {
+    "command": "lark-cli drive file.view_records list",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v1/files/{file_token}/view_records",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "drive.v1.fileViewRecord.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "contact:user.base:readonly",
+        "drive:file:view_record:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "08bd0afc9872db84ce00026050bc18e3a93b2be83a91eaa2c6936fba1c8a0819"
+  },
+  {
+    "command": "lark-cli drive file.comment.reply.reactions update_reaction",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "POST",
+    "path": "/open-apis/drive/v2/files/{file_token}/comments/reaction",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "docs:document.comment:create",
+        "docs:document.comment:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "275a7ad7cb07baf042e0dc34f1102dded84d6c5d4154b42f8b5540a7be21fc4f"
+  },
+  {
+    "command": "lark-cli drive quota_details get",
+    "source": "internal/registry/catalog/services/drive.json",
+    "method": "GET",
+    "path": "/open-apis/drive/v2/quota_details/{quota_detail_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:quota_detail:read_one"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "9f30f32a3927f0b649fa932d32fec0e83dee44aa3f93d145ef1b43e45cda5e88"
+  },
+  {
+    "command": "lark-cli im chats create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.chat.create",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat:create",
+        "im:chat:create_by_user"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "0165187f2c77d92c4222ddea72ee097ad23e734e01989846ff619618b1d448e4"
+  },
+  {
+    "command": "lark-cli im chats get",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chat.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "bc04a0e283f6119174d2f6228885fa6a16d7a41c3d18d8489ed1b18c43e25d41"
+  },
+  {
+    "command": "lark-cli im chats link",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats/{chat_id}/link",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chat.link"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "56cda1633b63255181ad5c0fd2361a679dbce454b84440b38566f7b1c08f0a22"
+  },
+  {
+    "command": "lark-cli im chats update",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PUT",
+    "path": "/open-apis/im/v1/chats/{chat_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chat.update"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b6a8f90bdcf4b4a4843ddc77bf5eab5c808557f25ed359532c745d202d08798c"
+  },
+  {
+    "command": "lark-cli im chat.members bots",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}/members/bots",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat.group_info:readonly",
+        "im:chat.members:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "220de9e1f3365705ce94fb9bb02d5eab8ecc59c4e04f7b8650b8e6ad9379e451"
+  },
+  {
+    "command": "lark-cli im chat.members create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats/{chat_id}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatMembers.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.members:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "007191d25c8d6ac85bc15ac5cba4c8a1983a8e26ff95b6ea892fd133c7a6b1a8"
+  },
+  {
+    "command": "lark-cli im chat.members delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/chats/{chat_id}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatMembers.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.members:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "a4113fb39b2a0e31cd5900a5a810cdc409887ac41ef4ce29a3d72a4af144d62f"
+  },
+  {
+    "command": "lark-cli im chat.members get",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatMembers.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat.group_info:readonly",
+        "im:chat.members:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "3f506c68457b391cc6352bab989bad6da1e9cb9785acd23472ab5a0131a1eeff"
+  },
+  {
+    "command": "lark-cli im chat.user_setting batch_query",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chat_user_setting/batch_query",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:read",
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat.user_setting:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "66d6e85030b0d284c5e5dfb79312b49604dbf913e0bd3c42d68a358cee4d09ed"
+  },
+  {
+    "command": "lark-cli im chat.user_setting batch_update",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chat_user_setting/batch_update",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.user_setting:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "b1095a0c6e575f8adecc782879d0f0ff5059f1577ee360a7cd8b62be2c8ddab7"
+  },
+  {
+    "command": "lark-cli im chat.managers add_managers",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats/{chat_id}/managers/add_managers",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatManagers.addManagers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.managers:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "114130a33618de0003ff4fb8d6b648ac4a5257edeab9e7deca69639dae9a1a19"
+  },
+  {
+    "command": "lark-cli im chat.managers delete_managers",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats/{chat_id}/managers/delete_managers",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatManagers.deleteManagers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.managers:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "395017b485459e946a9eacad120399ec265deadc91540c645df76bf5d4ee3d87"
+  },
+  {
+    "command": "lark-cli im chat.moderation get",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}/moderation",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatModeration.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat:readonly",
+        "im:chat",
+        "im:chat.moderation:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "50874b76b29715457319de127c6fbf4e6967f652009bc540ba0c1e2919ca5817"
+  },
+  {
+    "command": "lark-cli im chat.moderation update",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PUT",
+    "path": "/open-apis/im/v1/chats/{chat_id}/moderation",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.chatModeration.update"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat:moderation:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "d6184c1a55cda1c58f12d98e9adbacadeccb25bda7865077860f607bd2e0d895"
+  },
+  {
+    "command": "lark-cli im chat.nickname delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/chats/{chat_id}/nickname",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.nickname:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "dd4d66a9b07b82b71aa87fdec9096d641e6fffb8c9e43dc7cf6c287e41621f64"
+  },
+  {
+    "command": "lark-cli im chat.nickname get",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}/nickname",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat:read",
+        "im:chat:readonly",
+        "im:chat.nickname:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "316699459a4376160a2f93312e5fb772e52e6894e805419a10eb235419015fad"
+  },
+  {
+    "command": "lark-cli im chat.nickname update",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PUT",
+    "path": "/open-apis/im/v1/chats/{chat_id}/nickname",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat",
+        "im:chat.nickname:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "b24815bddc2e45bd0584f3f03792be24337667e4d4c323ed61542ef6695fe3e2"
+  },
+  {
+    "command": "lark-cli im chat.join_requests handle",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/chats/{chat_id}/membership_applications/handle",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat.membership_application:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "07d91d4ca472b99d268acd4cbb2451302181081a61eaab59f76121cc47ffae45"
+  },
+  {
+    "command": "lark-cli im chat.join_requests list",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/chats/{chat_id}/membership_applications",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:chat.membership_application:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "d0cd76c503241f7ea47f84ae0afba93daeb3c7148c55ff6e5f2d08f9a102989e"
+  },
+  {
+    "command": "lark-cli im messages delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/messages/{message_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.message.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:recall",
+        "im:message",
+        "im:message:send_as_bot"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "914ce54f7552e16c493c9f6093cd8b90762705b8c2589201c9c0a34910f1305d"
+  },
+  {
+    "command": "lark-cli im messages forward",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/messages/{message_id}/forward",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.forward",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:send_as_bot",
+        "im:message"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "8c06b9493022fc23cdc3087f3ce0f597526de0cc5523bcb4b37381eabe2b1be4"
+  },
+  {
+    "command": "lark-cli im messages merge_forward",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/messages/merge_forward",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.mergeForward",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:send_as_bot",
+        "im:message"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "91ab545c0db8e025f2c1dcc67de495fb1a468273784501ab2e9d1bd8dee7844b"
+  },
+  {
+    "command": "lark-cli im messages patch",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PATCH",
+    "path": "/open-apis/im/v1/messages/{message_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.message.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:update",
+        "im:message",
+        "im:message:send_as_bot"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "0469ffcd72529ccb4477904b4c9ac912bb9e8030d3e6fff8f9a1ee855ba22af9"
+  },
+  {
+    "command": "lark-cli im messages read_status",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/messages/read_status",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:get_as_user",
+        "im:message",
+        "im:message:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "704161678d4eea184c4ebe95f2cde352a071151f4867eab176163342bb353663"
+  },
+  {
+    "command": "lark-cli im messages read_users",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/messages/{message_id}/read_users",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.readUsers",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:basic",
+        "im:message:readonly",
+        "im:message",
+        "im:message:get_as_user"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c0133236789c58d83f4a6825f3224265a37eacbab6f4a43536c2e9d04e091b06"
+  },
+  {
+    "command": "lark-cli im messages urgent_app",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PATCH",
+    "path": "/open-apis/im/v1/messages/{message_id}/urgent_app",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.urgentApp",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message.urgent",
+        "im:message.urgent:app_send"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "80607b163f533bde56b6ae1d637e045145b434e3f811e8773cb4e7c7915798f1"
+  },
+  {
+    "command": "lark-cli im messages urgent_phone",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PATCH",
+    "path": "/open-apis/im/v1/messages/{message_id}/urgent_phone",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.urgentPhone",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message.urgent:phone",
+        "im:message.urgent:phone_send"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "cffc7b993eafe954122a9fd3a362247cc3f3bbc6f79489f1bea6968875a1caf8"
+  },
+  {
+    "command": "lark-cli im messages urgent_sms",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PATCH",
+    "path": "/open-apis/im/v1/messages/{message_id}/urgent_sms",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.message.urgentSms",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message.urgent:sms",
+        "im:message.urgent:sms_send"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "de5e7ffba6e561231461a5c5830e5621b3671b63463921938d5d812412ef6970"
+  },
+  {
+    "command": "lark-cli im reactions batch_query",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/messages/reactions/batch_query",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:readonly",
+        "im:message.reactions:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "df2baa54b7f5c9f50ff1784fcd384691dbed0794ffb9c3d8b3abdc3cb48ebf5b"
+  },
+  {
+    "command": "lark-cli im reactions create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/messages/{message_id}/reactions",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.messageReaction.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message",
+        "im:message.reactions:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "aa137b8887d42e13837d374837b1ca949652d6cddc0028eb3da3cefe2e7bf7ba"
+  },
+  {
+    "command": "lark-cli im reactions delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/messages/{message_id}/reactions/{reaction_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.messageReaction.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message",
+        "im:message.reactions:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "056e80b15d4b5e287f1d1f4aff58822b08a2e547e29a58149741f73e1f21f8a1"
+  },
+  {
+    "command": "lark-cli im reactions list",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/messages/{message_id}/reactions",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.messageReaction.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:readonly",
+        "im:message.reactions:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "cd2e3d4b2cbc31f06677570005e4bf64de0b5426491856313a436ca959fd150c"
+  },
+  {
+    "command": "lark-cli im threads forward",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/threads/{thread_id}/forward",
+    "state": "upstream_excluded",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [
+      {
+        "name": "im.v1.thread.forward",
+        "tokens": [
+          "tenant"
+        ],
+        "upload": false,
+        "download": false
+      }
+    ],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:send_as_bot",
+        "im:message"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "5fb065b7bd70dac2daee153cd14a8ca78569f5a3f5da7f614732a891cea3d99c"
+  },
+  {
+    "command": "lark-cli im images create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/images",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:resource:upload",
+        "im:resource"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "624ea315d9281f9418570a759747e673f0fd091b3cf9ecab1d853ed1b71bcd90"
+  },
+  {
+    "command": "lark-cli im files create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/files",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:resource:upload",
+        "im:resource"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "b6ba52c991595677d14a7dbcbe166ca4c61ae21ba0a8e87feaaab5f8f3ba81dc"
+  },
+  {
+    "command": "lark-cli im files folder",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/files/{file_key}/folder",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message.history:readonly",
+        "im:message:readonly",
+        "im:message"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d431a3544de929647a504c333c917199a59a08d41401d546b66f79cb859375cc"
+  },
+  {
+    "command": "lark-cli im pins create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/pins",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.pin.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:send_as_bot",
+        "im:message",
+        "im:message.pins:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "90f5002cd7c61b6765bedca1fa15c3214af7d11a632c96548fad58ef28eb93b4"
+  },
+  {
+    "command": "lark-cli im pins delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/pins/{message_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.pin.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:send_as_bot",
+        "im:message",
+        "im:message.pins:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "a25157ca8168fa45a5b91aff905cc2efb9dab1e92ec128c1e29703522efb0833"
+  },
+  {
+    "command": "lark-cli im pins list",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "GET",
+    "path": "/open-apis/im/v1/pins",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "im.v1.pin.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:message:readonly",
+        "im:message",
+        "im:message.pins:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "9784260d93578ad0f3ec20521392476edf1f624cc18a30fac4aa2cc214d6b1bf"
+  },
+  {
+    "command": "lark-cli im feed.groups batch_add_item",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/groups/{feed_group_id}/batch_add_item",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "5e331a2fe442a91bf3e53a1427b1ef0fec6c858cbf823cdc5dec7a6a9aa3c981"
+  },
+  {
+    "command": "lark-cli im feed.groups batch_query",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/groups/batch_query",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:read"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "ba5132d2e6c11639c86108f9d66a9255125091ef11cc9d21284a073680acb377"
+  },
+  {
+    "command": "lark-cli im feed.groups batch_remove_item",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/groups/{feed_group_id}/batch_remove_item",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "5b2945ffeba269da0a86edede71fd98495f3f6436db94eb0a234f688be087465"
+  },
+  {
+    "command": "lark-cli im feed.groups create",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "POST",
+    "path": "/open-apis/im/v1/groups",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "99621035ee86b4e914462020d42433125ecfe07c888161d0c5e2a52b6916bed2"
+  },
+  {
+    "command": "lark-cli im feed.groups delete",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "DELETE",
+    "path": "/open-apis/im/v1/groups/{feed_group_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "f30bf76873db9373605a4638bc8d7d983c49d6cdb53283079345d849ef5bb268"
+  },
+  {
+    "command": "lark-cli im feed.groups update",
+    "source": "internal/registry/catalog/services/im.json",
+    "method": "PUT",
+    "path": "/open-apis/im/v1/groups/{feed_group_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "im:feed_group_v1:write"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "0366157906b414d01706dd62d72280af8b69517b179caab2c9134d1109af4e86"
+  },
+  {
+    "command": "lark-cli mail multi_entity search",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/multi_entity/search",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "1b36cb881acd61d17e72595d5fbbba723910d5c1b3c2510c40c298e31b0f2456"
+  },
+  {
+    "command": "lark-cli mail user_mailboxes accessible_mailboxes",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/accessible_mailboxes",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox",
+        "mail:user_mailbox:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "4801343fa81696463689c9682bd4534fa05a32e80255e656c0275cecf6f9b73d"
+  },
+  {
+    "command": "lark-cli mail user_mailboxes profile",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/profile",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "d74e4b7065e947c3b6b53e8e5e5c88ec47e1ba22bf876feeee337fae08a8ba60"
+  },
+  {
+    "command": "lark-cli mail user_mailboxes search",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/search",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "e8040dd43ab43a607e27801b5090e927d74beecfff582674aeda25c4ce2cea88"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts cancel_scheduled_send",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/cancel_scheduled_send",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:send"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "cd8ce7d6f63ce9af6854c41e8803487ff24f63973272897304689974922902b1"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "1a0f38217e566f1e2c9134d5e45baea3a474ba3573e211492a7c999bd5aa004e"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts/{draft_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "791b85a7fac9727ab42c62db42a4f24b3d798448c5c4899dfd8534fdac2b647e"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts/{draft_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "fb20e17a1c9db0921c2d7af9a62400f23eb5feeeb54edf44de2abf924eccba74"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "9e871c2eee7407b40c499a5e30b89e54701c9dfd7b3b395e63b645556ec52e50"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts send",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts/{draft_id}/send",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:send"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "abe17f048e4f69020e9d147b8e5bf3179d8c35c87d044b24617590594f4b1bf8"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.drafts update",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PUT",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/drafts/{draft_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "a2d631020c8442e0baf4328498d519e122d4e5d9f8696a12ccd62f1c7fe7d567"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.event subscribe",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/event/subscribe",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxEvent.subscribe"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:event"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "231fdd2176c88c2967abe1e52528f9740fe4b98fc81ff35091e2a43187bea464"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.event subscription",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/event/subscription",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxEvent.subscription"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:event"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "f68826bee885d6cbbd8fc5a46db02583dca78e0f7c6d87d2aa5362d61d39f4b1"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.event unsubscribe",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/event/unsubscribe",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxEvent.unsubscribe"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:event"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "5dcac53b05e0c83213b40ea0877cf1f4743e271b4a71a606784d685fa5d5a974"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.folders create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/folders",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxFolder.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.folder:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "deb41325b8388e7d0cbf71a068b61e0dc80557d1fdd17696277164cf7aeedd33"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.folders delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/folders/{folder_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxFolder.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.folder:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "6e622bdfdc5b682f7e8cd3fcacd079556a00c7d977ed1478284de9420c509661"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.folders get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/folders/{folder_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.folder:write",
+        "mail:user_mailbox.folder:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "7b28a5aa92d9141b5afd8bd337a00cb6aa9a390c227d7c2d911dae8d108cc556"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.folders list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/folders",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxFolder.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.folder:write",
+        "mail:user_mailbox.folder:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "bf13ba461863032e307561732245aec2fe82d3a80500a1bf05afb8f3475ddc78"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.folders patch",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PATCH",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/folders/{folder_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxFolder.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.folder:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "ede05a4c14a5c79999759a7bfa2638efd99e402b8cbf75ceb64b639d0bec7689"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.labels create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/labels",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "fafdaa4cf217200223c4a703ad54c78d78b86cf0db390a36b822e2aa683dc770"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.labels delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/labels/{label_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "622a21d4e27c6f89463757893ba715776b6205608efaf2bac46bda2927fb6dcf"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.labels get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/labels/{label_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify",
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "2677fddd07f9efa12c1859eabb75c176f43a0eda31f57f2efd694cde98bfe5c9"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.labels list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/labels",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly",
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "bf15ea1144e653e427bfbdfe0fe1f4881e6345362d22b9454a1878f3940f16a8"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.labels patch",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PATCH",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/labels/{label_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "793dada7bafabe41459a531aa0fb288b17718f1b0bcded0045fc958ce902da9d"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.mail_contacts create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/mail_contacts",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMailContact.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.mail_contact:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "a4375d4e89e2efda364e526d65321a6daf00191829e02a7ef8cd08e11cfc2281"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.mail_contacts delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/mail_contacts/{mail_contact_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMailContact.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.mail_contact:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8fffbc782fb1a23873b2cb0e3cc7f17a60b8cc385e0da55c17bd634023008a37"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.mail_contacts list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/mail_contacts",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMailContact.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.mail_contact:write",
+        "mail:user_mailbox.mail_contact:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "cb01b181929b6b96166a6ee4689c80ffb6120ea61d92feff1199885dd1db95d3"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.mail_contacts patch",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PATCH",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/mail_contacts/{mail_contact_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMailContact.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.mail_contact:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "a604a7598ea686e9cf055910a4dae5b90e0536bc173c748c5b0b6b8e393baafa"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.message.attachments download_url",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/attachments/download_url",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMessageAttachment.downloadUrl"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message.body:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "69a2ca7d3195ffd354cf2c672c22520ab55ffa3aa4eb433979b79fa98d316cdb"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages batch_get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/batch_get",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ],
+      "requiredScopes": [
+        "mail:user_mailbox.message:readonly",
+        "mail:user_mailbox.message.subject:read",
+        "mail:user_mailbox.message.address:read",
+        "mail:user_mailbox.message.body:read"
+      ]
+    },
+    "schema_sha256": "7b44f76311059ac81b7a66c6e39a69c0fdb2e4286a7af70decd8755cd6f3d776"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages batch_modify",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/batch_modify",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "78fe5b3293916b1bc7242425249fb40a0b16573518b4b811fa7c167e7f1ed102"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages batch_trash",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/batch_trash",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "92f7b8211f46eeaf9f64ab0372c4131c2df4fca2e09ebebc5e7da4f2f8bf6f0a"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMessage.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ],
+      "requiredScopes": [
+        "mail:user_mailbox.message:readonly",
+        "mail:user_mailbox.message.subject:read",
+        "mail:user_mailbox.message.address:read",
+        "mail:user_mailbox.message.body:read"
+      ]
+    },
+    "schema_sha256": "927adf2636b8631154d255f48d91066159f26d040d42241621ae87e2936c309b"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxMessage.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "63c6334cb8628372a5f5d8edc32d35bc6ed50f907f6ef8c737f5ccde54bb26ae"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages modify",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PUT",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/modify",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "df7dcc1aa307d94a37f5d334bf41b583412583268b81e41186b1a7e419087b55"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages send_status",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/send_status",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "9168cd82a214f9f8c40c318f194ebecbeee10aa51e5b283d76f6f6f8a2b3cb5a"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.messages trash",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/trash",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "d4e5e2ca0999ff6510ef128006fabea552b9b1762ab79bee47c5ab5685c7bfda"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.rules create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/rules",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxRule.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.rule:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "3b4f2ccf955327d2eeade2c08324fbe1ff8e093aa0f2822567caf6ad2ccd3e64"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.rules delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/rules/{rule_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxRule.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.rule:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "3cb05efac311891d33b770f879dc8c5180aed3161d3a0f93279522675cf303d0"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.rules list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/rules",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxRule.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.rule:write",
+        "mail:user_mailbox.rule:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "c183d0a03df0e710568ae79520cd720b56c2c464da195b6d2227cabf49910ac9"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.rules reorder",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/rules/reorder",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxRule.reorder"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.rule:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "e571c8366cc4330ce4c5cbf39c6af1a7f3d030e068019afa04bad6ec52f97f90"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.rules update",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PUT",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/rules/{rule_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "mail.v1.userMailboxRule.update"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.rule:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b9142c70da16ee51075e7f3fd81cdc23c3766a9b448af6ca1f7e191d356d434f"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.sent_messages get_recall_detail",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/recall",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "d2b86cb2882079eecf5e00b485b123aa0495827544a30f3ef8f2234430691508"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.sent_messages recall",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/messages/{message_id}/recall",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "6453fc98c48d23fd4f908be11c957b23da3c243874f03b6aec4f7bb5e5d5744a"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.settings send_as",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/settings/send_as",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox:readonly",
+        "mail:user_mailbox"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "18e859c51871844bd7dcfe0e88c080442d519c3a275649a248a033677a3983b1"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.template.attachments download_url",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates/{template_id}/attachments/download_url",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "6406f94ac9d1d50bc468fc52c5f111fd77c1e3816e9328f4dc08570b46ea5f55"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.templates create",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "dbb5057ccae1279e4f513fafe9ec5207da4dea1c0c20455115eb0798a83ea475"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.templates delete",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "DELETE",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates/{template_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "18cf2e05a386a57c064bbef159c86207f69fee07b25c1cd545fdf97984e860e2"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.templates get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates/{template_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly",
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "f12a4d7caa5e6328ecbc38ef194161de104544bdcc35fa648008d7570aab8ca9"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.templates list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly",
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "6ac7d96c534e42265d137e5e16cc9d4330755af8d6a6e541b9b51e3a4e7f61b0"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.templates update",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "PUT",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/templates/{template_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "680bcefe351a6146a262402516fbbdc7d18e75e3072c8eafb6380317e85844d1"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads batch_modify",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads/batch_modify",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "b6d05f8a38922b3f7c8849258579abb76c2d7ba224eb3f18cd47a1ac6f2e3dc2"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads batch_trash",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads/batch_trash",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "23318e23e039a79e75ab3dbd678d554c29167a0d91b203e51b0dd3ad34d7cb47"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads get",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads/{thread_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "206ec5332192a6cb62838f37f612b629b1ea2760105671c627ebc32fc5855955"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads list",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "GET",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:readonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "6d59f79cb675f6030a884313372ef91ff014eb774f7bc752ff564187d43f4305"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads modify",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads/{thread_id}/modify",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "4c5903598887397ac5096c58f4747477b48247824b11d58e163a01c7af789b21"
+  },
+  {
+    "command": "lark-cli mail user_mailbox.threads trash",
+    "source": "internal/registry/catalog/services/mail.json",
+    "method": "POST",
+    "path": "/open-apis/mail/v1/user_mailboxes/{user_mailbox_id}/threads/{thread_id}/trash",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mail:user_mailbox.message:modify"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "ac70c03f82afd1368696d1a007bf05180761ee3bde962b645086d99fc62472ef"
+  },
+  {
+    "command": "lark-cli mindnotes nodes create",
+    "source": "internal/registry/catalog/services/mindnotes.json",
+    "method": "POST",
+    "path": "/open-apis/mindnote/v1/mindnotes/{mindnote_id}/nodes",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mindnote:node:create"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "6ae8d6b7cc9d442c29fa7e04422274d6aea3060a78d6c760a9bb1dc13fd04b39"
+  },
+  {
+    "command": "lark-cli mindnotes nodes list",
+    "source": "internal/registry/catalog/services/mindnotes.json",
+    "method": "GET",
+    "path": "/open-apis/mindnote/v1/mindnotes/{mindnote_id}/nodes",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "mindnote:node:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "82c131978d087f2e51130d5da8a6a759a2b31a28b3e56dae652c0033ffd77d03"
+  },
+  {
+    "command": "lark-cli minutes minutes get",
+    "source": "internal/registry/catalog/services/minutes.json",
+    "method": "GET",
+    "path": "/open-apis/minutes/v1/minutes/{minute_token}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "minutes.v1.minute.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "minutes:minutes",
+        "minutes:minutes:readonly",
+        "minutes:minutes.basic:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b50a7d2db32de8be291ca670ad960a50fdb6b0cc3d88b57bb48a4047124b1bc9"
+  },
+  {
+    "command": "lark-cli okr alignments delete",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "DELETE",
+    "path": "/open-apis/okr/v2/alignments/{alignment_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "3e5bb1da1779d3fcc9936f896d3d79733381414c4195f19d56ef6af29823d464"
+  },
+  {
+    "command": "lark-cli okr alignments get",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/alignments/{alignment_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "3188f99fa340571bde8bda809b8b8ca35f7325a0333b4e86717a5de02a9dfc5d"
+  },
+  {
+    "command": "lark-cli okr categories list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/categories",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.setting:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "84219e4ba86d3adaf15214f9aad5ce3ac8f23149714fe84e06f70e6a771b982d"
+  },
+  {
+    "command": "lark-cli okr cycles list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/cycles",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.period:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c60cd46624e8cdde35e7e3248d6ad88b2be9c5366a30738d10cda4e716f5773b"
+  },
+  {
+    "command": "lark-cli okr cycles objectives_position",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PUT",
+    "path": "/open-apis/okr/v2/cycles/{cycle_id}/objectives_position",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "9dac00ab8469731daaad95d704dcf3597bff47eb87ec1ed6674f9f0af14f2136"
+  },
+  {
+    "command": "lark-cli okr cycles objectives_weight",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PUT",
+    "path": "/open-apis/okr/v2/cycles/{cycle_id}/objectives_weight",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "7dc37666006c352dc866942b5d3179d0e08f74a6c4f51ac998444d3070d284c3"
+  },
+  {
+    "command": "lark-cli okr cycle.objectives create",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "POST",
+    "path": "/open-apis/okr/v2/cycles/{cycle_id}/objectives",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "d25a26beaa9e3774842ab2a8403735af929b69a4656a84eca4db5d9d510826aa"
+  },
+  {
+    "command": "lark-cli okr cycle.objectives list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/cycles/{cycle_id}/objectives",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "8a3270733e3063dcfccdd282cbf6ac2b493c4680e0d903ca5fe04dd1c3dc927a"
+  },
+  {
+    "command": "lark-cli okr indicators patch",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PATCH",
+    "path": "/open-apis/okr/v2/indicators/{indicator_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "cb8fe477941f7bcd1e5bd71e32fe47f49ef703f1b666d588dd59c09431ab5f32"
+  },
+  {
+    "command": "lark-cli okr key_results delete",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "DELETE",
+    "path": "/open-apis/okr/v2/key_results/{key_result_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "91f750f8a96b0d4f86dec050e0dadc1d748083c069b89328607266e1cd0f00e2"
+  },
+  {
+    "command": "lark-cli okr key_results get",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/key_results/{key_result_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "4d80ec9cd70775468ec1c458b93a3cdcaf1db563948d6072d69d6b07d4500cda"
+  },
+  {
+    "command": "lark-cli okr key_results patch",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PATCH",
+    "path": "/open-apis/okr/v2/key_results/{key_result_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "0f5d7a59e6622be6d48f24978513827e5456cac60ff1f714fe4b1b17371fab3a"
+  },
+  {
+    "command": "lark-cli okr key_result.indicators list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/key_results/{key_result_id}/indicators",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "006b95e61598e74e654176b6294efb1cada6cc0f851fe2382bc83eaf7228ba63"
+  },
+  {
+    "command": "lark-cli okr objectives delete",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "DELETE",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c4913df390ff71bdb6188f93ef83f1b7e4d220e8dae9bcaecc8ced8bfaea6172"
+  },
+  {
+    "command": "lark-cli okr objectives get",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "fd457ae83865b44b9960fc6a477d6680a044ffd02e114059a9a60613ba709de7"
+  },
+  {
+    "command": "lark-cli okr objectives key_results_position",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PUT",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/key_results_position",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "301c4680b5d5d11665ad7da079ae81ad4fe4ed827e75ada0e7ba59b232b947e5"
+  },
+  {
+    "command": "lark-cli okr objectives key_results_weight",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PUT",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/key_results_weight",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "7955bcbf36e3331b014772cb87568b17f90b1f4745cb9aa79cfbc37f9a7fc1ee"
+  },
+  {
+    "command": "lark-cli okr objectives patch",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "PATCH",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "da2065148a4dfedf9c632c1b8f2145dff17c6e6051cc4f821c9a96fd5a50a0f3"
+  },
+  {
+    "command": "lark-cli okr objective.alignments create",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "POST",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/alignments",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c27d30b8f3085a630e9dc3e68e2c703c1110a94a954ad27327228b6f312e535e"
+  },
+  {
+    "command": "lark-cli okr objective.alignments list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/alignments",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "2b24d05140e0e38e18b890509edcf24b91c8756ecb7924d121479d384a1c7bfc"
+  },
+  {
+    "command": "lark-cli okr objective.indicators list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/indicators",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "6f18cacdd0350e6551d00912a73f8de8d58297d054177e47a0b82e0cdb395551"
+  },
+  {
+    "command": "lark-cli okr objective.key_results create",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "POST",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/key_results",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:writeonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "0e435f6338d2eeea80e8979e8bd9aa0d95bb00cf4d18327b65ef676e50c9cce4"
+  },
+  {
+    "command": "lark-cli okr objective.key_results list",
+    "source": "internal/registry/catalog/services/okr.json",
+    "method": "GET",
+    "path": "/open-apis/okr/v2/objectives/{objective_id}/key_results",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "okr:okr.content:readonly"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "518ea0ed9b37a27fd539ae4800c553900d83b0badb0efce2a619b75c19aac724"
+  },
+  {
+    "command": "lark-cli sheets spreadsheets create",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "POST",
+    "path": "/open-apis/sheets/v3/spreadsheets",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheet.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "sheets:spreadsheet",
+        "sheets:spreadsheet:create"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "0c983d377e74401578e90ce44d185e1f553bdf7971af4712b40a5ce9ab31e6ce"
+  },
+  {
+    "command": "lark-cli sheets spreadsheets get",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "GET",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheet.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "sheets:spreadsheet:readonly",
+        "drive:drive",
+        "drive:drive:readonly",
+        "sheets:spreadsheet.meta:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "610b07f4ecd7494242323fab7645d3ac4a41482a31fbffb830022959d17a2726"
+  },
+  {
+    "command": "lark-cli sheets spreadsheets patch",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "PATCH",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheet.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "drive:drive",
+        "sheets:spreadsheet.meta:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8dc484eb153f3d10de781cdc0f9d34dffe1795c106f5ebd1c976e6164f03cc7b"
+  },
+  {
+    "command": "lark-cli sheets spreadsheet.sheet.filters create",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "POST",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/{sheet_id}/filter",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheetSheetFilter.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "drive:drive",
+        "sheets:spreadsheet:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8cd303eb6a5de8348dfa4366049971178168456cfd74693e24ac2649c74f21c6"
+  },
+  {
+    "command": "lark-cli sheets spreadsheet.sheet.filters delete",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "DELETE",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/{sheet_id}/filter",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheetSheetFilter.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "drive:drive",
+        "sheets:spreadsheet:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "07c5bdf798717fc0eefcf3a2fd5922619c5be9505f82a6799d541c01adbfecc9"
+  },
+  {
+    "command": "lark-cli sheets spreadsheet.sheet.filters get",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "GET",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/{sheet_id}/filter",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheetSheetFilter.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "drive:drive",
+        "drive:drive:readonly",
+        "sheets:spreadsheet",
+        "sheets:spreadsheet:readonly",
+        "sheets:spreadsheet:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b4141f108b96f33924aefdd93c266721a330bd7371f40ba6282ea6035e87f047"
+  },
+  {
+    "command": "lark-cli sheets spreadsheet.sheet.filters update",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "PUT",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/{sheet_id}/filter",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheetSheetFilter.update"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "drive:drive",
+        "sheets:spreadsheet:write_only"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "9b8deabb40667fa1f7cb200f31ee2d2b0de11ada70837bc3c8c5cd850dd21f8f"
+  },
+  {
+    "command": "lark-cli sheets spreadsheet.sheets find",
+    "source": "internal/registry/catalog/services/sheets.json",
+    "method": "POST",
+    "path": "/open-apis/sheets/v3/spreadsheets/{spreadsheet_token}/sheets/{sheet_id}/find",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "sheets.v3.spreadsheetSheet.find"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "sheets:spreadsheet",
+        "sheets:spreadsheet:readonly",
+        "drive:drive",
+        "drive:drive:readonly",
+        "sheets:spreadsheet:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "9af9528e6c2cd585886e7a7e51ac3b8dc07d5b5bfe36a66ce29253210e35fb9f"
+  },
+  {
+    "command": "lark-cli slides xml_presentations create",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/xml_presentations",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:create"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "e25d13c74dbe85855ad4f0b7497dae452dd9178798b4e382d62d5b03fb941892"
+  },
+  {
+    "command": "lark-cli slides xml_presentations get",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "GET",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "c4bb2d178b26ba0b3a98cb1e9ed870ab891c50ba1b28984fbb8b57298b2e2a95"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.history list",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "GET",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/histories",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d78218b05391fd3791bf754f29145fd356f47de51a93d9322f105d9f0113577e"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.history revert",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/history/revert",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:update",
+        "slides:presentation:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "fbe2ac97302e72fc6219d5e6c531d27609a611375647addfb5ed93826e2aa73d"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.history revert_status",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "GET",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/history/revert_status",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "a53f9cb2ab181546d3a94fc11d0cb98ce95b93e7ed9bc5df3a40152bfee09d50"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide create",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/slide",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:update",
+        "slides:presentation:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "efd892dddcab1d51cbc2bde1ef485292fa959fc0d16800902ab657991a61ab9c"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide delete",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "DELETE",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/slide",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:update",
+        "slides:presentation:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "08ace58274dab6feabe6e32870a134ab88ab08e648dd6e35c385287eed50fa9f"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide get",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "GET",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/slide",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "66c92fb1f866416493df37c70aca97b6e768cf1c3feafad57e3a4d6fa562ac1c"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide replace",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/slide/replace",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:update",
+        "slides:presentation:write_only"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "df30c4422dff0d13badf7aa421c9505cf79157b468b893d9f16273b25387a720"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide_image list",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/xml_presentations/{xml_presentation_id}/slide_images",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:screenshot"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "a120d5cd7e4d82d7b915419f49c41a745154664750c00776016098757cb041b5"
+  },
+  {
+    "command": "lark-cli slides xml_presentation.slide_image render",
+    "source": "internal/registry/catalog/services/slides.json",
+    "method": "POST",
+    "path": "/open-apis/slides_ai/v1/slide_image/render",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "slides:presentation:screenshot"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "375190773c28750931e5dceb1019f2f88b598703e73d80906d40225e046c09d6"
+  },
+  {
+    "command": "lark-cli task tasks create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:write",
+        "task:task:writeonly"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "444ce72b6f0125e8ceaa5ab2f6e9350260d259496ea9c464fc24fc880223479a"
+  },
+  {
+    "command": "lark-cli task tasks delete",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "DELETE",
+    "path": "/open-apis/task/v2/tasks/{task_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:delete",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d506840f44d1440b8d9e0736ec474bed3a9f4d6841f7e4c5718a85ac59fc19a7"
+  },
+  {
+    "command": "lark-cli task tasks get",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasks/{task_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:read",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "a9ef4751159cd92353aca77f351f8ed9c89a8cc405c036128158b60989062e18"
+  },
+  {
+    "command": "lark-cli task tasks list",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:read",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "f2ffb43b5e490f99f4eee9efe6d1add25dd784f31b41de009a50d5af24db78a1"
+  },
+  {
+    "command": "lark-cli task tasks patch",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "PATCH",
+    "path": "/open-apis/task/v2/tasks/{task_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:writeonly",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b43b89d9caf7b85016c6779756ac70b3bf76f739c40acd43123398ed439a5888"
+  },
+  {
+    "command": "lark-cli task tasklists add_members",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}/add_members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.addMembers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "04806e07967750c7d5788cf3abd9a1a00b01e25e4fb4e8f06f5fa6c078c8cf6b"
+  },
+  {
+    "command": "lark-cli task tasklists create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasklists",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "928bc7c545c238731c6dc0e3967195a517180156b2ae5e514aa5e91c6467bcd0"
+  },
+  {
+    "command": "lark-cli task tasklists delete",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "DELETE",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:delete",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "61806081473afab7fc36cfb180a73a3a3e7587d4592d0f9040a4a712f8fd9065"
+  },
+  {
+    "command": "lark-cli task tasklists get",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:read",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "83fd1d3af4781471d490aa58920c444275b94733c747bc2214911f2c676df3cf"
+  },
+  {
+    "command": "lark-cli task tasklists list",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasklists",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:read",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "401cd4923fb4c9197e452a0927f0f10e67a1e9e67c125aa904534753866654e9"
+  },
+  {
+    "command": "lark-cli task tasklists patch",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "PATCH",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "4a3b47c61b44206385db820db2b52ac0236f91f936b15024ab259504d0f22736"
+  },
+  {
+    "command": "lark-cli task tasklists remove_members",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}/remove_members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.removeMembers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "44d83fb2c0d49b209083b2af7a7dd0a90ed39182afc648c6c24cff43e441ba56"
+  },
+  {
+    "command": "lark-cli task tasklists tasks",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasklists/{tasklist_guid}/tasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.tasklist.tasks"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:tasklist:read",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "30bd23756ded7b9a31ffef44a94b47077e58c5fcac80bce923aee61399c4a757"
+  },
+  {
+    "command": "lark-cli task subtasks create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasks/{task_guid}/subtasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.taskSubtask.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:writeonly",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "f71023e9bde721f830dff34fb6875f38459369686aca34fbd1fdbdb13988b42a"
+  },
+  {
+    "command": "lark-cli task subtasks list",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/tasks/{task_guid}/subtasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.taskSubtask.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:read",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "7ff9d3a6759eb5df03626c36ce0d5c5d1d6d09c07c1cd47014ba6620bfd50997"
+  },
+  {
+    "command": "lark-cli task agent register_agent",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/agent/register_agent",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:writeonly",
+        "task:task:write",
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "77f4103130f0ba9b6631d97720179005c9a7927e797fdeba2d56f787c9d94845"
+  },
+  {
+    "command": "lark-cli task agent update_agent_profile",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/agent/update_agent_profile",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:writeonly",
+        "task:task:write",
+        "task:tasklist:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "7f27963da9bf3fee02c3755b2a35fa7c29ece7e6f083fc53234825f85f5eb429"
+  },
+  {
+    "command": "lark-cli task agent_task_step_info append_task_steps",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/agent_task_step_info/append_task_steps",
+    "state": "no_exact_endpoint",
+    "mcp_tools": [],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:task:write",
+        "task:task:writeonly"
+      ],
+      "accessTokens": [
+        "tenant"
+      ]
+    },
+    "schema_sha256": "206cbe5966b49aabcbb39b066388992e272b2e93537c377a703dcef8b31929fa"
+  },
+  {
+    "command": "lark-cli task sections create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/sections",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:writeonly",
+        "task:section:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "f3b7192121b964bd12331e9d930c9857f7ef7d43c8aba8aa71785f245d76dc3f"
+  },
+  {
+    "command": "lark-cli task sections delete",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "DELETE",
+    "path": "/open-apis/task/v2/sections/{section_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:delete",
+        "task:section:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "df280e333cfb9901ec8e35a39ce13cbad20efb5a0247dd35c253b782009df4e0"
+  },
+  {
+    "command": "lark-cli task sections get",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/sections/{section_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:write",
+        "task:section:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "c32592a09bd2e780955a74fa861d2e3c599ccf7a97743d5c78dc0a7bc25421c3"
+  },
+  {
+    "command": "lark-cli task sections list",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/sections",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:write",
+        "task:section:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d313b6871e8146b902586e14f98ac0e5fbccbe2713a026a64fa3b7fed16e6a61"
+  },
+  {
+    "command": "lark-cli task sections patch",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "PATCH",
+    "path": "/open-apis/task/v2/sections/{section_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:writeonly",
+        "task:section:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "4f9a5d348056b95a163019839aa1ebbf8e74bf4282cff2417b30157d4b69cafe"
+  },
+  {
+    "command": "lark-cli task sections tasks",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/sections/{section_guid}/tasks",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.section.tasks"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:section:read",
+        "task:section:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "df0b51a0f7a57598561f2ebfc9bd1592edc4f3239a59a37532868625628a5de6"
+  },
+  {
+    "command": "lark-cli task custom_fields add",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}/add",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.add"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:custom_field:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "0766d4d6a5fdbdcfab741a38368f3a38d190225e00393658d252bec5d46146fd"
+  },
+  {
+    "command": "lark-cli task custom_fields create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/custom_fields",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:custom_field:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "a14a0df5cd490a11387b94c4a3b28ade5e48f44c4549777ea3fbc6065abc45d7"
+  },
+  {
+    "command": "lark-cli task custom_fields get",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:write",
+        "task:custom_field:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "021472e02b565d30b0897f34506994efff347d04a4ef7cecb95cf014ac5615cc"
+  },
+  {
+    "command": "lark-cli task custom_fields list",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "GET",
+    "path": "/open-apis/task/v2/custom_fields",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:read",
+        "task:custom_field:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "19363439210beaf0794f4ee3749229b89186e215fc4eaf5bfbadb815cb55d7af"
+  },
+  {
+    "command": "lark-cli task custom_fields patch",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "PATCH",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:custom_field:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "316e912c3ae2812a485d9d23a920928c6b38937fcbdd70ed74a5eca6d19fdc6e"
+  },
+  {
+    "command": "lark-cli task custom_fields remove",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}/remove",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customField.remove"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:custom_field:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "8d6c20424b4b48af429cccff1433cc323aa58dc4b79eca72984af3a9ff23a2da"
+  },
+  {
+    "command": "lark-cli task custom_field_options create",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}/options",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customFieldOption.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:tasklist:write",
+        "task:tasklist:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "04d8e030bb786e7c8a852a71a1afc3100b5f5e7a69587fbbf6f8dff352048d7b"
+  },
+  {
+    "command": "lark-cli task custom_field_options patch",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "PATCH",
+    "path": "/open-apis/task/v2/custom_fields/{custom_field_guid}/options/{option_guid}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.customFieldOption.patch"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:custom_field:writeonly",
+        "task:tasklist:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "b5849ab83eb56e604c6b1770f6aa13801e33d7e51bad053772b373d93e2ee1cf"
+  },
+  {
+    "command": "lark-cli task members add",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasks/{task_guid}/add_members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.addMembers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:personnel:writeonly",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d180102d5961d819af9aee3e885ebae30ba03456f4f3374ce8ad56bea5429ba7"
+  },
+  {
+    "command": "lark-cli task members remove",
+    "source": "internal/registry/catalog/services/task.json",
+    "method": "POST",
+    "path": "/open-apis/task/v2/tasks/{task_guid}/remove_members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "task.v2.task.removeMembers"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "task:personnel:writeonly",
+        "task:task:write"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "d127ef4f309bd96839eedb0257d19885bc84c904a1a828cb4dd49706e324b45a"
+  },
+  {
+    "command": "lark-cli vc meeting get",
+    "source": "internal/registry/catalog/services/vc.json",
+    "method": "GET",
+    "path": "/open-apis/vc/v1/meetings/{meeting_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "vc.v1.meeting.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "vc:meeting:readonly",
+        "vc:meeting.meetingevent:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "7489bd514c1b66f9e7d42a9fa4874a86d91fb35325e28ded73d2cff69c5da00a"
+  },
+  {
+    "command": "lark-cli wiki spaces create",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "POST",
+    "path": "/open-apis/wiki/v2/spaces",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.space.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:space:write_only"
+      ],
+      "accessTokens": [
+        "user"
+      ]
+    },
+    "schema_sha256": "8fadf8f02d5dfb8deb909f679120913b7d0f41dc55a34e6f7ce0f4a9ce00b058"
+  },
+  {
+    "command": "lark-cli wiki spaces get",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "GET",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.space.get"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:wiki:readonly",
+        "wiki:space:read"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "038a30b735a69acc1ec3a66ce13010eed98da9acd59b3f9f0de355760d64a9a4"
+  },
+  {
+    "command": "lark-cli wiki spaces get_node",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "GET",
+    "path": "/open-apis/wiki/v2/spaces/get_node",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.space.getNode"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:wiki:readonly",
+        "wiki:node:read"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "0b435a0c3b408f9580a78a0d27e31621f5a499ec569f02951120b24696345771"
+  },
+  {
+    "command": "lark-cli wiki spaces list",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "GET",
+    "path": "/open-apis/wiki/v2/spaces",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.space.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:wiki:readonly",
+        "wiki:space:retrieve"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "210246433edf4923df6eaf2923e133d1e86b36f779ae29e7f8ce30155190b8c4"
+  },
+  {
+    "command": "lark-cli wiki members create",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "POST",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceMember.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:member:create"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "f25f118f14650c8fbacfe787dc08c933ebdba546df9711af71d5eb8fa8ffada5"
+  },
+  {
+    "command": "lark-cli wiki members delete",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "DELETE",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/members/{member_id}",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceMember.delete"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:member:update"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "3ca26c6c1d8da0e64c375debc94df7ffe4f386da5181b9267966d5760b0bf7c1"
+  },
+  {
+    "command": "lark-cli wiki members list",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "GET",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/members",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceMember.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:wiki:readonly",
+        "wiki:member:retrieve"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "9d20b6c7e74b095f28f72c33249de37c2533a7fe8f6ac086b3d986c49a45d4e6"
+  },
+  {
+    "command": "lark-cli wiki nodes copy",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "POST",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/nodes/{node_token}/copy",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceNode.copy"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:node:copy"
+      ],
+      "accessTokens": [
+        "tenant",
+        "user"
+      ]
+    },
+    "schema_sha256": "7ccc3aff54895868005952a44f491c731831029331019176fea785d2f2819990"
+  },
+  {
+    "command": "lark-cli wiki nodes create",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "POST",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/nodes",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceNode.create"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:node:create"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "03b8f72e853a301386c3a891b31d38c4a45eab06ee7b101dc725a9f7234ce8cf"
+  },
+  {
+    "command": "lark-cli wiki nodes list",
+    "source": "internal/registry/catalog/services/wiki.json",
+    "method": "GET",
+    "path": "/open-apis/wiki/v2/spaces/{space_id}/nodes",
+    "state": "catalog_match",
+    "mcp_tools": [
+      "wiki.v2.spaceNode.list"
+    ],
+    "excluded_upstream_tools": [],
+    "auth_evidence": {
+      "scopes": [
+        "wiki:wiki",
+        "wiki:wiki:readonly",
+        "wiki:node:retrieve"
+      ],
+      "accessTokens": [
+        "user",
+        "tenant"
+      ]
+    },
+    "schema_sha256": "765798538e93599433081ee6450dba61c721d96b5995213d1fb7ac5377bda83d"
+  }
+]

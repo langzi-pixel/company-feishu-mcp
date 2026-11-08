@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-base"
+  short_description: "操作飞书多维表格的表、字段、记录、视图、表单、仪表盘、工作流、权限及 BaseApp 应用模式。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

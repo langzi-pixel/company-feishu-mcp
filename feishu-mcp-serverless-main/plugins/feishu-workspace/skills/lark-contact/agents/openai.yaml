@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-contact"
+  short_description: "按姓名、邮箱或 ID 查找飞书联系人、部门与个人资料，解析后续操作的对象身份。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

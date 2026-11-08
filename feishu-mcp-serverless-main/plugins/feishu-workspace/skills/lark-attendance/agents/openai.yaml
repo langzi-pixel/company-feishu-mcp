@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-attendance"
+  short_description: "查询当前授权用户的飞书考勤与打卡记录，按日期范围整理结果。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

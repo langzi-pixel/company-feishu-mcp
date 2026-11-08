@@ -1,0 +1,239 @@
+{
+  "date": "2026-09-27",
+  "cli_current_commit": "32e14dea9041e7876c8b41aead963b10866267d1",
+  "cli_baseline_tag": "v1.0.74",
+  "cli_baseline_commit": "d4168ab84f96a846ab8d061f5bf66219671e4a40",
+  "current_skills": 28,
+  "baseline_skills": 27,
+  "current_files": 550,
+  "baseline_files": 437,
+  "current_bytes": 5473579,
+  "current_missing_instruction_references": 0,
+  "current_unresolved_example_targets": 26,
+  "current_command_examples": 2604,
+  "registered_cli_api_methods": 251,
+  "registered_api_endpoint_matches": {
+    "no_exact_endpoint": 121,
+    "upstream_excluded": 9,
+    "catalog_match": 121
+  },
+  "literal_shortcut_definitions": 399,
+  "mcp_upstream_catalog": 1291,
+  "mcp_included_catalog": 503,
+  "mcp_domain_counts": {
+    "acs": {
+      "upstream": 11,
+      "included": 6
+    },
+    "admin": {
+      "upstream": 13,
+      "included": 0
+    },
+    "aily": {
+      "upstream": 19,
+      "included": 19
+    },
+    "apaas": {
+      "upstream": 37,
+      "included": 7
+    },
+    "application": {
+      "upstream": 27,
+      "included": 5
+    },
+    "approval": {
+      "upstream": 29,
+      "included": 1
+    },
+    "attendance": {
+      "upstream": 37,
+      "included": 6
+    },
+    "auth": {
+      "upstream": 5,
+      "included": 0
+    },
+    "authen": {
+      "upstream": 1,
+      "included": 1
+    },
+    "baike": {
+      "upstream": 11,
+      "included": 11
+    },
+    "base": {
+      "upstream": 3,
+      "included": 3
+    },
+    "bitable": {
+      "upstream": 46,
+      "included": 46
+    },
+    "board": {
+      "upstream": 1,
+      "included": 1
+    },
+    "calendar": {
+      "upstream": 41,
+      "included": 39
+    },
+    "cardkit": {
+      "upstream": 10,
+      "included": 0
+    },
+    "compensation": {
+      "upstream": 6,
+      "included": 1
+    },
+    "contact": {
+      "upstream": 70,
+      "included": 15
+    },
+    "corehr": {
+      "upstream": 229,
+      "included": 4
+    },
+    "directory": {
+      "upstream": 21,
+      "included": 21
+    },
+    "docs": {
+      "upstream": 1,
+      "included": 1
+    },
+    "docx": {
+      "upstream": 21,
+      "included": 21
+    },
+    "drive": {
+      "upstream": 52,
+      "included": 52
+    },
+    "ehr": {
+      "upstream": 1,
+      "included": 0
+    },
+    "event": {
+      "upstream": 1,
+      "included": 0
+    },
+    "helpdesk": {
+      "upstream": 8,
+      "included": 8
+    },
+    "hire": {
+      "upstream": 178,
+      "included": 3
+    },
+    "human_authentication": {
+      "upstream": 1,
+      "included": 0
+    },
+    "im": {
+      "upstream": 67,
+      "included": 32
+    },
+    "lingo": {
+      "upstream": 12,
+      "included": 9
+    },
+    "mail": {
+      "upstream": 67,
+      "included": 22
+    },
+    "mdm": {
+      "upstream": 4,
+      "included": 0
+    },
+    "minutes": {
+      "upstream": 3,
+      "included": 3
+    },
+    "moments": {
+      "upstream": 1,
+      "included": 0
+    },
+    "okr": {
+      "upstream": 11,
+      "included": 6
+    },
+    "optical_char_recognition": {
+      "upstream": 1,
+      "included": 0
+    },
+    "passport": {
+      "upstream": 2,
+      "included": 0
+    },
+    "payroll": {
+      "upstream": 12,
+      "included": 9
+    },
+    "performance": {
+      "upstream": 20,
+      "included": 2
+    },
+    "personal_settings": {
+      "upstream": 6,
+      "included": 0
+    },
+    "report": {
+      "upstream": 3,
+      "included": 1
+    },
+    "search": {
+      "upstream": 14,
+      "included": 2
+    },
+    "security_and_compliance": {
+      "upstream": 1,
+      "included": 0
+    },
+    "sheets": {
+      "upstream": 27,
+      "included": 27
+    },
+    "speech_to_text": {
+      "upstream": 2,
+      "included": 0
+    },
+    "task": {
+      "upstream": 74,
+      "included": 74
+    },
+    "tenant": {
+      "upstream": 2,
+      "included": 0
+    },
+    "translation": {
+      "upstream": 2,
+      "included": 0
+    },
+    "trust_party": {
+      "upstream": 5,
+      "included": 5
+    },
+    "vc": {
+      "upstream": 55,
+      "included": 24
+    },
+    "verification": {
+      "upstream": 1,
+      "included": 0
+    },
+    "wiki": {
+      "upstream": 16,
+      "included": 16
+    },
+    "workplace": {
+      "upstream": 3,
+      "included": 0
+    }
+  },
+  "limits": [
+    "Endpoint matches do not prove parameter/response equivalence or live permissions.",
+    "No-exact-endpoint is not proof no equivalent composition exists.",
+    "Static shortcut extraction is a source index, not a full Go call graph.",
+    "No business writes or full live read/write acceptance performed."
+  ]
+}

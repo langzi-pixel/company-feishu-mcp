@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-approval"
+  short_description: "查询飞书审批定义、待办和实例，按指定对象发起、通过、拒绝、转交或撤回审批。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

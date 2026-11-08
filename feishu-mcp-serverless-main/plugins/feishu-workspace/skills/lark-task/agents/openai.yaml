@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-task"
+  short_description: "查询和管理飞书任务、清单、子任务、负责人、截止时间、评论和附件。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

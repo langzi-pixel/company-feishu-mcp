@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-event"
+  short_description: "检查飞书事件订阅与消费能力，读取有界增量事件并说明监听状态。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

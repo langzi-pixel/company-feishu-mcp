@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-calendar"
+  short_description: "查询和管理飞书日历、日程、重复实例、参与人、忙闲与会议室。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

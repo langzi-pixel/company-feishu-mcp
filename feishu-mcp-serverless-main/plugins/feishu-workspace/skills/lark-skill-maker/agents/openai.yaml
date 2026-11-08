@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-skill-maker"
+  short_description: "将已经验证的飞书操作整理为可复用技能、参数合同和失败恢复流程。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

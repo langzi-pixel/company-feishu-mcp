@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-slides"
+  short_description: "创建、读取和编辑飞书幻灯片及其页面、XML 内容、历史版本和演示素材。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

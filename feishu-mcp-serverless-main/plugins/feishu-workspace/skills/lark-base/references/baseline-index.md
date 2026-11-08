@@ -1,0 +1,15 @@
+# 兼容参考
+
+- [dashboard-block-data-config.md](baseline/references/dashboard-block-data-config.md)
+- [formula-field-guide.md](baseline/references/formula-field-guide.md)
+- [lark-base-cell-value.md](baseline/references/lark-base-cell-value.md)
+- [lark-base-data-analysis-sop.md](baseline/references/lark-base-data-analysis-sop.md)
+- [lark-base-data-query-guide.md](baseline/references/lark-base-data-query-guide.md)
+- [lark-base-field-json.md](baseline/references/lark-base-field-json.md)
+- [lark-base-record-batch-create.md](baseline/references/lark-base-record-batch-create.md)
+- [lark-base-record-batch-update.md](baseline/references/lark-base-record-batch-update.md)
+- [lark-base-record-upsert.md](baseline/references/lark-base-record-upsert.md)
+- [lark-base-role-guide.md](baseline/references/lark-base-role-guide.md)
+- [lark-base-workflow-guide.md](baseline/references/lark-base-workflow-guide.md)
+- [lookup-field-guide.md](baseline/references/lookup-field-guide.md)
+- [role-config.md](baseline/references/role-config.md)

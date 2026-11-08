@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-workflow-meeting-summary"
+  short_description: "把指定时间范围或指定会议的飞书纪要与逐字稿整理成有来源的会议总结。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

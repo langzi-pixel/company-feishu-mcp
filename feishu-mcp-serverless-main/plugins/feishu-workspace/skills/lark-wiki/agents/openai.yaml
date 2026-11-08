@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-wiki"
+  short_description: "管理飞书知识空间、成员、节点及节点移动复制；文档正文交给文档技能。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

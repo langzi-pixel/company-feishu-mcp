@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-note"
+  short_description: "处理飞书会议笔记 Note 的详情、关联关系与统一逐字稿请求。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

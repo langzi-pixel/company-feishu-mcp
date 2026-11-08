@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-shared"
+  short_description: "诊断飞书连接、当前身份、授权范围与访问失败。业务资料操作由对应领域技能处理。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

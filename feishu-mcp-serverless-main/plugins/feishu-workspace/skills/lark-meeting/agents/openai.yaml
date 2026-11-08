@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-meeting"
+  short_description: "检索飞书会议与即时会议，读取录制、妙记、会议笔记和逐字稿，整理会议来源。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

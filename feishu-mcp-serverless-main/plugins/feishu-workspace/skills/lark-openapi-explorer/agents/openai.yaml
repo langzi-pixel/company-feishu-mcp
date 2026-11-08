@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-openapi-explorer"
+  short_description: "查找飞书其他领域和日常入口未覆盖的 MCP 操作，读取参数合同并执行明确请求。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

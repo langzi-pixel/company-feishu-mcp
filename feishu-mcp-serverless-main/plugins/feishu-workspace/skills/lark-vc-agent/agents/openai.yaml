@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-vc-agent"
+  short_description: "处理飞书会中机器人的入会、离会、状态与实时会话请求。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

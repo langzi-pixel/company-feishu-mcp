@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-apps"
+  short_description: "处理飞书妙搭 Spark 应用的查询、页面开发、数据与发布工作流；BaseApp 应用模式转多维表格技能。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

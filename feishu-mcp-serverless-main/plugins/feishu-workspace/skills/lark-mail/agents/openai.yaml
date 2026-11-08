@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-mail"
+  short_description: "检索飞书邮箱邮件与线程，管理草稿、回复、附件、文件夹、联系人和邮件规则。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

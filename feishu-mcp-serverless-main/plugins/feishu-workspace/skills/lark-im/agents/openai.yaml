@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-im"
+  short_description: "搜索飞书聊天消息、读取线程、发送和回复消息、管理群聊、卡片与消息附件。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"

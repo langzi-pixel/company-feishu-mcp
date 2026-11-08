@@ -1,0 +1,3746 @@
+[
+  {
+    "source": "skills/lark-doc/SKILL.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-716f3f9ec728a423"
+  },
+  {
+    "source": "skills/lark-doc/references/baseline/references/lark-doc-word-stat.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-1b86afef9d0c9fb1"
+  },
+  {
+    "source": "skills/lark-doc/references/baseline/references/style/lark-doc-create-workflow.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-505571036767971e"
+  },
+  {
+    "source": "skills/lark-doc/references/baseline/references/style/lark-doc-style.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-736629778ea89853"
+  },
+  {
+    "source": "skills/lark-doc/references/baseline/references/style/lark-doc-update-workflow.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-26d0d13482df542c"
+  },
+  {
+    "source": "skills/lark-doc/references/baseline-index.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-f40a2d5d8326e672"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/business-analysis.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-3fe05b091841b8c7"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/data-report.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-ec6a3c26e29f5739"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/email.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-ec3eccc4b5c39d7d"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/execution-plan.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-9e9963b1a80624f4"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/formal-doc.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-6b9c19885d730757"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/meeting-minutes.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-1a26a6142bb8d15f"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/memo-brief.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-7833f9e70e54da14"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/official-redhead.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-0281fb5ee9728a7e"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/prd.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-6ef702ee6ac6f032"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/proposal.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-c55a6d544fa5ba4a"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/research-report.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-1eb6643eed824677"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/retrospective.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-e00d574f5142ae40"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-consumer.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-af0a44ff5f39f6c2"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-creative.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-fffc8265fbf7afbd"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-knowledge.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-ea844852fc2c0782"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-marketing.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-5e0a12ee9fc8a596"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-media.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-75a5ff5cb945e768"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-opinion.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-d88600670d574689"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-personal-brand.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-5749f65842ed140b"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-platform.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-fdd50f15ec9d6f18"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-report.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-58f7def42342443d"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/route-workplace.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-e2bc55083f23b4c2"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/sop-tutorial.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-0c1567267bef142f"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/technical-doc.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-effce8d735a3c3cb"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/wechat.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-2a475e131e6a3013"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/weekly-report.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-b7726b8a9446dc97"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/white-paper.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-da7caeaabc20f5e4"
+  },
+  {
+    "source": "skills/lark-doc/references/genres/xiaohongshu.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-10059c807269cb33"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-create-workflow.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-739ad8cd143cb1ae"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-create.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-3e0cb9c4da089f04"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-fetch.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-a8f2a17fdca55dac"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-history.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-6b62c5da61aa31a9"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-md.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-9c44704c1795505e"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-media-download.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-43ef6a2db7aed54e"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-media-insert.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-824642ceae394457"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-media-preview.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-34c2a74eabf2306b"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-mindnote.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-0d6978f43e363f7c"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-resource-cover.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-2f03c31ee9922b47"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-script.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-0113447ef0e9c0a5"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-update.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-cec7c8d10dbcb5cf"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-whiteboard.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-2f781ceff825aa92"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-xml-extended-blocks.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-6f03af2dfdb3b556"
+  },
+  {
+    "source": "skills/lark-doc/references/lark-doc-xml.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-7489401b60894e22"
+  },
+  {
+    "source": "skills/lark-doc/references/mcp-tools.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-3cf3cded12d2e709"
+  },
+  {
+    "source": "skills/lark-doc/workflow-reference.md",
+    "group": "feishu-content",
+    "target": "references/lark-doc-0.md",
+    "anchor": "s-746f80a36cd862a1"
+  },
+  {
+    "source": "skills/lark-drive/SKILL.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-c99c77320f67806c"
+  },
+  {
+    "source": "skills/lark-drive/references/baseline/references/lark-drive-comments-guide.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-4269ef838ed9b0ae"
+  },
+  {
+    "source": "skills/lark-drive/references/baseline-index.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-0ee3a82b3d5ae99b"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-add-comment.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-eec2b5c15e43279d"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-add-reply.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-60109a1dee1b4ac2"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-apply-permission.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-877958c402ff06d0"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-batch-query-comments.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-f9662d4ca719282c"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-comment-content.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-6205636d86928dea"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-comment-location.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-eb851ff361ffff9d"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-copy.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-008aed2b1b64ed04"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-cover.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-3439b20b56fac80d"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-create-folder.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-47844aa3761af3a5"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-create-shortcut.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-48903bcdbf5061e3"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-delete-reply.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-61db950f60f07c98"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-delete.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-0dd3b34e8e162f23"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-download.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-e71db3c18178ec5e"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-export-download.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-c88c646c96f5cce6"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-export.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-c34a363ec7e0cf38"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-files-list.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-1efd212989674e97"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-import.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-889102c7a37a958d"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-inspect.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-7e20781df311b587"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-list-comments.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-1d2de165cd3c3e19"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-list-replies.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-4f8de3d1bf0a5ce4"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-member-add.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-07f0f74d68c4cad4"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-member-list.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-5f791b35ecc31c53"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-member-remove.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-155b8223f5420f90"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-move.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-385feb5ed1a01e57"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-permission-get-setting.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-b0e0f705898998ad"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-permission-guide.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-de1404519a4930f0"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-preview.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-ec8393f20fb843f8"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-pull.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-d2127965f26bd7f6"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-push.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-6263f350dc70a48f"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-react-reply.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-e0d802deed5e42ef"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-reactions.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-d0ccd3f6a04918f3"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-resolve-comment.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-fb147dced6b63d1d"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-restore-comment.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-584fbfce73e3f3da"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-search.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-cd3b5c8a483e06d9"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-secure-label.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-0f10250131845279"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-status.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-564c2eed90faa255"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-task-result.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-27c169d1426c6d1e"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-update-reply.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-4a1316e014436948"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-update-title.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-726e12e695033297"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-upload.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-04b9ae35ec99a8aa"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-version-delete.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-7eb89ec617aa34ef"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-version-get.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-3b4e905df051a5ac"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-version-history.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-1a3638390e927950"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-version-revert.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-f842f6b78522ae26"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-analysis.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-99611fd285084ffc"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-discovery.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-9b1c8524f8f6530e"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-execution.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-414852b02798d96c"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-planning.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-ab4a6ec356c2f26a"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize-rollback.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-ce910315d5c6aab8"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-knowledge-organize.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-21e19860bee6e319"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-permission-governance-commands.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-1a80225bd1e462b4"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-permission-governance-outputs.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-96e5796aeec6819a"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-permission-governance.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-15bd7bdf6ce4606c"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-execute.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-58c1ba1f7a6bd6c7"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-recall.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-f856f016134a4f22"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-resolve-verify.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-f95e0f2d7b19b091"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-review-plan.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-9833aac2320c7b42"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector-setup.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-7a834241a1ae0cb7"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow-topic-move-collector.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-6ce8e611996d89c6"
+  },
+  {
+    "source": "skills/lark-drive/references/lark-drive-workflow.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-377eef44e820cfad"
+  },
+  {
+    "source": "skills/lark-drive/references/mcp-tools.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-4e8deadf354189d0"
+  },
+  {
+    "source": "skills/lark-drive/workflow-reference.md",
+    "group": "feishu-content",
+    "target": "references/lark-drive-0.md",
+    "anchor": "s-69fe0d064273f97c"
+  },
+  {
+    "source": "skills/lark-wiki/SKILL.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-384c23a567152824"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-delete-space.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-34320fa7440ad9af"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-member-add.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-5104188d1f7b4e0a"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-member-list.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-b2f85463036189d2"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-member-remove.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-ab1175a967ac2ff8"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-move-to-drive.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-9aa6007c9609b1f7"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-move.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-c6dffcf181e680d0"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-node-copy.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-56f9a1676bbdf1a1"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-node-create.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-502a3956dd387b13"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-node-delete.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-b9e78f1d6ed0d089"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-node-get.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-5b3c1d410c11b5c9"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-node-list.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-8a3585c4cccac51a"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-space-create.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-2161504a9c2fb6e3"
+  },
+  {
+    "source": "skills/lark-wiki/references/lark-wiki-space-list.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-0761d16c36ab346a"
+  },
+  {
+    "source": "skills/lark-wiki/references/mcp-tools.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-57561fbc35c449a0"
+  },
+  {
+    "source": "skills/lark-wiki/workflow-reference.md",
+    "group": "feishu-content",
+    "target": "references/lark-wiki-0.md",
+    "anchor": "s-ac3c3326e0d275ac"
+  },
+  {
+    "source": "skills/lark-markdown/SKILL.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-651194b317c3c3e6"
+  },
+  {
+    "source": "skills/lark-markdown/references/lark-markdown-create.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-25a410e9a5f012b6"
+  },
+  {
+    "source": "skills/lark-markdown/references/lark-markdown-diff.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-46b487eb2bb41b2a"
+  },
+  {
+    "source": "skills/lark-markdown/references/lark-markdown-fetch.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-82e785c8add411a8"
+  },
+  {
+    "source": "skills/lark-markdown/references/lark-markdown-overwrite.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-092efbb22825f064"
+  },
+  {
+    "source": "skills/lark-markdown/references/lark-markdown-patch.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-100022ed05851f48"
+  },
+  {
+    "source": "skills/lark-markdown/references/mcp-tools.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-82772ed49c9e16e2"
+  },
+  {
+    "source": "skills/lark-markdown/workflow-reference.md",
+    "group": "feishu-content",
+    "target": "references/lark-markdown-0.md",
+    "anchor": "s-ceaba10bda925e23"
+  },
+  {
+    "source": "skills/lark-whiteboard/SKILL.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-e0afe64ca7f20b4c"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/connectors.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-ea18fd1c68c2f7b2"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/content.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-60fd3932a882f6b5"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/image.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-fa454434bc0f7c77"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/layout.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-b965f93eeb968c1c"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/schema.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-3cf888a652cae3e7"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/style.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-5ee24eec3018135b"
+  },
+  {
+    "source": "skills/lark-whiteboard/elements/typography.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-d7aae2d1903fcd7e"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/baseline/references/lark-whiteboard-query.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-4992aff005bba434"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/baseline-index.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-072d46ebd175734f"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/lark-whiteboard-export.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-7477df609ac43925"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/lark-whiteboard-update.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-74ea06188c2a9901"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/lark-whiteboard-workflow.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-5120aaf78f86d9fc"
+  },
+  {
+    "source": "skills/lark-whiteboard/references/mcp-tools.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-8a20ea95d15a91e9"
+  },
+  {
+    "source": "skills/lark-whiteboard/routes/dsl.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-c9d60d52f07bec33"
+  },
+  {
+    "source": "skills/lark-whiteboard/routes/mermaid.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-7a188fdc100b8567"
+  },
+  {
+    "source": "skills/lark-whiteboard/routes/svg-edit.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-789494c3bfb5a204"
+  },
+  {
+    "source": "skills/lark-whiteboard/routes/svg.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-6863db27fc66d49d"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/architecture.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-db974239eb4aac4e"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/bar-chart.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-d1e31cc2d2ec91e5"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/comparison.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-9462fd05a543d65f"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/fishbone.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-6bd3ba7532964979"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/flowchart.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-6470d00d0c4fba6d"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/flywheel.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-91e8a2ce28d05718"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/funnel.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-6da612b4bc76324d"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/line-chart.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-8593fb86d7f537a2"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/mention.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-c4aa5563ff762b85"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/mermaid.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-bb1528a1207650a9"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/milestone.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-442a519466b2f74e"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/organization.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-3a52533d7f97b569"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/photo-showcase.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-5259c35726b07eeb"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/pyramid.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-1f20b6a76b19b3f7"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/swimlane.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-0a25305e25d6c653"
+  },
+  {
+    "source": "skills/lark-whiteboard/scenes/treemap.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-39da1883ccb290a4"
+  },
+  {
+    "source": "skills/lark-whiteboard/workflow-reference.md",
+    "group": "feishu-content",
+    "target": "references/lark-whiteboard-0.md",
+    "anchor": "s-529ec0e6d465c27c"
+  },
+  {
+    "source": "skills/lark-base/SKILL.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-f9ade3356084cb11"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/dashboard-block-data-config.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-0599e27f974fbb13"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/formula-field-guide.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-89342f7915177b77"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-cell-value.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-dbf80ea67b6de62e"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-data-analysis-sop.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-ef02569265f3b5e9"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-data-query-guide.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-83f069c00afa7c28"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-field-json.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-c9357194c4e173e0"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-record-batch-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-94c4af10ef29c531"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-record-batch-update.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-fc4edd6bd72475fb"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-record-upsert.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-7734410c1771f0a7"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-role-guide.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-caa7a2e6ba29ab15"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lark-base-workflow-guide.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-38ac803292b70568"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/lookup-field-guide.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-e82ab9ada91ec1e6"
+  },
+  {
+    "source": "skills/lark-base/references/baseline/references/role-config.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-304dccd7c23aa7ce"
+  },
+  {
+    "source": "skills/lark-base/references/baseline-index.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-e927c01324b3f729"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-advanced-permission-and-role.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-4970f49b7b7e8c10"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-app-block-data-config.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-ed634f84db63916f"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-app.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-4e3b1d6f0fda0ea4"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-dashboard-block-config.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-3eefa08fb4cd6f56"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-dashboard-block-get-data.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-637205f5d2d3f6f3"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-dashboard.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-b9539e7968607a67"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-data-query.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-1e1af96f8912b234"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-e0307fe646be43e6"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-extension.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-2f972de6d0cce9a2"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-formula.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-b26660f08d3f8148"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-lookup.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-c44aa7298dcfa089"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-schema.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-cb2af5486e8e59fc"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-field-update.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-747bb7fa2d2247a2"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-filter-condition.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-ea7773b079411c53"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-form-detail.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-985279bc773a01a5"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-form-questions-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-cc8ee423033b7e75"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-form-questions-update.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-cd7d8d135d50d3cc"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-form-submit.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-4963125425a3cc77"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-record-history-list.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-de0a78f95601bd3f"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-record-query-and-analysis-sop.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-cc7ad3628755b3c0"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-role-config.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-f85fbe39690db5ce"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-template-center.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-de5cfa38ac334522"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-view-set-filter.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-a147b2f981b2f942"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-view.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-acbbbbc678c14729"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-workflow-schema.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-aafd418669728581"
+  },
+  {
+    "source": "skills/lark-base/references/lark-base-workflow.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-c1c547e4561de954"
+  },
+  {
+    "source": "skills/lark-base/references/mcp-tools.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-f666ff95dd93435b"
+  },
+  {
+    "source": "skills/lark-base/workflow-reference.md",
+    "group": "feishu-data",
+    "target": "references/lark-base-0.md",
+    "anchor": "s-e7d0fe3a478ce891"
+  },
+  {
+    "source": "skills/lark-sheets/SKILL.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-0f8ea9ebe9d51002"
+  },
+  {
+    "source": "skills/lark-sheets/references/baseline-index.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-1dda7c01291c3dbe"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-batch-update.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-2c25121f6c3b3f7f"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-changeset.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-18cdf321d09f6521"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-chart.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-cbce883aa9089c71"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-conditional-format.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-4125fd916baec37d"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-filter-view.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-8560a4edfe4af66a"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-filter.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-00b713f0148c2449"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-float-image.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-de6e8fafb9b89e1b"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-formula-translation.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-a45637ec47141ec0"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-formula-verify.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-a9ccfea5b6632bcb"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-history.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-27621128aa1e437c"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-pivot-table.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-c059a327af863d1a"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-range-operations.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-cf7b82ddfd441386"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-read-data.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-33aa01802edb4628"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-search-replace.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-8f011971acd60ecd"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-sheet-structure.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-2cd74a3800579194"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-sparkline.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-04bd8322957595ca"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-styles-put.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-503d10a0a677b33f"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-visual-standards.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-034aab944f0fa5b1"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-workbook.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-5f22cba1f763b5d3"
+  },
+  {
+    "source": "skills/lark-sheets/references/lark-sheets-write-cells.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-aaec4f9bd070fde4"
+  },
+  {
+    "source": "skills/lark-sheets/references/mcp-tools.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-1fc1708a1e4de866"
+  },
+  {
+    "source": "skills/lark-sheets/scripts/lark_sheet_read_cli.py.txt",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-e6951b7dd087587b"
+  },
+  {
+    "source": "skills/lark-sheets/scripts/lark_sheets_df.py.txt",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-958a212184321d2d"
+  },
+  {
+    "source": "skills/lark-sheets/workflow-reference.md",
+    "group": "feishu-data",
+    "target": "references/lark-sheets-0.md",
+    "anchor": "s-d34c656c2b13a2cb"
+  },
+  {
+    "source": "skills/lark-slides/SKILL.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-bf3fba8342983cfe"
+  },
+  {
+    "source": "skills/lark-slides/references/asset-planning.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-7a879f9a89239810"
+  },
+  {
+    "source": "skills/lark-slides/references/baseline/references/lark-slides-replace-pages.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-87565d90060fdcb7"
+  },
+  {
+    "source": "skills/lark-slides/references/baseline/references/lark-slides-xml-presentation-slide-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-c10ee8fbaeeaf588"
+  },
+  {
+    "source": "skills/lark-slides/references/baseline/references/lark-slides-xml-presentation-slide-delete.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-5700ab4e082d365a"
+  },
+  {
+    "source": "skills/lark-slides/references/baseline-index.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-80502f611f7175ab"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-add-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-781503ce17b301f7"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-2dc9fd2b0e0f4d9a"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-delete-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-daa81361dc1abfe2"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-history.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-5cc060a534022d87"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-media-upload.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-0a4a00cc57a24b7b"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-replace-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-de7059cb8c77747f"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-screenshot.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-6b365928e39b6922"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-update-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-d59026b95d949611"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-xml-presentation-slide-get.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-2d171d998264620f"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-xml-presentation-slide-replace.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-d2f2d1646f64523b"
+  },
+  {
+    "source": "skills/lark-slides/references/cli/lark-slides-xml-presentations-get.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-cc7a42f8bd992b15"
+  },
+  {
+    "source": "skills/lark-slides/references/iconpark.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-2626f6fe03de6544"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-add-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-ebaded39387cfe85"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-create.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-105abd5c906ba7ac"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-delete-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-589d125ba93d6932"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-edit-workflows.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-a4e0976e51be8185"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-history.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-8038b8affca7fa95"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-media-upload.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-f8e4854ef21490e3"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-pptx-template-workflows.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-203a167c233e71a8"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-replace-slide.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-944ae26a79b98595"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-screenshot.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-bc8ccdc9481a9ea6"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-xml-presentation-slide-get.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-52b75a2383820bdd"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-xml-presentation-slide-replace.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-18b83200df4dfc70"
+  },
+  {
+    "source": "skills/lark-slides/references/lark-slides-xml-presentations-get.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-e81978b6a8defb71"
+  },
+  {
+    "source": "skills/lark-slides/references/mcp-tools.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-fe8c2e7be080b9c6"
+  },
+  {
+    "source": "skills/lark-slides/references/planning-layer.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-f217c09d017c35e5"
+  },
+  {
+    "source": "skills/lark-slides/references/troubleshooting.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-56b45bf45d58bcee"
+  },
+  {
+    "source": "skills/lark-slides/references/validation-checklist.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-5716632a2c1c33bd"
+  },
+  {
+    "source": "skills/lark-slides/references/visual-planning.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-8a29c841ba6ccca9"
+  },
+  {
+    "source": "skills/lark-slides/references/workflow/error-handling.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-91d349f39b2cd412"
+  },
+  {
+    "source": "skills/lark-slides/references/workflow/slides-editing.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-741dd493d62520a5"
+  },
+  {
+    "source": "skills/lark-slides/references/workflow/template-editing.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-f749479c8d9360a8"
+  },
+  {
+    "source": "skills/lark-slides/references/workflow/validation-xml.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-4a72cbe8eec0b655"
+  },
+  {
+    "source": "skills/lark-slides/references/xml/iconpark.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-0952eb4744ad31ed"
+  },
+  {
+    "source": "skills/lark-slides/references/xml/xml-schema-quick-ref.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-5c0e180adc0fc634"
+  },
+  {
+    "source": "skills/lark-slides/references/xml-schema-quick-ref.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-5b72c86816ac416c"
+  },
+  {
+    "source": "skills/lark-slides/scripts/iconpark_tool_test.py.txt",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-1edc04e75dcdb6b2"
+  },
+  {
+    "source": "skills/lark-slides/scripts/xml_lint_test.py.txt",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-2d4e92c2f05681a1"
+  },
+  {
+    "source": "skills/lark-slides/workflow-reference.md",
+    "group": "feishu-data",
+    "target": "references/lark-slides-0.md",
+    "anchor": "s-ee19803fba2dac88"
+  },
+  {
+    "source": "skills/lark-calendar/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-3d0136d3d09a934d"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-859d2833af4b4d57"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-join-event.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-f67e2c0f5ffe4125"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-list-attendees.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-2563add39b3ba428"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-meeting-relation.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-15f633d24613c559"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-meeting.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-a46ac6486d54bd0d"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-recurring.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-b4d4cc7de8425317"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-room-find.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-8e52cf22f22e0533"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-rsvp.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-f55576b9cac50175"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-schedule-clear-time.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-5714c4973a0cad5b"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-schedule-fuzzy-time.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-e0fa9b1c2b943e62"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-schedule-meeting.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-ef4c0627b1c3b332"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-suggestion.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-cfb58c530b6fbded"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-transfer.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-cc3f1096bf6a8c7e"
+  },
+  {
+    "source": "skills/lark-calendar/references/lark-calendar-update.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-4d2b30bbb64781b9"
+  },
+  {
+    "source": "skills/lark-calendar/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-68ce1569ce804fa7"
+  },
+  {
+    "source": "skills/lark-calendar/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-calendar-0.md",
+    "anchor": "s-104d56452b8c24b9"
+  },
+  {
+    "source": "skills/lark-contact/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-c7dcb2e78118aadb"
+  },
+  {
+    "source": "skills/lark-contact/references/lark-contact-get-user.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-a8f9f3b86ecdb129"
+  },
+  {
+    "source": "skills/lark-contact/references/lark-contact-search-bot.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-1d63f69fa0d94fd3"
+  },
+  {
+    "source": "skills/lark-contact/references/lark-contact-search-user.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-f3d322c87ecb0195"
+  },
+  {
+    "source": "skills/lark-contact/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-37d87097a225a0f9"
+  },
+  {
+    "source": "skills/lark-contact/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-contact-0.md",
+    "anchor": "s-4148f56f6c60012e"
+  },
+  {
+    "source": "skills/lark-im/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-29d24f3594acb424"
+  },
+  {
+    "source": "skills/lark-im/references/card/card-2.0-schema.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-fdc2ef756de734c6"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/button.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-1dc14a94304fc7ea"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/chart.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-7c80c4fbc53a9279"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/checker.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-c957559220008552"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/collapsible_panel.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-cfc09ce7aea02088"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/column_set.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-b80f4bd0762e11d9"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/date_picker.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-482a7125c1ceeae5"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/div.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-829093502be89dc0"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/form.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-83b7cc5102eeb63f"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/header.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-bea33e21db9355c0"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/hr.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-ef48e59f5111fe42"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/img.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-b53f21def4bc993c"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/img_combination.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-157e3d987a9e0f15"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/input.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-79e4c12a17f4987f"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/interactive_container.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-8112539cf25ada85"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/markdown.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-47b9788b1db5f242"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/multi_select_person.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-49d84d344f93d6a4"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/multi_select_static.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-a3e307a491f3ba6a"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/overflow.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-87a70266bba10bd8"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/person.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-8c33f08c94c39a0a"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/person_list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-cba97c04c532deb6"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/picker_datetime.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-bda080ac23c42b54"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/picker_time.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-dc532a0efa1667a1"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/recycling_container.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-e8e2bb2c00626828"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/select_img.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-4e8ec210687207f1"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/select_person.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-60107cf98bb835b7"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/select_static.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-2ca4b2ebc3e4ad66"
+  },
+  {
+    "source": "skills/lark-im/references/card/components/table.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-981a5eb163670ac1"
+  },
+  {
+    "source": "skills/lark-im/references/card/lark-im-card-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-d696b77ca9d8247e"
+  },
+  {
+    "source": "skills/lark-im/references/card/lark-im-card-style.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-faff906db49a6db1"
+  },
+  {
+    "source": "skills/lark-im/references/card/resource/colors.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-3c96a2e90a837a04"
+  },
+  {
+    "source": "skills/lark-im/references/card/resource/icons.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-978f7957cea2a607"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-card-action-reply.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-0787235e521ea2b3"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-b45e0f608e764f23"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-identity.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-0b9cdcf437a82bca"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-40dccb6cd1c80206"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-members-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-3281657aa0dc19e4"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-messages-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-43afe0ecacda410d"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-search.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-9f65accd2ba213aa"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-chat-update.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-a9746f00409900ba"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-group-list-item.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-be18789166012cf7"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-group-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-4fb92386a19dff09"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-group-query-item.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-2bf0075d4091f3df"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-groups.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-2e49c3abb0077382"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-shortcut-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-be106fd381cea6ac"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-shortcut-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-39786b99840b69c4"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-feed-shortcut-remove.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-7c8057f1b9bae435"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-flag-cancel.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-f0f0e20c68848d12"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-flag-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-15799ee1717952a6"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-flag-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-c124a515054d555f"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-message-enrichment.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-e81ffeda0cc77282"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-message-read-status.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-e976e0fe8b3ddf96"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-edit.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-2c2ff6e6aa64755e"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-mget.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-014eb18f9468d53f"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-reply.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-adb4499d4cc6a86d"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-resources-download.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-920425a2e334972a"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-search.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-bf79aa000db3a664"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-messages-send.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-41fc9efbe3a4e8bd"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-reactions.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-c5eb287ba04f37b3"
+  },
+  {
+    "source": "skills/lark-im/references/lark-im-threads-messages-list.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-04d19219d85dd751"
+  },
+  {
+    "source": "skills/lark-im/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-01374d5011221b96"
+  },
+  {
+    "source": "skills/lark-im/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-im-0.md",
+    "anchor": "s-074968175c53efae"
+  },
+  {
+    "source": "skills/lark-mail/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-3559d7afa989eebe"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-calendar-invite.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-ff030ad23837fe6f"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-decline-receipt.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-801c2b8478a4f0ad"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-draft-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-a50b71bccab073bb"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-draft-edit.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-e0c4ba62f47bef0f"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-forward.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-2ccf8396d1ecd936"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-html.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-12f754a896e02db9"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-lint-html.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-dcb784fa13d8f699"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-message-modify.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-12c030d3f16b423f"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-message-trash.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-cd24a43532aec3e3"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-message.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-601fd3fa9eb60cf5"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-messages.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-5318a57195556983"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-recall.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-4f39d49e02fdb971"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-recipient-search.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-88caf77e5d778154"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-reply-all.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-d8b0e14eda550bcc"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-reply.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-a54ac55ddfc377aa"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-rules.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-d422ca5980ed1bc1"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-send-as.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-45661b1233a71c1b"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-send-receipt.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-aed285f41a713fe6"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-send-status.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-2631780e1c63cced"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-send.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-7fa22ca912b921bf"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-share-to-chat.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-a80909d2f3710e6f"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-signature.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-f1ed5a54a889e37e"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-template-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-2658403205c4d374"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-template-update.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-3e66d077d1401dba"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-template.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-5502b3ca31bb1511"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-thread-modify.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-be5e3b296b5dfd28"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-thread-trash.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-6cb71784e0d7267a"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-thread.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-062bbcdc7aebf5ad"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-triage.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-1feb2bbb8f9ee14f"
+  },
+  {
+    "source": "skills/lark-mail/references/lark-mail-watch.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-df69157c30cb9a7d"
+  },
+  {
+    "source": "skills/lark-mail/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-ad66ec172cfd2bc8"
+  },
+  {
+    "source": "skills/lark-mail/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-mail-0.md",
+    "anchor": "s-433648802e67f024"
+  },
+  {
+    "source": "skills/lark-task/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-c03ee45b65ed2a9e"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-assign.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-f883a7c6783ae66b"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-comment.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-5b7d661e171eca2f"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-complete.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-f3d302a71f10f132"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-75f7806fdf31c36f"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-followers.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-9935a7c539c9776a"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-get-my-tasks.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-4ac34fd06222b7d3"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-get-related-tasks.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-69941e2c1c20a721"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-reminder.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-2e77f79dada77863"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-reopen.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-92d4bdcf51890429"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-search.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-62fa529d316435b2"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-set-ancestor.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-aa082fdd6daf81fa"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-tasklist-create.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-4148318b06ff7288"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-tasklist-members.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-65a25a2b6e8e00e4"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-tasklist-search.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-7d4c6a6a5ae46416"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-tasklist-task-add.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-e35477871e089419"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-update.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-71e07f8f78ee286e"
+  },
+  {
+    "source": "skills/lark-task/references/lark-task-upload-attachment.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-26b026c4be45db64"
+  },
+  {
+    "source": "skills/lark-task/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-69236b7e5f12c696"
+  },
+  {
+    "source": "skills/lark-task/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-task-0.md",
+    "anchor": "s-acd30b0dd9b2329b"
+  },
+  {
+    "source": "skills/lark-workflow-standup-report/SKILL.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-workflow-standup-report-0.md",
+    "anchor": "s-580fd4dca62b3c36"
+  },
+  {
+    "source": "skills/lark-workflow-standup-report/references/mcp-tools.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-workflow-standup-report-0.md",
+    "anchor": "s-a7229c6bec47200c"
+  },
+  {
+    "source": "skills/lark-workflow-standup-report/workflow-reference.md",
+    "group": "feishu-collaboration",
+    "target": "references/lark-workflow-standup-report-0.md",
+    "anchor": "s-431f9e8db5a4c9ee"
+  },
+  {
+    "source": "skills/lark-meeting/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-d18634841861885e"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-apply-permission.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-d4c7d9db1161e205"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-3e1c4a681cc2ae6d"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-download.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-06b66459939c5346"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-search.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-81f252a33d1bf027"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-speaker-replace.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-45f8b0d7733efe34"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-summary.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-860055b8893752bd"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-todo.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-4eda03852c02682a"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-update.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-0791096865f48330"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-minutes-upload.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-08c8ebf5c8321239"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-note-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-70f05555aba6167f"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-note-transcript.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-f44d5fe4bf8bfb52"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-agent-meeting-end.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-021163033cf31c99"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-agent-meeting-invite.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-92614d068beec283"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-agent-meeting-join.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-1ce454738383dec1"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-agent-meeting-leave.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-384f08d6b9592cc5"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-f83a53e7114cecb3"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-meeting-countdown.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-206fbaf6aa28aa3f"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-meeting-events.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-0193f3a7e7d4f298"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-meeting-list-active.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-592e95478e6a0276"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-meeting-message-send.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-06c0fec9ab3dcfbf"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-meeting-screenshot.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-c4eacc3fed2ea93a"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-recording.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-8d08d39b956adcd3"
+  },
+  {
+    "source": "skills/lark-meeting/references/lark-vc-search.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-336b0395b2ffd277"
+  },
+  {
+    "source": "skills/lark-meeting/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-d6d9955b0380747c"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/create-and-edit-minutes.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-2b52e88c32b7298d"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/live-meeting-attend.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-007bc536dd114079"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/live-meeting-interact.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-a4ae76e5c00fb3af"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/query-meeting-and-artifacts.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-f0bd564eb956c3d7"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/query-minutes-and-artifacts.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-b4803aa71f203d03"
+  },
+  {
+    "source": "skills/lark-meeting/scenes/query-note-and-artifacts.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-043cc283b03d4c58"
+  },
+  {
+    "source": "skills/lark-meeting/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-meeting-0.md",
+    "anchor": "s-f875bf4220831ee1"
+  },
+  {
+    "source": "skills/lark-vc/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-35c58c6881ec380e"
+  },
+  {
+    "source": "skills/lark-vc/references/baseline/references/lark-vc-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-e05238971ddb666c"
+  },
+  {
+    "source": "skills/lark-vc/references/baseline/references/lark-vc-recording.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-1ff93ed6418e9203"
+  },
+  {
+    "source": "skills/lark-vc/references/baseline/references/lark-vc-search.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-94a0ee79838d7347"
+  },
+  {
+    "source": "skills/lark-vc/references/baseline/references/vc-domain-boundaries.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-8b208449e33e39da"
+  },
+  {
+    "source": "skills/lark-vc/references/baseline-index.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-63a67430100a7f3e"
+  },
+  {
+    "source": "skills/lark-vc/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-20c66225c4b0ac15"
+  },
+  {
+    "source": "skills/lark-vc/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-0.md",
+    "anchor": "s-e12bfee45aa4775d"
+  },
+  {
+    "source": "skills/lark-vc-agent/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-99f6ab3423a4d756"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline/references/lark-vc-agent-meeting-events.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-a373a1d8f12b7c41"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline/references/lark-vc-agent-meeting-join.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-09b8f9180127c16f"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline/references/lark-vc-agent-meeting-leave.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-baffd705f875e45c"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline/references/lark-vc-agent-meeting-list-active.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-b06bc034cb685f94"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline/references/lark-vc-agent-meeting-message-send.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-4b14bf6d73a59e50"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/baseline-index.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-60ac10fbf819ab7d"
+  },
+  {
+    "source": "skills/lark-vc-agent/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-78b5fd17c4d9f036"
+  },
+  {
+    "source": "skills/lark-vc-agent/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-vc-agent-0.md",
+    "anchor": "s-7fd42ed55bd7fb02"
+  },
+  {
+    "source": "skills/lark-minutes/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-c357b92850015e0b"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-6c0b05ae720dbc9e"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-download.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-2b7c200fc360523a"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-search.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-f6f0810cec79053b"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-speaker-replace.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-c0bdff48f9c607a4"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-summary.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-250fbb3ff4fdd227"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-todo.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-8b32f0409f9b5c9d"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-update.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-08c583e2be9adc5f"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline/references/lark-minutes-upload.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-d291971e04f66d14"
+  },
+  {
+    "source": "skills/lark-minutes/references/baseline-index.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-70582d9120c717a1"
+  },
+  {
+    "source": "skills/lark-minutes/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-9876b9be32f6091e"
+  },
+  {
+    "source": "skills/lark-minutes/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-minutes-0.md",
+    "anchor": "s-da454629ccc7a464"
+  },
+  {
+    "source": "skills/lark-note/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-7bca76187d2c4f4f"
+  },
+  {
+    "source": "skills/lark-note/references/baseline/references/lark-note-detail.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-e01d46e9f47a8234"
+  },
+  {
+    "source": "skills/lark-note/references/baseline/references/lark-note-transcript.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-9c6ff33f773912ed"
+  },
+  {
+    "source": "skills/lark-note/references/baseline-index.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-70a0ebb8fd9f25f2"
+  },
+  {
+    "source": "skills/lark-note/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-7fca5a7369fa319e"
+  },
+  {
+    "source": "skills/lark-note/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-note-0.md",
+    "anchor": "s-638cb676afde177f"
+  },
+  {
+    "source": "skills/lark-workflow-meeting-summary/SKILL.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-workflow-meeting-summary-0.md",
+    "anchor": "s-94b20d487dc5732c"
+  },
+  {
+    "source": "skills/lark-workflow-meeting-summary/references/mcp-tools.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-workflow-meeting-summary-0.md",
+    "anchor": "s-76a679609b9cd17c"
+  },
+  {
+    "source": "skills/lark-workflow-meeting-summary/workflow-reference.md",
+    "group": "feishu-meetings",
+    "target": "references/lark-workflow-meeting-summary-0.md",
+    "anchor": "s-d80ee5c848e6f1cb"
+  },
+  {
+    "source": "skills/lark-shared/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-fd106a64f84b4188"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-shared-config-init.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-39acd50614c5467b"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-shared-high-risk-approval.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-000704902c395058"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-shared-identity-and-permissions.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-65638c69ce4b3f9e"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-shared-output-contract.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-cd71eb84bf452305"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-shared-update-notice.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-2ebaa4f3f89b9fac"
+  },
+  {
+    "source": "skills/lark-shared/references/lark-wiki-token-routing.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-0e115e7627c47f6d"
+  },
+  {
+    "source": "skills/lark-shared/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-b4577e34b9115f69"
+  },
+  {
+    "source": "skills/lark-shared/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-shared-0.md",
+    "anchor": "s-462d9b1758bd9fe9"
+  },
+  {
+    "source": "skills/lark-approval/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-f159bc5d6a53e949"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-approvals-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-b13a269a4eb073d1"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-approvals-search.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-6361e0e4c53acbef"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-initiate.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-9c86d856c03b8a0d"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instance-form-control-parameters.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-ae4579b915605025"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instance-value-sourcing.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-b6930238e931340d"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instances-cancel.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-2a5f723da6212888"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instances-cc.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-12d139472cd3408e"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instances-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-e80f7dde38033867"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-instances-initiated.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-4399944f68b6f495"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-add-sign.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-5d85fa5e55eb20b3"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-approve.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-1c1bf1c6e41cd5f6"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-query.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-3c682c5e9f3237eb"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-reject.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-ea738fff91ce99a0"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-remind.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-94ab8f435e95d701"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-rollback.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-77b20e8418554ee6"
+  },
+  {
+    "source": "skills/lark-approval/references/lark-approval-tasks-transfer.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-5cdd294a9622797c"
+  },
+  {
+    "source": "skills/lark-approval/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-27deed1ac28b29bf"
+  },
+  {
+    "source": "skills/lark-approval/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-approval-0.md",
+    "anchor": "s-97c2655cb53cc597"
+  },
+  {
+    "source": "skills/lark-attendance/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-attendance-0.md",
+    "anchor": "s-a7d1b6f680050d68"
+  },
+  {
+    "source": "skills/lark-attendance/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-attendance-0.md",
+    "anchor": "s-b7856d9bf3f438fe"
+  },
+  {
+    "source": "skills/lark-attendance/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-attendance-0.md",
+    "anchor": "s-389dbaa239262489"
+  },
+  {
+    "source": "skills/lark-okr/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-8bde09e6f148ff41"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-alignments.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-2354c9c50895abb3"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-batch-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-ab36ffb3c1ee32b5"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-e74749e9cb4850ee"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-delete.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-658e56646727c3a5"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-detail.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-2e2dff7de68f0c69"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-33d49c2c37ebe05a"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-615dc4b66a768872"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-patch.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-cc1bf6ee9bfe46b5"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-comment-solve-reopen.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-5378ddbb443e95d4"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-contentblock.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-a9c3d82fa50f75dd"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-6f590b5bfd67b6da"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-cycle-detail.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-032ab2f6c5cb93e6"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-cycle-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-fbe34eb1b143bef1"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-entities.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-454dba25e45d198c"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-image-upload.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-7866ce90b57ba3f6"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-indicator-update.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-74dbe5000150f3db"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-indicators.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-a3c3473c5ffab324"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-patch.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-9f3f244b890a135d"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-progress-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-ffc7d40e98f5e2f6"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-progress-delete.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-38f007bf25a4da26"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-progress-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-3138ddb2f8520874"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-progress-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-61fa4c0c12279422"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-progress-update.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-5f8c6e73eb82723b"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-reorder.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-7675856e8f737ccd"
+  },
+  {
+    "source": "skills/lark-okr/references/lark-okr-weight.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-430493adec78775e"
+  },
+  {
+    "source": "skills/lark-okr/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-326189fa39448a2d"
+  },
+  {
+    "source": "skills/lark-okr/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-okr-0.md",
+    "anchor": "s-c2733bde244238c4"
+  },
+  {
+    "source": "skills/lark-apps/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-9a35a16887a0dc7d"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/agents/fork-verifier-agent.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-f03cf61bfb91e096"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/agents/vision-probe-agent.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-1368ff6d1b5643c1"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/creative-design.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-f8a6d6c38ace17f7"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/aily.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-cc2dc5087c8bbdb7"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/animated-video.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-87b3a94150ebdf9c"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/charts.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-ef8493268a9bec42"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/claude.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-1e3c8e148136d0c3"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/codex.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-d0ad1d20f2c343e2"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/data-report.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-893fc1e93d26fea8"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/frontend-design.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-3c2c98dda9c41d7c"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/hi-fi-design.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-6db4e4fd9b65d8a6"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/interactive-prototype.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-9bf31893bed32a35"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/make-a-deck.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-7013858eee3f154a"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/visual-exposure.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-da6debbaa0f0eab4"
+  },
+  {
+    "source": "skills/lark-apps/creative-design/references/wireframe.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-effc6bea00f9fec9"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-access-scope-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-7523a1a96cad7b64"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-access-scope-set.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-7815170ab1f1079d"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-automation.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-68084fcb70a13f3c"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-cache.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-de9a29a9da56de4b"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-cloud-dev.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-3d9dc0c016534e10"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-de19ad0816b322df"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-db-execute.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-358575498d2196cc"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-db.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-58278cf33930781b"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-env-pull.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-3812d672c9477467"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-env.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-5d718c07c1bc0269"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-export.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-10c6b0e1608b29fd"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-file.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-acdffe9c72e0103c"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-68bff6315f02b93f"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-git-credential.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-8dc06210c9b0a4c8"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-html-publish.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-2bf12aa514217300"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-init.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-888500ef1f503cdd"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-62bfb1387359b156"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-local-dev.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-fdd74fbe6e1ec486"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-observability.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-3764f5e5b9ac6085"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-openapi-key.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-42ad7c7b83f8960d"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-plugin-install.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-e84213427b3677cb"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-plugin-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-ef98e44986909681"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-plugin-uninstall.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-d48ab44f7fdd475f"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-release-create.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-0904709c92afb515"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-release-get.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-38ad53881787a13a"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-release-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-4860de9ed5598562"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-role.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-9466ae5c5c037a7e"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-session-messages-list.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-aae446554d1f035e"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-update.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-b10a6bb969a3a4e7"
+  },
+  {
+    "source": "skills/lark-apps/references/lark-apps-user-id-convert.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-a1c7a7ed90006c7c"
+  },
+  {
+    "source": "skills/lark-apps/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-4d5385a58712554a"
+  },
+  {
+    "source": "skills/lark-apps/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-apps-0.md",
+    "anchor": "s-c85bc4b3c7d618fc"
+  },
+  {
+    "source": "skills/lark-event/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-aead883e2e40767c"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-application.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-eebcb715c39149b8"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-approval.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-dd2867a76a01c7fc"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-im.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-2590d7881b5bbcf7"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-minutes.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-32afada9dab06d60"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-task.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-c7a29a7baef1e5e9"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-vc.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-b0f51ee51958174c"
+  },
+  {
+    "source": "skills/lark-event/references/lark-event-whiteboard.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-447e5716b0c91424"
+  },
+  {
+    "source": "skills/lark-event/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-48d406d7832d21a4"
+  },
+  {
+    "source": "skills/lark-event/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-event-0.md",
+    "anchor": "s-cdfdf19458982289"
+  },
+  {
+    "source": "skills/lark-openapi-explorer/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-openapi-explorer-0.md",
+    "anchor": "s-180120bedca6008d"
+  },
+  {
+    "source": "skills/lark-openapi-explorer/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-openapi-explorer-0.md",
+    "anchor": "s-5a234e7b68bc78b9"
+  },
+  {
+    "source": "skills/lark-openapi-explorer/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-openapi-explorer-0.md",
+    "anchor": "s-ec8acc02e8952f26"
+  },
+  {
+    "source": "skills/lark-skill-maker/SKILL.md",
+    "group": "feishu-operations",
+    "target": "references/lark-skill-maker-0.md",
+    "anchor": "s-599576bc00bd2fd6"
+  },
+  {
+    "source": "skills/lark-skill-maker/references/mcp-tools.md",
+    "group": "feishu-operations",
+    "target": "references/lark-skill-maker-0.md",
+    "anchor": "s-d94e7c192cb5a23b"
+  },
+  {
+    "source": "skills/lark-skill-maker/workflow-reference.md",
+    "group": "feishu-operations",
+    "target": "references/lark-skill-maker-0.md",
+    "anchor": "s-7e95cd9e2b4f03f7"
+  }
+]

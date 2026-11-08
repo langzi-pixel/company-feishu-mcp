@@ -1,0 +1,20 @@
+{
+  "region": "your-region",
+  "functionName": "feishu-mcp",
+  "role": "acs:ram::<account-id>:role/aliyunfcdefaultrole",
+  "nodeBinary": "/absolute/path/to/verified-linux-x64-node",
+  "domain": "mcp.example.com",
+  "certificatePath": "/absolute/path/to/fullchain.pem",
+  "privateKeyPath": "/absolute/path/to/private-key.pem",
+  "environmentVariables": {
+    "NODE_ENV": "production", "PUBLIC_ORIGIN": "https://mcp.example.com", "BASE_PATH": "/feishu", "PORT": "9000",
+    "FEISHU_APP_ID": "replace-me", "FEISHU_APP_SECRET": "replace-me", "FEISHU_SCOPES": "offline_access",
+    "OSS_BUCKET": "your-private-bucket", "OSS_REGION": "oss-your-region", "OSS_PREFIX": "feishu/", "OSS_INTERNAL": "true",
+    "STATE_ENCRYPTION_KEY": "base64-encoded-random-32-byte-key"
+  },
+  "routes": [
+    {"path":"/feishu/*","functionName":"feishu-mcp","qualifier":"LATEST","methods":["GET","POST","DELETE","OPTIONS"]},
+    {"path":"/.well-known/oauth-authorization-server/feishu","functionName":"feishu-mcp","qualifier":"LATEST","methods":["GET"]},
+    {"path":"/.well-known/oauth-protected-resource/feishu/mcp","functionName":"feishu-mcp","qualifier":"LATEST","methods":["GET"]}
+  ]
+}

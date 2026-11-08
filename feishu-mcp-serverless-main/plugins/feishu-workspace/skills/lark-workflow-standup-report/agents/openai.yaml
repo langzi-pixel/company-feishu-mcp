@@ -1,0 +1,10 @@
+interface:
+  display_name: "lark-workflow-standup-report"
+  short_description: "结合飞书日程和未完成任务生成指定日期的日报、站会或次日安排摘要。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "feishu"
+      description: "飞书资料与协作工具"
+      transport: "streamable_http"
+      url: "https://mcp.example.com/feishu/mcp"
