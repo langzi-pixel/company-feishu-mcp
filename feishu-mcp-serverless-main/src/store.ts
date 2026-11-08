@@ -1,6 +1,9 @@
-import { createCipheriv, createDecipheriv, createHash, randomBytes } from 'node:crypto';
+import { createHash, randomBytes } from 'node:crypto';
 import OSS from 'ali-oss';
 import { timed } from './telemetry.js';
+import { StateCodec } from './state-codec.js';
+import { SqliteStore } from './sqlite-store.js';
+export { SqliteStore } from './sqlite-store.js';
 
 export const hash = (s: string) => createHash('sha256').update(s).digest('hex');
 export const random = () => randomBytes(32).toString('base64url');
@@ -9,6 +12,7 @@ export interface Store {
   get<T>(key: string): Promise<T | undefined>;
   put(key: string, value: unknown, ttl: number): Promise<void>;
   claim(key: string, ttl: number): Promise<boolean>;
+  close?(): void;
 }
 export class MemoryStore implements Store {
   entries = new Map<string, { value: unknown; expiry: number }>();
@@ -29,22 +33,18 @@ export class MemoryStore implements Store {
 // OAuth state is small. Private OSS objects avoid a permanently running database.
 // Single-use claims use OSS's atomic forbid-overwrite operation, not get-then-put.
 export class OssStore implements Store {
-  constructor(private client: OSS, private encryptionKey: Buffer, private prefix = 'feishu/') {
-    if (encryptionKey.length !== 32) throw new Error('STATE_ENCRYPTION_KEY must be 32 bytes encoded as base64');
+  private readonly codec: StateCodec;
+  constructor(private client: OSS, encryptionKey: Buffer, private prefix = 'feishu/') {
+    this.codec = new StateCodec(encryptionKey);
   }
   private objectName(key: string) { return this.prefix + key; }
   private encode(key: string, value: unknown, ttl: number) {
-    const iv = randomBytes(12), cipher = createCipheriv('aes-256-gcm', this.encryptionKey, iv);
-    cipher.setAAD(Buffer.from(this.objectName(key)));
-    const data = Buffer.concat([cipher.update(JSON.stringify({ value, expiry: now() + ttl })), cipher.final()]);
-    return Buffer.concat([iv, cipher.getAuthTag(), data]);
+    return this.codec.encode(this.objectName(key), value, now() + ttl);
   }
   async get<T>(key: string): Promise<T | undefined> {
     try {
       const result = await timed('state_store','get:'+key.split('/')[0],()=>this.client.get(this.objectName(key)));
-      const raw = Buffer.from(result.content), decipher = createDecipheriv('aes-256-gcm', this.encryptionKey, raw.subarray(0,12));
-      decipher.setAAD(Buffer.from(this.objectName(key))); decipher.setAuthTag(raw.subarray(12,28));
-      const data = JSON.parse(Buffer.concat([decipher.update(raw.subarray(28)), decipher.final()]).toString());
+      const data = this.codec.decode<T>(this.objectName(key), Buffer.from(result.content));
       return data.expiry > now() ? data.value as T : undefined;
     } catch (e) { if ((e as { code?: string }).code === 'NoSuchKey') return undefined; throw e; }
   }
@@ -60,7 +60,16 @@ export class OssStore implements Store {
   }
 }
 export function createStore(env = process.env): Store {
-  if (env.STATE_STORE === 'memory' && env.NODE_ENV !== 'production') return new MemoryStore();
+  const backend = env.STATE_STORE || 'oss';
+  if (backend === 'memory') {
+    if (env.NODE_ENV === 'production') throw new Error('Memory state storage is not allowed in production');
+    return new MemoryStore();
+  }
+  if (backend === 'sqlite') {
+    if (!env.STATE_DB_PATH || !env.STATE_ENCRYPTION_KEY) throw new Error('STATE_DB_PATH and STATE_ENCRYPTION_KEY are required for SQLite storage');
+    return new SqliteStore(env.STATE_DB_PATH, Buffer.from(env.STATE_ENCRYPTION_KEY, 'base64'));
+  }
+  if (backend !== 'oss') throw new Error('Unsupported STATE_STORE; use sqlite, oss, or development-only memory');
   if (!env.OSS_BUCKET || !env.STATE_ENCRYPTION_KEY) throw new Error('Durable OSS storage configuration is required');
   // FC supplies short-lived role credentials. No account AccessKey is deployed.
   const client = new OSS({ region: env.OSS_REGION || 'oss-cn-hangzhou', bucket: env.OSS_BUCKET,

@@ -9,7 +9,7 @@
 - Streamable HTTP MCP，默认路径为 `/feishu/mcp`。
 - 飞书用户 OAuth 登录；MCP 客户端使用独立授权码、访问令牌和刷新令牌。
 - 支持 OAuth discovery、DCR、PKCE S256、resource 校验、刷新令牌轮换和撤销。
-- 支持内存或 OSS 持久化授权状态；生产环境建议使用加密持久化存储。
+- 支持加密 SQLite 或 OSS 持久化授权状态；开发环境也可使用内存存储。
 - 提供常用业务工具，并保留完整原生工具目录，可按需搜索 schema 后调用。
 - 支持文件搜索、Markdown 文档读写、多维表格结构与记录操作等常见工作流。
 - 所有操作仍受飞书应用权限、用户授权和资源 ACL 约束。
@@ -18,7 +18,7 @@
 
 ## 本地运行
 
-需要 Node.js 22+。
+需要 Node.js 22.16+（SQLite 存储和在线备份使用 Node.js 内置 SQLite API）。
 
 ```sh
 npm ci
@@ -54,7 +54,9 @@ npm run verify
 - 将云资源名称、地域、域名、应用 ID 与密钥全部放在部署侧配置中。
 - 不要在公开仓库中硬编码生产服务器、日志项目、连接器 ID 或个人账户信息。
 
-历史部署脚本仅作为参考，详见 [部署说明](docs/deployment.md)。
+单台 ECS 可使用 SQLite，无需配置 OSS。使用 `deploy/sqlite.env.example` 和 `deploy/compose.sqlite.yaml`，将数据库挂载到容器外的私有目录，并安排在线备份。多台服务器共享状态时使用 OSS 或其他共享存储；本地 SQLite 不是多机共享数据库。
+
+历史 FC 部署脚本仅作为参考，详见 [部署说明](docs/deployment.md)。
 
 ## ChatGPT 连接
 

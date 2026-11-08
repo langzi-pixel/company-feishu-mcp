@@ -16,7 +16,7 @@
 
 生产环境至少需要：
 
-- Node.js 22+
+- Node.js 22.16+
 - `PUBLIC_ORIGIN`
 - `BASE_PATH=/feishu`
 - `FEISHU_APP_ID`
@@ -25,7 +25,7 @@
 - `OAUTH_REDIRECT_URIS`
 - 持久化存储配置与 `STATE_ENCRYPTION_KEY`
 
-示例见 `.env.example` 和 `deploy/config.example.json`。
+SQLite 容器配置见 `deploy/sqlite.env.example`、`deploy/compose.sqlite.yaml`；OSS / FC 示例见 `.env.example` 和 `deploy/config.example.json`。
 
 不要把真实 App Secret、访问令牌、生产域名、云资源名称、账户 ID、存储桶名或本机私有路径提交到仓库。
 
@@ -40,6 +40,41 @@ docker build -t feishu-mcp .
 ```
 
 生产环境应由反向代理或云平台提供 HTTPS，并将外部端口转发到应用的 `PORT`。
+
+### 单台 ECS：SQLite
+
+使用明确的 `STATE_STORE=sqlite`，配置容器内绝对路径 `STATE_DB_PATH=/data/state.sqlite` 和一次性生成的 `STATE_ENCRYPTION_KEY`。不需要 OSS Bucket 或云 AccessKey。没有显式选择后端时仍沿用 OSS，保持旧部署兼容。
+
+在仓库之外准备环境文件和数据目录，权限分别为 `0600` 和 `0700`；数据目录的 UID/GID 应与镜像内 `node` 用户匹配。填入真实 HTTPS origin、飞书应用凭据、已批准的用户 scopes 和客户端显示的精确 OAuth 回调地址，不要用示例配置上线。
+
+设置以下三个部署侧变量后使用 Compose：
+
+```sh
+export FEISHU_MCP_IMAGE=feishu-mcp:your-verified-tag
+export FEISHU_MCP_ENV_FILE="$PRIVATE_DEPLOY_DIR/service.env"
+export FEISHU_MCP_DATA_DIR="$PRIVATE_DEPLOY_DIR/data"
+docker compose -f deploy/compose.sqlite.yaml config --quiet
+docker compose -f deploy/compose.sqlite.yaml up -d
+```
+
+`PRIVATE_DEPLOY_DIR` 必须事先设为仓库之外的私有目录。Compose 使用原样读取的 env 文件，避免密钥中的 `$` 被插值；环境文件只交给服务端。默认只把服务绑定到 `127.0.0.1:8080`，由 HTTPS 反向代理转发，并保留根路径下的 OAuth metadata 路由。
+
+SQLite 存储对每条授权记录使用 AES-256-GCM，加密时绑定记录键和有效期；启动时校验加密密钥，配置错误的密钥会拒绝启动。一次性消费由单条 SQLite UPSERT 仲裁，WAL 和 FULL 同步用于持久化；过期记录在启动和后续写入时定期清理。它支持单机多个进程使用同一数据库，不适用于把数据库文件放在 NFS 上供多台应用服务器共享。
+
+### SQLite 在线备份与恢复
+
+运行以下命令生成加密状态的独立快照：
+
+```sh
+docker exec company-feishu-mcp node /app/dist/backup-state.mjs \
+  /data/state.sqlite /data/backups
+```
+
+备份脚本使用 SQLite 在线备份 API，包含已经提交到 WAL 的状态，输出唯一文件名，不覆盖已有备份。脚本不需要解密密钥，也不会打印授权数据。应定期执行并把快照复制到另一台服务器或离线存储；同机备份不能覆盖整台主机或磁盘损失。解密密钥应独立保存，不能只留在同一块磁盘上。
+
+恢复时先停止应用，保留当前完整数据目录作为回滚副本，把所选快照放入一个新的私有数据目录并命名为 `state.sqlite`，保持原加密密钥和正确 UID/GID，再切换挂载目录启动。不要混入旧目录中的 `-wal`、`-shm` 文件。恢复会回到快照时的授权和撤销状态；旧快照可能不包含之后的撤销，事故恢复时应评估是否需要让用户重新授权。
+
+使用 SQLite 不会更改飞书的用户身份、应用权限或资源 ACL。容器更新时保留数据目录和密钥，现有会话可以继续使用；更换或丢失密钥需要重新授权。
 
 ## Serverless / FC
 

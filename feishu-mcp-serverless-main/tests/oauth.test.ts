@@ -2,14 +2,18 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createApp} from '../src/app.js';
 import {configFromEnv} from '../src/config.js';
-import {MemoryStore,hash,now} from '../src/store.js';
+import {MemoryStore,SqliteStore,hash,now,type Store} from '../src/store.js';
+import {randomBytes} from 'node:crypto';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {basename,dirname,join,resolve} from 'node:path';
 import {Feishu} from '../src/feishu.js';
 import {catalog, exposedName, toolDefinitions} from '../src/tools.js';
 import {challenge} from '../src/oauth.js';
 const callback='https://chatgpt.com/connector_platform_oauth_redirect';
-async function fixture(){
+async function fixture(store:Store=new MemoryStore()){
  const config=configFromEnv({PUBLIC_ORIGIN:'http://localhost:8080',FEISHU_APP_ID:'test-app',FEISHU_APP_SECRET:'test-secret'});
- const store=new MemoryStore();let exchanges=0;
+ let exchanges=0;
  const fakeFetch:typeof fetch=async(url)=>{
   if(String(url).endsWith('user_info'))return new Response(JSON.stringify({code:0,data:{open_id:'user-1'}}));
   exchanges++;return new Response(JSON.stringify({access_token:'upstream-'+exchanges,refresh_token:'refresh-'+exchanges,expires_in:7200}));
@@ -37,7 +41,7 @@ async function fixture(){
   assert.equal(callbackRes.status,302);const target=new URL(callbackRes.headers.get('location')!);assert.equal(target.searchParams.get('iss'),config.issuer);assert.equal(target.searchParams.get('state'),'client-state');
   return {...tx,code:target.searchParams.get('code')!};
  }
- return {config,store,feishu,request,post,client,authorize,code,close:()=>new Promise<void>(resolve=>server.close(()=>resolve()))};
+ return {config,store,feishu,request,post,client,authorize,code,close:()=>new Promise<void>(resolve=>server.close(()=>{store.close?.();resolve();}))};
 }
 test('OAuth metadata, consent, PKCE, audience, one-time code, refresh and revoke',async()=>{
  const f=await fixture();try{
@@ -81,6 +85,28 @@ test('credentials refresh once during concurrent requests',async()=>{
 test('expired records and concurrent single-use claims',async()=>{
  const store=new MemoryStore();await store.put('expired',true,-1);assert.equal(await store.get('expired'),undefined);
  const claims=await Promise.all(Array.from({length:50},()=>store.claim(hash('one-time-code'),100)));assert.equal(claims.filter(Boolean).length,1);
+});
+
+test('SQLite keeps OAuth grants, upstream sessions, and revocations across service restarts',async t=>{
+ const directory=mkdtempSync(join(tmpdir(),'feishu-oauth-sqlite-')),file=join(directory,'state.sqlite'),key=randomBytes(32);
+ t.after(()=>{assert.equal(dirname(resolve(directory)),resolve(tmpdir()));assert.ok(basename(directory).startsWith('feishu-oauth-sqlite-'));rmSync(directory,{recursive:true,force:true});});
+ let f=await fixture(new SqliteStore(file,key));
+ try {
+  const issued=await f.code(),clientId=f.client.client_id;
+  const response=await f.post('/feishu/token',{grant_type:'authorization_code',client_id:clientId,redirect_uri:callback,resource:f.config.resource,code:issued.code,code_verifier:issued.verifier});
+  assert.equal(response.status,200);const token=await response.json() as any;
+  const headers={Authorization:'Bearer '+token.access_token,Accept:'application/json, text/event-stream'};
+  await f.close();
+  f=await fixture(new SqliteStore(file,key));
+  const grant=await f.store.get<{sessionId:string}>('access/'+hash(token.access_token));assert.ok(grant);
+  assert.equal(await f.feishu.userToken(grant.sessionId),'upstream-1');
+  assert.equal((await f.post('/feishu/mcp',{jsonrpc:'2.0',id:1,method:'tools/list',params:{}},headers)).status,200);
+  const revoke=await f.post('/feishu/revoke',{client_id:clientId,token:token.refresh_token});assert.equal(revoke.status,200);
+  await f.close();
+  f=await fixture(new SqliteStore(file,key));
+  assert.equal((await f.post('/feishu/mcp',{},headers)).status,401);
+  assert.equal((await f.post('/feishu/token',{grant_type:'refresh_token',client_id:clientId,refresh_token:token.refresh_token,resource:f.config.resource})).status,400);
+ }finally{await f.close();}
 });
 
 test('profile OAuth resource metadata, audience and refresh remain bound to the selected endpoint',async()=>{
